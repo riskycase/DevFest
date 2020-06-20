@@ -4,6 +4,10 @@
 }
 
 
+.naav:hover{
+  color: #66f8ee !important;
+}
+
 #mainNav{
   @media screen and (max-width: 1000px){
     display: none !important;
