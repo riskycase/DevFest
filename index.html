@@ -960,6 +960,24 @@
         text-align: center;
         text-transform: none;
       }
+      #register {
+        -ms-flex-align: center;
+        -webkit-box-align: center;
+        align-items: center;
+        border-radius: 3px;
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, 'SegoeUI', Helvetica, Arial, sans-serif, 'AppleColorEmoji', 'SegoeUIEmoji', 'SegoeUISymbol';
+        font-size: 18px;
+        font-weight: 600;
+        padding: 12px20px;
+        text-align: center;
+        text-transform: none;
+      }
 
       #apply_button:not([disabled]) {
         cursor: pointer;
@@ -1049,13 +1067,19 @@
         <div class="col-lg-12" style="margin-top: 2.5rem !important;">
           <div class="rectangle" style="display:grid; grid-template-columns:1fr 1fr 1fr">
             <div class="button box" style="text-align:center; grid-column:1/2">
-              <button class="btn btn-primary js-scroll-trigger" id="apply_button" style="font-size: 100% !important;">
+              <p class="text-dark" style="color: white !important; font-size: 150%; text-align: left;"><strong>Register for Hackathon</strong></p>
+              <button class="btn btn-primary js-scroll-trigger" id="apply_button" style="font-size: 100% !important; margin: 0 !important;">
                 <svg class="logo" fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115.46 123.46" style="height:24px;width:24px;margin-right:8px">
                   <path d="M115.46 68a55.43 55.43 0 0 1-50.85 55.11S28.12 124 16 123a12.6 12.6 0 0 1-10.09-7.5 15.85 15.85 0 0 0 5.36 1.5c4 .34 10.72.51 20.13.51 13.82 0 28.84-.38 29-.38h.26a60.14 60.14 0 0 0 54.72-52.47c.05 1.05.08 2.18.08 3.34z" />
                   <path d="M110.93 55.87A55.43 55.43 0 0 1 60.08 111s-36.48.92-48.58-.12C5 110.29.15 104.22 0 97.52l.2-83.84C.38 7 5.26.94 11.76.41c12.11-1 48.59.12 48.59.12a55.41 55.41 0 0 1 50.58 55.34z" />
                 </svg>
                 Apply with Devfolio
               </button>
+              <br />
+              <p class="text-dark" style="color: white !important; font-size: 150%; text-align: left;"><strong>Register for Talks/Workshop</strong></p>
+              <a class="btn btn-success js-scroll-trigger" href=" https://bp-gc.in/30cdYC" target="_blank" id="register" style="font-size: 100% !important; margin: 0 !important; display: flex; justify-content: center;">  
+                Register
+              </a>
               <script type="text/javascript">
                 document.addEventListener('DOMContentLoaded', function () {
                   let devfolioOptions = {
@@ -1102,7 +1126,7 @@
   </section>
 <!-- TECHNOLOGIES IN FOCUS -->
   <section id="tech">
-    <div class="content text-dark" style="font-family: 'Young'">Technologies in focus</div>
+    <div class="content text-dark" style="font-family: 'Young'; padding-bottom: 5%;">Technologies in focus</div>
     <div class="container text-center">
       <div class="row">
         <div class="col-md-3">
@@ -1465,10 +1489,13 @@
       <ul>
         <li class="booking-card" style="background-image: url('img/TechWithTim.jpeg');">
           <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">TechWithTim</p>
+            </div>
           </div>
           <div class="informations-container">
             <h1 class="title"> How to find Software Development internships + Tips on Getting Started in Machine Learning</h1>
-            <p class="sub-title">Tim Ruscica</p>
+            <p class="sub-title">Tim Ruscica, TechWithTim</p>
             <div class="more-information">
                 <div class="hello" style="display: flex; justify-content: center;">SDE Intern @ Microsoft | Tech Youtuber w/ 320k subs & 21M views | Podcast Host @ Time Out with Tim | CS Major @ University of Ottawa</div>
             </div>
@@ -1480,12 +1507,31 @@
         <li class="booking-card" style="background-image: url('img/ShashiBhushan.jpeg'); background-position: center center;
         background-size: cover;">
           <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">GeeksForGeeks</p>
+            </div>
           </div>
           <div class="informations-container">
             <h1 class="title">Placement Preparation</h1>
-            <p class="sub-title">Shashi Bhushan</p>
+            <p class="sub-title">Shashi Bhushan, GeeksForGeeks</p>
             <div class="more-information">
                 <div class="hello" style="display: flex; justify-content: center;">Worked with Adobe for about 2 years as a senior member MTS, Shashi Bhushan has sound knowledge of technologies like Java, Spring/Spring Boot,  Python, Django, etc. He graduated from NIT Allahabad in 2016 and worked for Paytm as a Software Engineer for a year. He is very passionate about Competitive Programming & Problem Solving. He is currently working as a Mentor at GeeksforGeeks.</div>
+            </div>
+          </div>
+        </li>
+
+        <li class="booking-card" style="background-image: url('img/SPeaker_interviewBit.jpeg');background-position: center center;
+        background-size: cover;">
+          <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">InterviewBit</p>
+            </div>
+          </div>
+          <div class="informations-container">
+            <h1 class="title">Becoming an Impactful Software Engineer: Building the next Silicon Valley in India</h1>
+            <p class="sub-title">Abhimanyu Saxena, InterviewBit</p>
+            <div class="more-information">
+                <div class="hello" style="display: flex; justify-content: center;">Abhimanyu is the co-founder at InterviewBit. He oversees the technical strategy of the company, and is dedicated towards building a world-class learning platform with the help of technology.</div>
             </div>
           </div>
         </li>
@@ -1493,10 +1539,13 @@
         <li class="booking-card" style="background-image: url('img/Dheeraj.jpeg');background-position: center center;
         background-size: cover;">
           <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">Caarya Experience</p>
+            </div>
           </div>
           <div class="informations-container">
             <h1 class="title"> Cultivating Entrepreneurship for Economy & Ecology</h1>
-            <p class="sub-title">Narayan Dheeraj Kumar Guduri</p>
+            <p class="sub-title">Narayan Dheeraj Kumar Guduri, Caarya Experience</p>
             <div class="more-information">
                 <div class="hello" style="display: flex; justify-content: center;">Founder, Klimaverse | Product Innovation Enthusiast | Technology Entrepreneurship Mentor, The Caarya Experience</div>
             </div>
@@ -1506,38 +1555,29 @@
         <li class="booking-card" style="background-image: url('img/Naga.jpeg'); background-position: center center;
         background-size: cover;">
           <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">Caarya Experience</p>
+            </div>
           </div>
           <div class="informations-container">
             <h1 class="title">Workshop: Strategies & Processes for Idea to Product</h1>
-            <p class="sub-title">Naga Sairam Koduri</p>
+            <p class="sub-title">Naga Sairam Koduri, Caarya Experience</p>
             <div class="more-information">
                 <div class="hello" style="display: flex; justify-content: center;">Chief Experience Officer, Fountane LLC | Digital Product Consultant | Design Thinking Mentor, The Caarya Experience</div>
             </div>
           </div>
         </li>
 
-        <li class="booking-card" style="background-image: url('img/SPeaker_interviewBit.jpeg');background-position: center center;
-        background-size: cover;">
-          <div class="book-container">
-          </div>
-          <div class="informations-container">
-            <h1 class="title">Becoming an Impactful Software Engineer: Building the next Silicon Valley in India</h1>
-            <p class="sub-title">Abhimanyu Saxena</p>
-            <div class="more-information">
-                <div class="hello" style="display: flex; justify-content: center;">Abhimanyu is the co-founder at InterviewBit. He oversees the technical strategy of the company, and is dedicated towards building a world-class learning platform with the help of technology.</div>
-            </div>
-          </div>
-        </li>
-
-        
-        
         <li class="booking-card" style="background-image: url('img/Vandhya.jpeg');background-position: center center;
         background-size: cover;">
           <div class="book-container">
+            <div class="content">
+              <p style="font-size: 60%; color: white;">Caarya Experience</p>
+            </div>
           </div>
           <div class="informations-container">
             <h1 class="title">Validating Your Next Big Idea<br /><br /></h1>
-            <p class="sub-title">Vandyaa Lakkaraju</p>
+            <p class="sub-title">Vandyaa Lakkaraju, Caarya Experience</p>
             <div class="more-information">
                 <div class="hello" style="display: flex; justify-content: center;">Co-founder Ishma Accessories LLP |  Sustainable Living Enthusiast | Lifestyle Accessories Designer | Impact Design Mentor, The Caarya Experience</div>
             </div>
@@ -1656,16 +1696,15 @@
     </div>
     <div class="row mb-4">
       <div class="col-md-6 mx-auto text-center">
+        <a  href="https://bpgc-cte.org/" target="_blank" rel="noreferrer">
+          <img src="img/cte-logo.png" alt="cte logo" class="img-fluid" style="width: 240px">
+        </a>
+      </div>
+      <div class="col-md-6 mx-auto text-center">
         <a  href="https://fold.money/" target="_blank" rel="noreferrer">
           <img src="img/fold-logo.svg" alt="fold logo" class="img-fluid" style="width: 240px">
         </a>
       </div>
-      <div class="col-md-6 mx-auto text-center">
-        <a  href="https://rosenfeldmedia.com/" target="_blank" rel="noreferrer">
-          <img src="img/rosenfeld-logo.jpg" alt="rosenfeld logo" class="img-fluid" style="width: 240px">
-        </a>
-      </div>
-      
     </div>
     <div class="row mb-4">
       <div class="col-md-6 mx-auto text-center">
@@ -1710,9 +1749,11 @@
           <img src="img/echoAR - Logo 2020 - Dark.png" alt="echoAR logo" class="img-fluid" style="width: 240px">
         </a>
       </div>
-
-
-
+      <div class="col-md-6 mx-auto text-center">
+        <a  href="https://rosenfeldmedia.com/" target="_blank" rel="noreferrer">
+          <img src="img/rosenfeld-logo.jpg" alt="rosenfeld logo" class="img-fluid" style="width: 240px">
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1863,7 +1904,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <!-- <div class="card">
               <button class="card-header collapsed" data-toggle="collapse" role="button" href="#collapse7">
                 <a class="panel-title card-title text-black">
                   <h5 class="arrow display-5" style="font-size:21px; font-family: 'Encode Sans Semi Expanded'">
@@ -1879,8 +1920,8 @@
                   work with.
                   <!-- You can join our
                   <a href="https://slack.ethindia.co" target="_blank">Slack</a> to find potential teammates.</p> -->
-              </div>
-            </div>
+              <!-- </div>
+            </div> --> 
 
             <!-- <div class="card">
               <button class="card-header collapsed" data-toggle="collapse" role="button" href="#collapse8">
@@ -2043,7 +2084,9 @@
                 <p class="panel-text display-7 panel-body" style="font-family: 'Encode Sans Semi Expanded'">
                   Pretty much everything, from socializing with fellow hacker community to internship/job offers from
                   the coolest tech companies. And yeah we'll have prizes for finalist teams and many other sponsored
-                  prizes.
+                  prizes.<br />
+
+The prizes include cash prizes upto ₹45000 and other credits worth a total of ₹10 lacs
                 </p>
               </div>
             </div>
