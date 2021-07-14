@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import Technology from './pages/technology/Technology';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
                Learn React
             </a>
          </header>
+         <Technology />
       </div>
    );
 }
