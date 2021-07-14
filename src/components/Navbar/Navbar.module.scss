@@ -1,0 +1,22 @@
+.fixed {
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+}
+
+.Navbar {
+   margin-top: 2%;
+   height: auto;
+   width: auto;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   list-style: none;
+   .navLinks {
+      color: black;
+      text-decoration: none;
+   }
+}
