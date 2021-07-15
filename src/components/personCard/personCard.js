@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './personCard.scss';
+import Styles from './personCard.module.scss';
 
 class PersonCard extends React.Component {
    static propTypes = {
@@ -11,11 +11,11 @@ class PersonCard extends React.Component {
    };
    render() {
       return (
-         <div className="person-card">
-            <div className="person-name">{this.props.name}</div>
-            <img className="person-photo" src={this.props.photo} />
-            <div className="person-info-container">
-               <div className="person-about">{this.props.about}</div>
+         <div className={Styles.personCard}>
+            <div className={Styles.personName}>{this.props.name}</div>
+            <img className={Styles.personPhoto} src={this.props.photo} />
+            <div className={Styles.personInfoContainer}>
+               <div>{this.props.about}</div>
             </div>
          </div>
       );

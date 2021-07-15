@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PersonCard from '../../components/personCard/personCard';
-import './team.scss';
+import Styles from './team.module.scss';
 
 class Team extends React.Component {
    static propTypes = {
@@ -10,7 +10,7 @@ class Team extends React.Component {
    render() {
       const people = this.props.people.map((person, index) => {
          return (
-            <div key={index} className="team-card">
+            <div key={index} className={Styles.teamCard}>
                <PersonCard
                   name={person.name}
                   photo={person.photo}
@@ -19,7 +19,7 @@ class Team extends React.Component {
             </div>
          );
       });
-      return <div className="team-container">{people}</div>;
+      return <div className={Styles.teamContainer}>{people}</div>;
    }
 }
 

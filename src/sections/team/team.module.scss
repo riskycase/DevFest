@@ -1,0 +1,13 @@
+.teamContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .teamCard {
+        --card-width: min(100vh, 275px);
+        flex: 1 0 31%;
+        display: flex;
+        margin: 5px;
+        justify-content: center;
+    }
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PersonCard from '../../components/personCard/personCard';
-import './speakers.scss';
+import Styles from './speakers.module.scss';
 
 class Speakers extends React.Component {
    static propTypes = {
@@ -10,7 +10,7 @@ class Speakers extends React.Component {
    render() {
       const people = this.props.people.map((person, index) => {
          return (
-            <div key={index} className="speaker-card">
+            <div key={index} className={Styles.speakerCard}>
                <PersonCard
                   name={person.name}
                   photo={person.photo}
@@ -19,7 +19,7 @@ class Speakers extends React.Component {
             </div>
          );
       });
-      return <div className="speakers-container">{people}</div>;
+      return <div className={Styles.speakersContainer}>{people}</div>;
    }
 }
 
