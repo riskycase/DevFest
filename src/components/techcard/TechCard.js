@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Styles from './TechCard.module.scss';
 
 const TechCard = ({ title, img_url }) => {
    return (
-      <div className="card">
-         <img src={img_url} className="card-img-top" alt={title} />
-         <div className="card-body">
-            <h3 className="card-title">{title}</h3>
-         </div>
+      <div className={Styles.card}>
+         <img src={img_url} className={Styles.image} alt={title} />
+         <h3 className={Styles.title}>{title}</h3>
       </div>
    );
 };

@@ -1,0 +1,29 @@
+.card {
+
+    position: relative;
+    text-align: center;
+
+    $max_height: 100%;
+    $max_width: 100%;
+
+    --width: 300px;
+    --height: 270px;
+
+    height: var(--height);
+    width: var(--width);
+
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+
+    .image {
+        height: var(--height);
+        width: var(--width);
+    }
+
+    .title {
+        position: absolute;
+        bottom: 7px;
+        left: 25px;
+    }
+}
