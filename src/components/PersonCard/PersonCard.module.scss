@@ -1,0 +1,22 @@
+.personCard {
+    width: var(--card-width);
+    background-color: darkgrey;
+    padding: calc(var(--card-width) * 0.02);
+    .personName{
+        margin-left: 20%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    .personPhoto {
+        width: 85%;
+    }
+    .personInfoContainer {
+        background-color: #ffffff88;
+        backdrop-filter: blur(30px);
+        width: calc(var(--card-width) * 0.85);
+        margin-left: 10%;
+        margin-top: -15%;
+        padding: 2%;
+        height: fit-content;
+    }
+}
