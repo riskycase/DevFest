@@ -1,16 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import PersonCard from '../../components/personCard/personCard';
-import Styles from './speakers.module.scss';
+import Styles from './Team.module.scss';
 
-class Speakers extends React.Component {
+class Team extends React.Component {
    static propTypes = {
       people: PropTypes.array,
    };
    render() {
       const people = this.props.people.map((person, index) => {
          return (
-            <div key={index} className={Styles.speakerCard}>
+            <div key={index} className={Styles.teamCard}>
                <PersonCard
                   name={person.name}
                   photo={person.photo}
@@ -19,8 +19,8 @@ class Speakers extends React.Component {
             </div>
          );
       });
-      return <div className={Styles.speakersContainer}>{people}</div>;
+      return <div className={Styles.teamContainer}>{people}</div>;
    }
 }
 
-export default Speakers;
+export default Team;

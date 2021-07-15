@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Styles from './personCard.module.scss';
+import Styles from './PersonCard.module.scss';
 
 class PersonCard extends React.Component {
    static propTypes = {
