@@ -82,9 +82,7 @@ const FAQs = () => {
                      </svg>
                   </h4>
                </div>
-               <div className={Styles.accordionContent}>
-                  <p>{value.answer}</p>
-               </div>
+               <p className={Styles.accordionContent}>{value.answer}</p>
             </>
          ))}
       </div>

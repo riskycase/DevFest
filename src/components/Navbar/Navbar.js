@@ -5,9 +5,15 @@ import Styles from './Navbar.module.scss';
 const Navbar = () => {
    return (
       <>
-         <div className={Styles.fixed} style={{ background: 'white' }}>
+         <div className={Styles.fixed}>
             <ul className={Styles.Navbar}>
-               <li style={{ marginTop: '1%' }}>
+               <li className={Styles.navLinks}>
+                  <div className={Styles.logo}>
+                     Developer&apos;s Society BITS Goa
+                  </div>
+                  <img src={logo} alt="Devsoc logo" />
+               </li>
+               <li style={{ marginTop: '1%', marginLeft: '30px' }}>
                   <a href="#" className={Styles.navLinks}>
                      About
                   </a>
@@ -26,13 +32,6 @@ const Navbar = () => {
                   <a href="#" className={Styles.navLinks}>
                      Technologies
                   </a>
-               </li>
-               <li>
-                  <img
-                     src={logo}
-                     alt="Devsoc logo"
-                     style={{ height: '40px' }}
-                  />
                </li>
                <li style={{ marginTop: '1%' }}>
                   <a href="#" className={Styles.navLinks}>
