@@ -4,7 +4,8 @@ import Styles from './FAQs.module.scss';
 const FAQs = () => {
    const Array = [
       {
-         question: 'What is life',
+         question:
+            'Tempor ut enim adipisicing do exercitation. Laborum ad labore nulla elit ea adipisicing in sunt commodo consequat. Laboris id eiusmod reprehenderit dolor laborum consectetur sint mollit elit nisi dolor. Do amet proident laboris laboris voluptate ea minim elit nulla ut duis nulla dolor. Ut officia aliquip do esse ea cupidatat aliqua magna. Excepteur elit adipisicing ipsum amet ut. Esse nisi aliqua ullamco reprehenderit aliqua enim est. Mollit pariatur laborum est ad nulla ea anim ullamco non do cupidatat ut. Nisi adipisicing ea irure aliquip quis magna dolore reprehenderit et commodo id voluptate ea Lorem. Nostrud sint mollit incididunt ipsum elit sint eiusmod ullamco ut dolor. Excepteur amet ipsum eiusmod est do anim cupidatat. Reprehenderit ea esse ullamco tempor veniam ad tempor exercitation mollit culpa ut incididunt. Minim ut in exercitation officia labore sunt dolor adipisicing officia esse reprehenderit laboris.',
          answer: 'God knows',
       },
       {
@@ -21,16 +22,13 @@ const FAQs = () => {
    ];
 
    function Accordion(e) {
-      // console.log(e.target);
-      let content;
-      // svg.style.animationDelay = '0.5s';
-      // svg.style.animation = 'transform';
-      // content = e.target.parentElement.nextElementSibling;
-      content =
+      let content =
          e.target.parentElement.parentElement.parentElement.nextElementSibling;
       if (content.style.maxHeight) {
+         e.target.parentElement.style.transform = 'rotate(0deg)';
          content.style.maxHeight = null;
       } else {
+         e.target.parentElement.style.transform = 'rotate(-180deg)';
          content.style.maxHeight = content.scrollHeight + 'px';
       }
    }
@@ -49,9 +47,8 @@ const FAQs = () => {
             <>
                <div className={Styles.accordion} key={value}>
                   <h4 style={{ fontWeight: 'lighter' }}>
-                     {value.question}{' '}
+                     {value.question}
                      <svg
-                        style={{ transform: 'rotate(0deg)' }}
                         onClick={Accordion}
                         width="69"
                         height="47"
@@ -60,6 +57,7 @@ const FAQs = () => {
                         xmlns="http://www.w3.org/2000/svg"
                      >
                         <rect
+                           className={Styles.svg}
                            y="47"
                            width="47"
                            height="69"
