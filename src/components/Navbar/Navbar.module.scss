@@ -1,4 +1,4 @@
-.fixed{
+.fixed {
    background-color: #181818;
    .Navbar {
       margin-left: 10%;
@@ -13,26 +13,37 @@
          color: white;
          text-decoration: none;
       }
-      .logo{
+      .logo {
          display: inline-block;
          font-size: 14px;
          text-align: center;
          width: 150px;
          height: 50px;
       }
-      img{
+      img {
          height: 40px;
          margin-top: 1%;
       }
-   } 
+   }
 }
 
-
 @media only screen and (max-width: 1044px) {
-   .fixed{
-      .Navbar{
+   .fixed {
+      .Navbar {
          margin-left: 0;
          width: 90%;
-     }
+      }
    }
- }
+}
+
+@media only screen and (max-width: 884px) {
+   .desktop {
+      display: none;
+   }
+   }
+
+@media only screen and (min-width: 885px) {
+   .mobile {
+      display: none;
+   }
+}

@@ -1,12 +1,22 @@
 import React from 'react';
 import Styles from './Homepage.module.scss';
+import background from '../../assets/img/background.png';
 
 const Homepage = () => {
    return (
       <div>
-         <div className={Styles.Homepage}>
-            <section>DevFest 2.0</section>
-            <main>
+         <div
+            className="container-md w-auto text-white text-align-center"
+            style={{
+               marginTop: '10%',
+               height: 'auto',
+               fontFamily: 'Roboto, sans-serif',
+            }}
+         >
+            <section style={{ fontSize: '80px', textAlign: 'center' }}>
+               DevFest 2.0
+            </section>
+            <main style={{ textAlign: 'center', fontWeight: '400' }}>
                Most calendars are designed for teams. Slate is designed for
                freelancers who want a simple way to plan their schedule
             </main>
@@ -19,7 +29,9 @@ const Homepage = () => {
                </button>
             </div>
          </div>
-         <div className={Styles.background}></div>
+         <br />
+         {/* <div className={Styles.background}></div> */}
+         <img src={background} className={Styles.background} alt="background" />
       </div>
    );
 };
