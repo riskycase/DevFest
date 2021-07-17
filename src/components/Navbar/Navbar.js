@@ -71,6 +71,7 @@ const Navbar = () => {
                      data-bs-toggle="offcanvas"
                      data-bs-target="#offcanvasRight"
                      aria-controls="offcanvasRight"
+                     style={{ outline: 'none', boxShadow: 'none' }}
                   >
                      <img src={menu} alt="Menu" />
                   </button>
@@ -81,11 +82,11 @@ const Navbar = () => {
             className="offcanvas offcanvas-end"
             tabIndex="-1"
             id="offcanvasRight"
-            aria-labelledby="offcanvasRightLabel"
+            aria-labelledby="offcanvasRight"
             style={{ backgroundColor: '#181818', color: 'white' }}
          >
             <div className="offcanvas-header">
-               <h5 id="offcanvasRightLabel" className={Styles.navLinks}>
+               <h5 id="offcanvasRight" className={Styles.navLinks}>
                   <div
                      className={Styles.logo}
                      style={{ display: 'inline', marginRight: '4px' }}
@@ -108,43 +109,43 @@ const Navbar = () => {
             <div className="offcanvas-body">
                <nav className="navbar">
                   <ul className="navbar-nav">
-                     <li style={{ marginTop: '1%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            About
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            DevFest 1.0
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            DevSoc
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            Technologies
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            Speakers
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            Sponsors
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            FAQs
                         </a>
                      </li>
-                     <li style={{ marginTop: '1%' }}>
-                        <a href="#" className={Styles.navLinks}>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a href="#" className={Styles.mobileLinks}>
                            Team
                         </a>
                      </li>

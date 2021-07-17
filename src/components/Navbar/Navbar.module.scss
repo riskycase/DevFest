@@ -40,10 +40,26 @@
    .desktop {
       display: none;
    }
-   }
+}
 
 @media only screen and (min-width: 885px) {
    .mobile {
       display: none;
    }
 }
+
+.mobileLinks {
+   color: rgba(255, 255, 255, 0.8);
+   text-transform: uppercase;
+   text-decoration: none;
+   margin-top: 4%;
+   margin-left: 4%;
+}
+
+.mobileLinks:hover{
+   color: rgb(255, 255, 255);
+}
+.btn:focus {
+   outline: none;
+   box-shadow: none;
+   }
