@@ -12,11 +12,16 @@ class PersonCard extends React.Component {
    render() {
       return (
          <div className={Styles.personCard}>
-            <div className={Styles.personName}>{this.props.name}</div>
-            <img className={Styles.personPhoto} src={this.props.photo} />
-            <div className={Styles.personInfoContainer}>
-               <div>{this.props.about}</div>
+            <div className={Styles.photoAndName}>
+               <img className={Styles.photo} src={this.props.photo} />
+               <div className={Styles.nameAndDesignation}>
+                  <span className={Styles.name}>{this.props.name}</span>
+                  <span className={Styles.designation}>
+                     {this.props.designation}
+                  </span>
+               </div>
             </div>
+            <div className={Styles.personInfoContainer}>{this.props.about}</div>
          </div>
       );
    }
