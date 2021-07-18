@@ -1,9 +1,10 @@
-import React /* , { useState } */ from 'react';
+//import React, { useState } from 'react';
+import React from 'react';
 import TechCard from '../../components/techcard/TechCard';
 import TechnologyList from './Tech.json';
 import Styles from './Technology.module.scss';
 
-const technology = () => {
+const Technology = () => {
    /* const [itemsToShow, setItemsToShow] = useState(2);
    const [buttonValue, setButtonValue] = useState('Show more');
 
@@ -21,7 +22,8 @@ const technology = () => {
       <div className={Styles.section}>
          <h2 className={Styles.heading}>Technologies in focus</h2>
          <div className={Styles.container}>
-            {TechnologyList /* .slice(0, itemsToShow) */.map(tech => (
+            {/* {TechnologyList.slice(0, itemsToShow).map(tech => ( */}
+            {TechnologyList.map(tech => (
                <TechCard
                   key={tech.title}
                   title={tech.title}
