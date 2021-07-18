@@ -25,7 +25,7 @@ class Footer extends React.Component {
    };
    render() {
       const linkColumns = this.props.linkColumns.map((link, index) => (
-         <LinksWithHeader header={link.header} links={link.links} key={index} />
+         <LinksWithHeader header={link.header} links={link.link} key={index} />
       ));
       const textsWithIcon = this.props.textsWithIcon.map(
          (textWithIcon, index) => (

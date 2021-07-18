@@ -1,108 +1,125 @@
-
 import React from 'react';
 import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import PersonCard from './components/PersonCard/PersonCard';
+import Homepage from './sections/Homepage/Homepage';
+import Footer from './sections/Footer/Footer';
+import Team from './sections/Team/Team';
+import Testimonial from './sections/Testimonials/Testimonials';
 
 function App() {
    return (
       <div>
-         <Navbar />
-         <PersonCard
-            name="Tyler"
-            photo="../../assets/img/logo.png"
-            designation="From Webd"
-            about="Nisi sint elit ex exercitation officia excepteur magna aute consectetur. Id enim dolor exercitation irure nisi occaecat labore ea. Ad dolore quis eu do anim nostrud aute irure nostrud tempor elit. Id occaecat sunt consectetur veniam deserunt voluptate labore excepteur laboris commodo laborum. Quis amet in officia consequat adipisicing. Ut et anim excepteur Lorem elit commodo tempor sit Lorem elit laborum aliqua.
-
-Officia est aliqua adipisicing do sint non nisi irure sit proident deserunt nisi voluptate ex. Ex consequat occaecat exercitation cupidatat duis amet do mollit ipsum do non labore. Duis eiusmod excepteur ad ut est nostrud exercitation sit adipisicing aliqua qui tempor esse.
-
-Culpa ex ut in mollit incididunt mollit nulla. Id pariatur ullamco irure ullamco eu laborum nulla voluptate laboris nulla ut. Et Lorem occaecat Lorem mollit. Voluptate non reprehenderit labore adipisicing fugiat anim commodo dolore do eiusmod adipisicing.
-
-Nisi quis laborum tempor nisi anim consectetur consectetur et esse amet. Mollit eu nulla veniam dolore et voluptate mollit cupidatat ullamco aliquip nostrud. Qui officia aliquip esse cupidatat nisi tempor quis proident irure ullamco. Quis cupidatat incididunt sit reprehenderit ipsum quis anim pariatur do ullamco cillum velit eu. Nisi aute irure cillum in irure cillum enim laborum do magna laborum sunt ea. Occaecat ut aliquip quis Lorem sint amet enim laborum cillum ad adipisicing reprehenderit.
-
-Aute voluptate et nulla eu laborum Lorem culpa nisi commodo aute. Non excepteur duis consequat eiusmod velit magna qui reprehenderit consectetur commodo sint commodo reprehenderit labore. Sit ipsum eu excepteur pariatur minim. Magna irure ut exercitation sit aliqua commodo ex nostrud magna duis velit nulla veniam ipsum.
-
-Culpa velit aliquip eu nisi mollit Lorem cupidatat culpa excepteur pariatur eu exercitation anim esse. Veniam sit cupidatat ex tempor fugiat fugiat incididunt. Adipisicing incididunt aliquip commodo amet velit nulla labore. Enim ex et culpa officia laborum culpa laboris eu laboris pariatur. Exercitation adipisicing fugiat ea ex culpa labore incididunt dolor laboris quis sunt consequat quis nulla. Sit non est adipisicing magna elit consectetur commodo laborum nostrud laborum dolor cillum. Consectetur aliquip nostrud veniam Lorem non adipisicing pariatur.
-
-Reprehenderit mollit ullamco pariatur quis magna eu Lorem eiusmod minim minim tempor Lorem. Laboris velit minim proident excepteur do laboris occaecat dolore Lorem nisi anim magna esse. Veniam ea sunt est elit est voluptate sint irure. Aliqua consectetur ipsum fugiat et ullamco occaecat. Velit commodo quis laboris excepteur labore. Amet aute in cupidatat cupidatat occaecat adipisicing aliqua commodo irure est ea do ea.
-
-Qui mollit pariatur amet qui et eu cupidatat consectetur enim. Et ullamco fugiat ex id esse consequat adipisicing ad. Dolor consectetur exercitation voluptate officia. Laborum mollit nisi et ex cupidatat qui velit do eiusmod pariatur do veniam veniam aute. Excepteur commodo aliquip elit nulla non ea adipisicing nostrud sit ipsum. Dolore do qui sit veniam minim veniam laborum occaecat aute exercitation enim veniam. Ullamco ullamco eiusmod eu laborum commodo adipisicing est nisi pariatur deserunt.
-
-Eiusmod deserunt magna elit commodo eu velit. Ullamco incididunt et adipisicing pariatur sunt anim tempor do pariatur incididunt voluptate. Mollit proident sint officia duis eiusmod nisi do. Ad commodo enim laboris veniam dolore aute cillum nulla anim aute magna. Exercitation ad veniam elit cillum sint incididunt nulla dolor dolore. Minim eiusmod laboris id labore occaecat nostrud qui magna non quis ullamco occaecat minim sint.
-
-Aliqua est aliquip ad aliquip. Nulla ea veniam ipsum aliqua non commodo fugiat magna eu nostrud minim eiusmod ex excepteur. Ut aliqua est dolore aliqua duis culpa dolor amet in voluptate exercitation aute elit. Nisi ipsum reprehenderit duis voluptate mollit incididunt anim nostrud irure cillum incididunt."
+         <Homepage />
+         <Testimonial
+            people={[
+               {
+                  name: 'Mayank Mathur',
+                  designation: 'Web dev',
+                  photo: 'the url to the photo',
+                  testimonial:
+                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+               },
+               {
+                  name: 'Mayank Mathur',
+                  designation: 'Web dev',
+                  photo: 'the url to the photo',
+                  testimonial:
+                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+               },
+               {
+                  name: 'Mayank Mathur',
+                  designation: 'Web dev',
+                  photo: 'the url to the photo',
+                  testimonial:
+                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+               },
+               {
+                  name: 'Mayank Mathur',
+                  designation: 'Web dev',
+                  photo: 'the url to the photo',
+                  testimonial:
+                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+               },
+            ]}
          />
-         <PersonCard
-            name="Tyler"
-            photo="../../assets/img/logo.png"
-            designation="From Webd"
-            about="Nisi sint elit ex exercitation officia excepteur magna aute consectetur. Id enim dolor exercitation irure nisi occaecat labore ea. Ad dolore quis eu do anim nostrud aute irure nostrud tempor elit. Id occaecat sunt consectetur veniam deserunt voluptate labore excepteur laboris commodo laborum. Quis amet in officia consequat adipisicing. Ut et anim excepteur Lorem elit commodo tempor sit Lorem elit laborum aliqua.
-
-Officia est aliqua adipisicing do sint non nisi irure sit proident deserunt nisi voluptate ex. Ex consequat occaecat exercitation cupidatat duis amet do mollit ipsum do non labore. Duis eiusmod excepteur ad ut est nostrud exercitation sit adipisicing aliqua qui tempor esse.
-
-Culpa ex ut in mollit incididunt mollit nulla. Id pariatur ullamco irure ullamco eu laborum nulla voluptate laboris nulla ut. Et Lorem occaecat Lorem mollit. Voluptate non reprehenderit labore adipisicing fugiat anim commodo dolore do eiusmod adipisicing.
-
-Nisi quis laborum tempor nisi anim consectetur consectetur et esse amet. Mollit eu nulla veniam dolore et voluptate mollit cupidatat ullamco aliquip nostrud. Qui officia aliquip esse cupidatat nisi tempor quis proident irure ullamco. Quis cupidatat incididunt sit reprehenderit ipsum quis anim pariatur do ullamco cillum velit eu. Nisi aute irure cillum in irure cillum enim laborum do magna laborum sunt ea. Occaecat ut aliquip quis Lorem sint amet enim laborum cillum ad adipisicing reprehenderit.
-
-Aute voluptate et nulla eu laborum Lorem culpa nisi commodo aute. Non excepteur duis consequat eiusmod velit magna qui reprehenderit consectetur commodo sint commodo reprehenderit labore. Sit ipsum eu excepteur pariatur minim. Magna irure ut exercitation sit aliqua commodo ex nostrud magna duis velit nulla veniam ipsum.
-
-Culpa velit aliquip eu nisi mollit Lorem cupidatat culpa excepteur pariatur eu exercitation anim esse. Veniam sit cupidatat ex tempor fugiat fugiat incididunt. Adipisicing incididunt aliquip commodo amet velit nulla labore. Enim ex et culpa officia laborum culpa laboris eu laboris pariatur. Exercitation adipisicing fugiat ea ex culpa labore incididunt dolor laboris quis sunt consequat quis nulla. Sit non est adipisicing magna elit consectetur commodo laborum nostrud laborum dolor cillum. Consectetur aliquip nostrud veniam Lorem non adipisicing pariatur.
-
-Reprehenderit mollit ullamco pariatur quis magna eu Lorem eiusmod minim minim tempor Lorem. Laboris velit minim proident excepteur do laboris occaecat dolore Lorem nisi anim magna esse. Veniam ea sunt est elit est voluptate sint irure. Aliqua consectetur ipsum fugiat et ullamco occaecat. Velit commodo quis laboris excepteur labore. Amet aute in cupidatat cupidatat occaecat adipisicing aliqua commodo irure est ea do ea.
-
-Qui mollit pariatur amet qui et eu cupidatat consectetur enim. Et ullamco fugiat ex id esse consequat adipisicing ad. Dolor consectetur exercitation voluptate officia. Laborum mollit nisi et ex cupidatat qui velit do eiusmod pariatur do veniam veniam aute. Excepteur commodo aliquip elit nulla non ea adipisicing nostrud sit ipsum. Dolore do qui sit veniam minim veniam laborum occaecat aute exercitation enim veniam. Ullamco ullamco eiusmod eu laborum commodo adipisicing est nisi pariatur deserunt.
-
-Eiusmod deserunt magna elit commodo eu velit. Ullamco incididunt et adipisicing pariatur sunt anim tempor do pariatur incididunt voluptate. Mollit proident sint officia duis eiusmod nisi do. Ad commodo enim laboris veniam dolore aute cillum nulla anim aute magna. Exercitation ad veniam elit cillum sint incididunt nulla dolor dolore. Minim eiusmod laboris id labore occaecat nostrud qui magna non quis ullamco occaecat minim sint.
-
-Aliqua est aliquip ad aliquip. Nulla ea veniam ipsum aliqua non commodo fugiat magna eu nostrud minim eiusmod ex excepteur. Ut aliqua est dolore aliqua duis culpa dolor amet in voluptate exercitation aute elit. Nisi ipsum reprehenderit duis voluptate mollit incididunt anim nostrud irure cillum incididunt."
-         />
-         <PersonCard
-            name="Tyler"
-            photo="../../assets/img/logo.png"
-            designation="From Webd"
-            about="Nisi sint elit ex exercitation officia excepteur magna aute consectetur. Id enim dolor exercitation irure nisi occaecat labore ea. Ad dolore quis eu do anim nostrud aute irure nostrud tempor elit. Id occaecat sunt consectetur veniam deserunt voluptate labore excepteur laboris commodo laborum. Quis amet in officia consequat adipisicing. Ut et anim excepteur Lorem elit commodo tempor sit Lorem elit laborum aliqua.
-
-Officia est aliqua adipisicing do sint non nisi irure sit proident deserunt nisi voluptate ex. Ex consequat occaecat exercitation cupidatat duis amet do mollit ipsum do non labore. Duis eiusmod excepteur ad ut est nostrud exercitation sit adipisicing aliqua qui tempor esse.
-
-Culpa ex ut in mollit incididunt mollit nulla. Id pariatur ullamco irure ullamco eu laborum nulla voluptate laboris nulla ut. Et Lorem occaecat Lorem mollit. Voluptate non reprehenderit labore adipisicing fugiat anim commodo dolore do eiusmod adipisicing.
-
-Nisi quis laborum tempor nisi anim consectetur consectetur et esse amet. Mollit eu nulla veniam dolore et voluptate mollit cupidatat ullamco aliquip nostrud. Qui officia aliquip esse cupidatat nisi tempor quis proident irure ullamco. Quis cupidatat incididunt sit reprehenderit ipsum quis anim pariatur do ullamco cillum velit eu. Nisi aute irure cillum in irure cillum enim laborum do magna laborum sunt ea. Occaecat ut aliquip quis Lorem sint amet enim laborum cillum ad adipisicing reprehenderit.
-
-Aute voluptate et nulla eu laborum Lorem culpa nisi commodo aute. Non excepteur duis consequat eiusmod velit magna qui reprehenderit consectetur commodo sint commodo reprehenderit labore. Sit ipsum eu excepteur pariatur minim. Magna irure ut exercitation sit aliqua commodo ex nostrud magna duis velit nulla veniam ipsum.
-
-Culpa velit aliquip eu nisi mollit Lorem cupidatat culpa excepteur pariatur eu exercitation anim esse. Veniam sit cupidatat ex tempor fugiat fugiat incididunt. Adipisicing incididunt aliquip commodo amet velit nulla labore. Enim ex et culpa officia laborum culpa laboris eu laboris pariatur. Exercitation adipisicing fugiat ea ex culpa labore incididunt dolor laboris quis sunt consequat quis nulla. Sit non est adipisicing magna elit consectetur commodo laborum nostrud laborum dolor cillum. Consectetur aliquip nostrud veniam Lorem non adipisicing pariatur.
-
-Reprehenderit mollit ullamco pariatur quis magna eu Lorem eiusmod minim minim tempor Lorem. Laboris velit minim proident excepteur do laboris occaecat dolore Lorem nisi anim magna esse. Veniam ea sunt est elit est voluptate sint irure. Aliqua consectetur ipsum fugiat et ullamco occaecat. Velit commodo quis laboris excepteur labore. Amet aute in cupidatat cupidatat occaecat adipisicing aliqua commodo irure est ea do ea.
-
-Qui mollit pariatur amet qui et eu cupidatat consectetur enim. Et ullamco fugiat ex id esse consequat adipisicing ad. Dolor consectetur exercitation voluptate officia. Laborum mollit nisi et ex cupidatat qui velit do eiusmod pariatur do veniam veniam aute. Excepteur commodo aliquip elit nulla non ea adipisicing nostrud sit ipsum. Dolore do qui sit veniam minim veniam laborum occaecat aute exercitation enim veniam. Ullamco ullamco eiusmod eu laborum commodo adipisicing est nisi pariatur deserunt.
-
-Eiusmod deserunt magna elit commodo eu velit. Ullamco incididunt et adipisicing pariatur sunt anim tempor do pariatur incididunt voluptate. Mollit proident sint officia duis eiusmod nisi do. Ad commodo enim laboris veniam dolore aute cillum nulla anim aute magna. Exercitation ad veniam elit cillum sint incididunt nulla dolor dolore. Minim eiusmod laboris id labore occaecat nostrud qui magna non quis ullamco occaecat minim sint.
-
-Aliqua est aliquip ad aliquip. Nulla ea veniam ipsum aliqua non commodo fugiat magna eu nostrud minim eiusmod ex excepteur. Ut aliqua est dolore aliqua duis culpa dolor amet in voluptate exercitation aute elit. Nisi ipsum reprehenderit duis voluptate mollit incididunt anim nostrud irure cillum incididunt."
-         />
-         <PersonCard
-            name="Tyler"
-            photo="../../assets/img/logo.png"
-            designation="From Webd"
-            about="Nisi sint elit ex exercitation officia excepteur magna aute consectetur. Id enim dolor exercitation irure nisi occaecat labore ea. Ad dolore quis eu do anim nostrud aute irure nostrud tempor elit. Id occaecat sunt consectetur veniam deserunt voluptate labore excepteur laboris commodo laborum. Quis amet in officia consequat adipisicing. Ut et anim excepteur Lorem elit commodo tempor sit Lorem elit laborum aliqua.
-
-Officia est aliqua adipisicing do sint non nisi irure sit proident deserunt nisi voluptate ex. Ex consequat occaecat exercitation cupidatat duis amet do mollit ipsum do non labore. Duis eiusmod excepteur ad ut est nostrud exercitation sit adipisicing aliqua qui tempor esse.
-
-Culpa ex ut in mollit incididunt mollit nulla. Id pariatur ullamco irure ullamco eu laborum nulla voluptate laboris nulla ut. Et Lorem occaecat Lorem mollit. Voluptate non reprehenderit labore adipisicing fugiat anim commodo dolore do eiusmod adipisicing.
-
-Nisi quis laborum tempor nisi anim consectetur consectetur et esse amet. Mollit eu nulla veniam dolore et voluptate mollit cupidatat ullamco aliquip nostrud. Qui officia aliquip esse cupidatat nisi tempor quis proident irure ullamco. Quis cupidatat incididunt sit reprehenderit ipsum quis anim pariatur do ullamco cillum velit eu. Nisi aute irure cillum in irure cillum enim laborum do magna laborum sunt ea. Occaecat ut aliquip quis Lorem sint amet enim laborum cillum ad adipisicing reprehenderit.
-
-Aute voluptate et nulla eu laborum Lorem culpa nisi commodo aute. Non excepteur duis consequat eiusmod velit magna qui reprehenderit consectetur commodo sint commodo reprehenderit labore. Sit ipsum eu excepteur pariatur minim. Magna irure ut exercitation sit aliqua commodo ex nostrud magna duis velit nulla veniam ipsum.
-
-Culpa velit aliquip eu nisi mollit Lorem cupidatat culpa excepteur pariatur eu exercitation anim esse. Veniam sit cupidatat ex tempor fugiat fugiat incididunt. Adipisicing incididunt aliquip commodo amet velit nulla labore. Enim ex et culpa officia laborum culpa laboris eu laboris pariatur. Exercitation adipisicing fugiat ea ex culpa labore incididunt dolor laboris quis sunt consequat quis nulla. Sit non est adipisicing magna elit consectetur commodo laborum nostrud laborum dolor cillum. Consectetur aliquip nostrud veniam Lorem non adipisicing pariatur.
-
-Reprehenderit mollit ullamco pariatur quis magna eu Lorem eiusmod minim minim tempor Lorem. Laboris velit minim proident excepteur do laboris occaecat dolore Lorem nisi anim magna esse. Veniam ea sunt est elit est voluptate sint irure. Aliqua consectetur ipsum fugiat et ullamco occaecat. Velit commodo quis laboris excepteur labore. Amet aute in cupidatat cupidatat occaecat adipisicing aliqua commodo irure est ea do ea.
-
-Qui mollit pariatur amet qui et eu cupidatat consectetur enim. Et ullamco fugiat ex id esse consequat adipisicing ad. Dolor consectetur exercitation voluptate officia. Laborum mollit nisi et ex cupidatat qui velit do eiusmod pariatur do veniam veniam aute. Excepteur commodo aliquip elit nulla non ea adipisicing nostrud sit ipsum. Dolore do qui sit veniam minim veniam laborum occaecat aute exercitation enim veniam. Ullamco ullamco eiusmod eu laborum commodo adipisicing est nisi pariatur deserunt.
-
-Eiusmod deserunt magna elit commodo eu velit. Ullamco incididunt et adipisicing pariatur sunt anim tempor do pariatur incididunt voluptate. Mollit proident sint officia duis eiusmod nisi do. Ad commodo enim laboris veniam dolore aute cillum nulla anim aute magna. Exercitation ad veniam elit cillum sint incididunt nulla dolor dolore. Minim eiusmod laboris id labore occaecat nostrud qui magna non quis ullamco occaecat minim sint.
-
-Aliqua est aliquip ad aliquip. Nulla ea veniam ipsum aliqua non commodo fugiat magna eu nostrud minim eiusmod ex excepteur. Ut aliqua est dolore aliqua duis culpa dolor amet in voluptate exercitation aute elit. Nisi ipsum reprehenderit duis voluptate mollit incididunt anim nostrud irure cillum incididunt."
+         <Team />
+         <Footer
+            linkColumns={[
+               {
+                  header: 'Fingertips',
+                  link: [
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                  ],
+               },
+               {
+                  header: 'Fingertips',
+                  link: [
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                  ],
+               },
+               {
+                  header: 'Fingertips',
+                  link: [
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                     {
+                        text: 'Home',
+                        url: 'wassup',
+                     },
+                  ],
+               },
+            ]}
+            textsWithIcon={[
+               {
+                  text: 'Some fancy text',
+                  icon: ['fab', 'github'],
+               },
+               {
+                  text: 'Some fancy text',
+                  icon: 'some fontawesome icon',
+               },
+            ]}
+            socialIcons={[
+               {
+                  link: 'Github',
+                  icon: ['fab', 'github'],
+               },
+               {
+                  link: '  Instagram',
+                  icon: 'Insta',
+               },
+               {
+                  link: 'Facebook',
+                  icon: 'facebook',
+               },
+            ]}
          />
       </div>
    );
