@@ -1,0 +1,25 @@
+.speakersContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .speakerCard {
+        --dark-background: #181818;
+        --text-color: white;
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 31%;
+        margin: 5px;
+        justify-content: center;
+        .backdrop{
+            width: calc(100% - 40px);
+            aspect-ratio: 42/32;
+            object-fit: cover;
+        }
+        .infoCard {
+            transform: translate(40px, -50px);
+            width: calc(100% - 40px);
+            display: flex;
+        }
+    }
+}

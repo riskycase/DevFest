@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin: 5px;
+    color: var(--text-color);
+    .heading{
+        font-size: 1.2rem;
+        margin: 0.2rem;
+    }
+    .link {
+        text-decoration: inherit;
+        color: inherit;
+        margin: 0.2rem;
+    }
+    .link:hover {
+        filter: brightness(75%);
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+}

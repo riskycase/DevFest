@@ -1,0 +1,33 @@
+.teamContainer {
+    --dark-background: #181818;
+    --text-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: var(--dark-background);
+    color: var(--text-color);
+    .teamName{
+        width: 100%;
+        text-align: center;
+        margin: 1.5rem 0;
+        font-weight: 400;
+        font-size: 3rem; 
+    }
+    .teamMembers {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 840px;
+        margin: 1.5rem 0;
+        align-self: center;
+        .teamCard {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
+            margin: 5px;
+            justify-content: center;
+        }
+    }
+}

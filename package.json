@@ -3,6 +3,10 @@
    "version": "0.1.0",
    "private": true,
    "dependencies": {
+      "@fortawesome/fontawesome-svg-core": "^1.2.35",
+      "@fortawesome/free-brands-svg-icons": "^5.15.3",
+      "@fortawesome/free-solid-svg-icons": "^5.15.3",
+      "@fortawesome/react-fontawesome": "^0.1.14",
       "@testing-library/jest-dom": "^5.11.4",
       "@testing-library/react": "^11.1.0",
       "@testing-library/user-event": "^12.1.10",
@@ -39,14 +43,17 @@
       ]
    },
    "devDependencies": {
+      "bootstrap": "^5.0.2",
       "eslint": "^7.30.0",
       "eslint-config-prettier": "^8.3.0",
       "eslint-plugin-prettier": "^3.4.0",
       "eslint-plugin-react": "^7.24.0",
       "husky": "^7.0.1",
       "lint-staged": "^11.0.0",
+      "node-sass": "^6.0.1",
       "prettier": "^2.3.2",
-      "pretty-quick": "^3.1.1"
+      "pretty-quick": "^3.1.1",
+      "sass-loader": "^12.1.0"
    },
    "lint-staged": {
       "*.js": "eslint"
