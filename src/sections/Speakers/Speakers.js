@@ -1,21 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import PersonCard from '../../components/personCard/personCard';
+import PersonCard from '../../components/PersonCard/PersonCard';
 import Styles from './Speakers.module.scss';
 
 class Speakers extends React.Component {
    static propTypes = {
-      people: PropTypes.array,
+      people: PropTypes.arrayOf({
+         name: PropTypes.string,
+         designation: PropTypes.string,
+         photo: PropTypes.string,
+         about: PropTypes.string,
+         backdrop: PropTypes.string,
+      }),
    };
    render() {
       const people = this.props.people.map((person, index) => {
          return (
             <div key={index} className={Styles.speakerCard}>
-               <PersonCard
-                  name={person.name}
-                  photo={person.photo}
-                  about={person.about}
-               />
+               <img src={person.backdrop} className={Styles.backdrop} />
+               <div className={Styles.infoCard}>
+                  <PersonCard
+                     name={person.name}
+                     designation={person.designation}
+                     photo={person.photo}
+                     about={person.about}
+                  />
+               </div>
             </div>
          );
       });
