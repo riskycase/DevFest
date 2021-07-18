@@ -1,0 +1,52 @@
+
+.Homepage {
+   color: #ffffff;
+   font-family: 'Roboto', sans-serif;
+   margin: auto;
+   margin-top: 10%;
+   width: 20vw;
+   section {
+      text-align: center;
+      font-size: 80px;
+      letter-spacing: 0.2px;
+   }
+   main {
+      text-align: center;
+      font-weight: 400;
+   }
+}
+.Register {
+   background-size: 40em;
+   margin-top: 10%;
+   display: flex;
+   justify-content: center;
+   .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      width: 60%;
+      justify-content: space-around;
+      button{
+         padding: 1rem 2.5rem;
+         color: white;
+         margin: 10px;
+         filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
+      }
+      .dashboard {
+         color: white;
+         background: #4452fe;
+      }
+      .register {
+         color: white;
+         background-color: #181818;
+         border: 1px solid #ffffff;
+      }
+   }
+}
+
+
+
+.background {
+   height: 100%;
+   width: 100%;
+   min-height: 50vh;
+}
