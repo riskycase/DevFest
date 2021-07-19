@@ -1,11 +1,9 @@
 .teamContainer {
-    --dark-background: #181818;
-    --text-color: white;
     font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     display: flex;
     flex-direction: column;
     width: 100%;
-    background: var(--dark-background);
+    background: var(--primary);
     color: var(--text-color);
     .teamName{
         width: 100%;
