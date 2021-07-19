@@ -21,7 +21,13 @@ class PersonCard extends React.Component {
                   </span>
                </div>
             </div>
-            <div className={Styles.personInfoContainer}>{this.props.about}</div>
+            {this.props.about ? (
+               <div className={Styles.personInfoContainer}>
+                  {this.props.about}
+               </div>
+            ) : (
+               ''
+            )}
          </div>
       );
    }
