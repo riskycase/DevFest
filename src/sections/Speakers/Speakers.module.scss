@@ -4,19 +4,19 @@
     flex-wrap: wrap;
     justify-content: center;
     .speakerCard {
-        display: flex;
-        flex-direction: column;
-        flex: 1 0 31%;
-        margin: 5px;
+        --dark-background: #181818;
+        --text-color: white;
+        width: 29rem;
+        margin: 0.5rem;
         justify-content: center;
         .backdrop{
-            width: calc(100% - 40px);
-            aspect-ratio: 42/32;
+            width: calc(100% - 3rem);
+            aspect-ratio: 44/32;
             object-fit: cover;
         }
         .infoCard {
-            transform: translate(40px, -50px);
-            width: calc(100% - 40px);
+            transform: translate(2rem, -2rem);
+            width: calc(100% - 3rem);
             display: flex;
         }
     }
