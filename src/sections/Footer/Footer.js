@@ -1,22 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import logo from '../../assets/img/logo.png';
 import Styles from './Footer.module.scss';
 import TextWithIcon from '../../components/TextWithIcon/TextWithIcon';
 import SocialIcon from '../../components/SocialIcon/SocialIcon';
-import {
-   faMapMarkerAlt,
-   faMobileAlt,
-   faEnvelope,
-} from '@fortawesome/free-solid-svg-icons';
-import {
-   faFacebookF,
-   faGithub,
-   faInstagram,
-   faLinkedinIn,
-   faYoutube,
-} from '@fortawesome/free-brands-svg-icons';
 
 class Footer extends React.Component {
+   static propTypes = {
+      textsWithIcon: PropTypes.arrayOf({
+         icon: PropTypes.string,
+         text: PropTypes.string,
+      }),
+      socialIcons: PropTypes.arrayOf({
+         icon: PropTypes.string,
+         link: PropTypes.string,
+      }),
+   };
    render() {
       const textsWithIcon = this.props.textsWithIcon.map(
          (textWithIcon, index) => (
@@ -44,14 +43,13 @@ class Footer extends React.Component {
                      DevSoc
                   </span>
                </div>
-               <span className={Styles.buttonPlaceholder} />
+               <span className={Styles.codeOfConduct}>Code Of Conduct</span>
                <span className={Styles.websiteCredits}>
                   Website credits - ETHIndia and Devfolio
                </span>
                <span className={Styles.websiteEditor}>Edited by DevSoc</span>
             </div>
             <div className={Styles.rightPart}>
-               <span className={Styles.rightPartTitle}>Reach Us</span>
                {textsWithIcon}
                <span className={Styles.socialIconsContainer}>
                   {socialIcons}
