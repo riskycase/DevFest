@@ -1,12 +1,12 @@
 .card {
    margin: auto;
+   margin-top: 10rem;
    display: flex;
    justify-content: space-around;
    background: #343434;
    box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
    border-radius: 33px;
    width: 80%;
-   height: calc(auto + 10px);
    .hack {
       margin-left: 2.5%;
       height: auto;
