@@ -1,0 +1,37 @@
+@mixin sponsors {
+   margin: auto;
+   margin-top: 5rem;
+   width: 60%;
+   height: auto;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   gap: 6.25em;
+}
+
+.brands {
+   color: white;
+   text-align: center;
+   margin-top: 10%;
+   button {
+      color: white;
+      width: 10.75em;
+      height: 3.25em;
+      margin-top: 5rem;
+      border: 1px solid #ffffff;
+      box-sizing: border-box;
+      filter: drop-shadow(0px 1em 31px rgba(0, 0, 0, 0.15));
+      order: 2;
+      background-color: transparent;
+   }
+   button:hover{
+      color: white
+   }
+   .sponsors1 {
+      @include sponsors;
+      display: flex;
+   }
+   .sponsors2 {
+      @include sponsors;
+      display: flex;
+   }
+}
