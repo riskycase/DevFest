@@ -1,14 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Team from './sections/Team/Team';
-import Button from './components/Button/Button';
+
 function App() {
    return (
       <div className="App">
-         <Team></Team>
-         <Button color="primary" text="Web Development"></Button>
-         <Button color="secondary" text="Web Development"></Button>
          <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <p>
