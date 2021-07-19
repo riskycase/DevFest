@@ -7,7 +7,7 @@ const TechCard = ({ title, img_url }) => {
    return (
       <div className={Styles.card}>
          <img src={img.default} className={Styles.image} alt={title} />
-         {/* <h3 className={Styles.title}>{title}</h3> */}
+         <div className={Styles.title}>{title}</div>
       </div>
    );
 };
