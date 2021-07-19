@@ -3,16 +3,16 @@ import './App.css';
 import Sponsors from './sections/Sponsors/Sponsors';
 import Hackathon from './components/Hackathon/Hackathon';
 import Homepage from './sections/Homepage/Homepage';
-// import Technology from './sections/technology/Technology';
-// import Footer from './sections/Footer/Footer';
-// import Team from './sections/Team/Team';
-// import Speakers from './sections/Speakers/Speakers';
+import Technology from './sections/technology/Technology';
+import Footer from './sections/Footer/Footer';
+import Team from './sections/Team/Team';
+import Speakers from './sections/Speakers/Speakers';
 
 function App() {
    return (
       <div>
          <Homepage />
-         {/* <Speakers
+         <Speakers
             people={[
                {
                   name: 'Tyler',
@@ -33,12 +33,12 @@ function App() {
                   about: 'Exercitation id laborum magna consequat exercitation minim ut. Ea culpa adipisicing sint sunt cillum et mollit sint ex consequat duis eu. Reprehenderit do irure nulla non voluptate non est mollit. Commodo ipsum velit esse est officia ex ipsum adipisicing do aliquip ex. Esse in dolore sunt occaecat reprehenderit. Reprehenderit Lorem laboris pariatur dolor Lorem cillum nulla id cupidatat amet adipisicing consectetur. Sint pariatur enim magna amet et quis incididunt in aliquip.Pariatur veniam magna nulla proident eiusmod deserunt laboris ad cillum. Quis occaecat ullamco aliqua cupidatat anim dolore pariatur magna consequat. Enim elit et adipisicing do duis velit anim consequat veniam anim excepteur ex labore. Dolor esse ea ullamco sunt do qui pariatur nulla ullamco velit consectetur. In mollit aute in ut commodo ut dolore elit enim minim id.',
                },
             ]}
-         /> */}
-         {/* <Technology /> */}
+         />
+         <Technology />
          <Sponsors />
-         {/* <Team /> */}
+         <Team />
          <Hackathon />
-         {/* <Footer
+         <Footer
             linkColumns={[
                {
                   header: 'Fingertype',
@@ -124,7 +124,7 @@ function App() {
                   icon: 'Github',
                },
             ]}
-         /> */}
+         />
       </div>
    );
 }
