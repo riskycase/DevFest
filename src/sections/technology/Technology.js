@@ -36,4 +36,4 @@ const Technology = () => {
    );
 };
 
-export default technology;
+export default Technology;
