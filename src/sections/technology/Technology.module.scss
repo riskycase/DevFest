@@ -1,15 +1,9 @@
 .section {
-   --primary: #181818;
-   --secondary: #ffffff;
-   --tertiary: #4452fe;
-   --font-family: 'Roboto';
-   --font-size: 40px;
-
    @media (min-width: 650px) {
-      --font-size: 60px;
+      --font-size-header: 60px;
    }
    @media (max-width: 450px) {
-      --font-size: 30px;
+      --font-size-header: 30px;
    }
 
    display: grid;
@@ -31,12 +25,13 @@
    .heading {
       color: var(--secondary);
       font-family: var(--font-family);
-      margin-top: 75px;
-      margin-bottom: 75px;
-      font-size: var(--font-size);
+      margin-top: 6rem;
+      margin-bottom: 6rem;
+      text-align: center;
+      font-size: var(--font-size-header);
 
       @media (min-width: 450px) {
-         margin-bottom: 150px;
+         margin-bottom: 12rem;
       }
    }
 }
