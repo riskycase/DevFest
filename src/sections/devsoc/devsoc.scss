@@ -1,0 +1,46 @@
+$primary: #181818;
+$secondary: #ffffff;
+$tertiary: #4452fe;
+
+body {
+   background: $primary !important;
+   color: $secondary !important;
+}
+
+.section-heading {
+   font-family: 'Roboto';
+   font-weight: normal;
+   font-size: 52px;
+}
+
+.section-subheading {
+   font-family: 'Roboto';
+   font-size: 24px;
+   font-weight: normal;
+   color: $secondary !important;
+}
+.col-md-6 {
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 10%;
+   padding-bottom: 5%;
+}
+
+.box-heading {
+   font-family: 'Roboto';
+   font-size: 20px;
+   font-weight: 500;
+   letter-spacing: 0.1px;
+   text-align: left;
+}
+.box-text {
+   font-family: 'Roboto';
+   font: size 16px;
+   font-weight: normal;
+   letter-spacing: 0.2px;
+   text-align: left;
+}
+.btn-primary {
+   background: $tertiary !important;
+   font-family: 'Roboto' !important;
+}

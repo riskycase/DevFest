@@ -3,6 +3,7 @@ import './App.css';
 import Sponsors from './sections/Sponsors/Sponsors';
 import Hackathon from './components/Hackathon/Hackathon';
 import Homepage from './sections/Homepage/Homepage';
+import Devsoc from './sections/devsoc/devsoc';
 import Technology from './sections/technology/Technology';
 import Footer from './sections/Footer/Footer';
 import Team from './sections/Team/Team';
@@ -12,6 +13,7 @@ function App() {
    return (
       <div>
          <Homepage />
+         <Devsoc />
          <Speakers
             people={[
                {
