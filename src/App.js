@@ -1,123 +1,127 @@
 import React from 'react';
 import './App.css';
+import Sponsors from './sections/Sponsors/Sponsors';
+import Hackathon from './components/Hackathon/Hackathon';
 import Homepage from './sections/Homepage/Homepage';
+import Technology from './sections/technology/Technology';
 import Footer from './sections/Footer/Footer';
 import Team from './sections/Team/Team';
-import Testimonial from './sections/Testimonials/Testimonials';
+import Speakers from './sections/Speakers/Speakers';
 
 function App() {
    return (
       <div>
          <Homepage />
-         <Testimonial
+         <Speakers
             people={[
                {
-                  name: 'Mayank Mathur',
-                  designation: 'Web dev',
-                  photo: 'the url to the photo',
-                  testimonial:
-                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+                  name: 'Tyler',
+                  photo: '../../assets/img/logo.png',
+                  designation: 'From Webd',
+                  about: 'Minim velit pariatur exercitation voluptate. Ullamco incididunt ut irure enim minim incididunt nulla mollit cillum. Labore commodo tempor elit incididunt consequat sunt anim esse nostrud consequat aute. Anim et reprehenderit veniam non non commodo ea amet tempor amet reprehenderit. Enim quis non Lorem eiusmod do quis Lorem ut commodo reprehenderit anim eu amet. Amet ut magna cillum ullamco deserunt quis veniam enim pariatur ipsum ex irure. Aliquip veniam cupidatat id non sint.Labore nulla minim Lorem nulla veniam adipisicing do anim labore. Consectetur dolore irure veniam non laboris Lorem nisi aliqua. Dolore id eiusmod nisi ut eiusmod. Nisi culpa dolore enim mollit. Occaecat enim Lorem duis velit veniam anim amet minim ea Lorem.',
                },
                {
-                  name: 'Mayank Mathur',
-                  designation: 'Web dev',
-                  photo: 'the url to the photo',
-                  testimonial:
-                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+                  name: 'Tyler',
+                  photo: '../../assets/img/logo.png',
+                  designation: 'From Webd',
+                  about: 'Magna velit ipsum eu ullamco. Non nostrud quis eiusmod exercitation amet labore sunt tempor sint adipisicing. Sunt nulla amet minim consectetur exercitation ullamco officia esse pariatur pariatur proident.Do ex exercitation in irure adipisicing fugiat occaecat. Consequat ad eiusmod consequat ipsum consectetur ad excepteur quis eu fugiat et commodo Lorem. Laboris in non fugiat do reprehenderit aute duis culpa aliquip mollit velit Lorem deserunt. Quis occaecat nulla minim sint cupidatat voluptate veniam.',
                },
                {
-                  name: 'Mayank Mathur',
-                  designation: 'Web dev',
-                  photo: 'the url to the photo',
-                  testimonial:
-                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
-               },
-               {
-                  name: 'Mayank Mathur',
-                  designation: 'Web dev',
-                  photo: 'the url to the photo',
-                  testimonial:
-                     'Dolore ea ea adipisicing occaecat commodo ex aute consequat deserunt. Occaecat do eu mollit irure voluptate laboris. Dolore voluptate nulla dolor dolor magna reprehenderit mollit laboris culpa cillum ex tempor. Ad incididunt esse sit officia voluptate dolor sint laboris cillum aliquip aliquip duis. Exercitation ullamco qui quis nulla voluptate duis Lorem cupidatat tempor fugiat id deserunt. In tempor pariatur sint ex laboris dolor pariatur eiusmod. Pariatur officia veniam fugiat et amet. Magna aliqua aliqua aute Lorem duis id minim tempor. Esse duis ea aliqua minim minim occaecat reprehenderit enim consectetur ea Lorem occaecat voluptate. Consectetur nostrud qui reprehenderit incididunt dolore quis magna ut. Est id in Lorem nisi laboris magna irure nulla duis velit adipisicing esse consectetur. Amet reprehenderit officia adipisicing esse ad Lorem voluptate fugiat veniam commodo. Excepteur eu sunt Lorem aliquip duis. In consequat eiusmod esse consectetur dolor ea esse magna aliqua sit commodo velit. Ad consectetur commodo consequat incididunt laborum proident irure pariatur ex officia incididunt laborum ad aute. Labore culpa ad est mollit consectetur et est dolore sit elit dolor velit. Irure magna ea reprehenderit exercitation velit irure excepteur qui aliquip do nisi sunt. Consequat ea ipsum ad exercitation labore proident pariatur ut nostrud nulla dolore ut nisi labore. Aliquip consectetur voluptate adipisicing voluptate irure ut culpa ea pariatur mollit pariatur. Ex aliquip aliqua irure ut. Eu ipsum dolore Lorem laboris ut in culpa officia dolor. Reprehenderit excepteur ex qui nisi deserunt pariatur magna sit deserunt veniam ad nisi fugiat laborum. Elit laborum et do nulla aliqua nulla. Elit sunt ullamco id nostrud cillum id. Elit non deserunt est ad amet esse sunt enim commodo voluptate aute deserunt ullamco labore. Commodo consectetur duis nulla amet mollit amet aliquip excepteur adipisicing. Commodo irure id sunt esse dolor ipsum cillum ad esse incididunt irure velit nulla cillum.',
+                  name: 'Tyler',
+                  photo: '../../assets/img/logo.png',
+                  designation: 'From Webd',
+                  about: 'Exercitation id laborum magna consequat exercitation minim ut. Ea culpa adipisicing sint sunt cillum et mollit sint ex consequat duis eu. Reprehenderit do irure nulla non voluptate non est mollit. Commodo ipsum velit esse est officia ex ipsum adipisicing do aliquip ex. Esse in dolore sunt occaecat reprehenderit. Reprehenderit Lorem laboris pariatur dolor Lorem cillum nulla id cupidatat amet adipisicing consectetur. Sint pariatur enim magna amet et quis incididunt in aliquip.Pariatur veniam magna nulla proident eiusmod deserunt laboris ad cillum. Quis occaecat ullamco aliqua cupidatat anim dolore pariatur magna consequat. Enim elit et adipisicing do duis velit anim consequat veniam anim excepteur ex labore. Dolor esse ea ullamco sunt do qui pariatur nulla ullamco velit consectetur. In mollit aute in ut commodo ut dolore elit enim minim id.',
                },
             ]}
          />
+         <Technology />
+         <Sponsors />
          <Team />
+         <Hackathon />
          <Footer
             linkColumns={[
                {
-                  header: 'Fingertips',
+                  header: 'Fingertype',
                   link: [
                      {
                         text: 'Home',
-                        url: 'wassup',
+                        url: '/home',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Examples',
+                        url: '/example',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Pricing',
+                        url: '/pricing',
+                     },
+                     {
+                        text: 'Updates',
+                        url: '/update',
                      },
                   ],
                },
                {
-                  header: 'Fingertips',
+                  header: 'Resources',
                   link: [
                      {
                         text: 'Home',
-                        url: 'wassup',
+                        url: '/home',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Examples',
+                        url: '/example',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Pricing',
+                        url: '/pricing',
+                     },
+                     {
+                        text: 'Updates',
+                        url: '/update',
                      },
                   ],
                },
                {
-                  header: 'Fingertips',
+                  header: 'About',
                   link: [
                      {
                         text: 'Home',
-                        url: 'wassup',
+                        url: '/home',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Examples',
+                        url: '/example',
                      },
                      {
-                        text: 'Home',
-                        url: 'wassup',
+                        text: 'Pricing',
+                        url: '/pricing',
+                     },
+                     {
+                        text: 'Updates',
+                        url: '/update',
                      },
                   ],
                },
             ]}
             textsWithIcon={[
                {
-                  text: 'Some fancy text',
-                  icon: ['fab', 'github'],
+                  text: 'Adress',
+                  icon: 'Adress',
                },
                {
-                  text: 'Some fancy text',
-                  icon: 'some fontawesome icon',
+                  text: 'Phone',
+                  icon: 'Call',
                },
             ]}
             socialIcons={[
                {
-                  link: 'Github',
-                  icon: ['fab', 'github'],
+                  link: 'https://www.instagram.com/devsocbitsgoa/',
+                  icon: 'Instagram',
                },
                {
-                  link: '  Instagram',
-                  icon: 'Insta',
-               },
-               {
-                  link: 'Facebook',
-                  icon: 'facebook',
+                  link: 'https://github.com/Devsoc-BPGC/',
+                  icon: 'Github',
                },
             ]}
          />
