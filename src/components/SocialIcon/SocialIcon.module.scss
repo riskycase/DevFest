@@ -1,7 +1,10 @@
-.container{
-    .icon {
+.container {
+    color: var(--text-color);
+    :hover, :focus, :visited, :active{
         color: var(--text-color);
-        height: 2rem;
-        margin: 0 0.5rem;
+        filter: brightness(80%);
+    }
+    .icon {
+        margin: 2rem 2rem 0 0;
     }
 }
