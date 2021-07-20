@@ -1,5 +1,7 @@
 import React from 'react';
 import '../devsoc/devsoc.scss';
+/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';*/
+/*import { faGooglePlay } from '@fortawesome/free-brands-svg-icons';*/
 
 function Devsoc() {
    return (
@@ -21,7 +23,19 @@ function Devsoc() {
                <div className="col-md-6">
                   <span className="fa-stack fa-4x"></span>
 
-                  <h4 className="box-heading">15+ Apps on Playstore</h4>
+                  <h4 className="box-heading">
+                     <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        fill="currentColor"
+                        className="bi bi-play-fill"
+                        viewBox="0 0 16 16"
+                     >
+                        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
+                     </svg>
+                     15+ Apps on Playstore
+                  </h4>
                   <p className="box-text">
                      We have 15+ apps on Google Play Store that have received
                      positive feedbacks.
