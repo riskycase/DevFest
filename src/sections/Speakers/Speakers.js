@@ -17,7 +17,9 @@ class Speakers extends React.Component {
       const people = this.props.people.map((person, index) => {
          return (
             <div key={index} className={Styles.speakerCard}>
-               <img src={person.backdrop} className={Styles.backdrop} />
+               <div className={Styles.backdropWrapper}>
+                  <img src={person.backdrop} className={Styles.backdrop} />
+               </div>
                <div className={Styles.infoCard}>
                   <PersonCard
                      name={person.name}
