@@ -1,0 +1,70 @@
+$primary: #181818;
+$secondary: #ffffff;
+$tertiary: #4452fe;
+
+body {
+   background: $primary !important;
+   color: $secondary !important;
+}
+
+.section-heading-1 {
+   font-family: 'Roboto';
+   font-weight: normal;
+   font-size: 52px;
+   letter-spacing: 0.2px;
+   padding-top: 5%;
+}
+
+.section-subheading-1 {
+   padding-bottom: 5%;
+   padding-top: 2%;
+   font-family: 'Roboto';
+   font-size: 20px;
+   font-weight: 400;
+   color: $secondary !important;
+}
+.background1 {
+   position: relative;
+}
+.col-auto {
+   background: $primary;
+}
+.col {
+   background: $primary;
+}
+.card {
+   background: $primary;
+   border: transparent !important;
+}
+.card-block {
+   background: $primary;
+   padding: 10%;
+}
+.card-title {
+   font-family: 'Roboto';
+   font-weight: 500;
+}
+.card-text {
+   font-family: 'Roboto';
+   font-weight: 400;
+}
+/*.image-stack {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   position: relative;
+}
+
+.image-stack__item--bottom {
+   grid-column: 4/-1;
+   grid-row: 1;
+}
+
+.image-stack__item--top {
+   grid-column: 1 / span 8;
+   grid-row: 1;
+   padding-top: 20%;
+}
+
+img {
+   display: block;
+}*/
