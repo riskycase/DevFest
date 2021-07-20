@@ -43,10 +43,16 @@ body {
 .card-title {
    font-family: 'Roboto';
    font-weight: 500;
+   font-size: 20px;
 }
 .card-text {
    font-family: 'Roboto';
    font-weight: 400;
+   font-size: 16px;
+}
+.calendar-element {
+   padding-top: 0;
+   padding-bottom: 6%;
 }
 /*.image-stack {
    display: grid;

@@ -2,6 +2,7 @@ import React from 'react';
 import '../devfest1/devfest1.scss';
 import Img1 from '../../assets/img/Devfest1.0/img.png';
 /*import Img2 from '../../assets/img/Devfest1.0/img2.png';*/
+import Img3 from '../../assets/img/Devfest1.0/Saly-42.png';
 
 function Devfest() {
    return (
@@ -13,6 +14,9 @@ function Devfest() {
                   Devfest 1.0 was a massive success with 1000+ students and 5+
                   sessions. BITS Goa is back with yet another chaper of DEVFEST!
                </h4>
+            </div>
+            <div className="col-lg-12 text-center calendar-element">
+               <img src={Img3} alt="" />
             </div>
             <div className="card">
                <div className="row no-gutters">
