@@ -6,12 +6,12 @@ import '../devsoc/devsoc.scss';
 function Devsoc() {
    return (
       <section className="page-section" id="boxs">
-         <hr />
          <div className="container">
             <div className="row">
                <div className="col-lg-12 text-center">
-                  <h2 className="section-heading text-center">DevSoc;</h2>
-                  <h2 className="section-heading text-center">BITS Goa</h2>
+                  <h2 className="section-heading text-center">
+                     DevSoc; BITS Goa
+                  </h2>
                   <h4 className="section-subheading text">
                      Developers Society of BITS Goa has been primarily
                      responsible for providing innovative technical solutions to
@@ -72,7 +72,6 @@ function Devsoc() {
                Visit our Website
             </button>
          </div>
-
          <hr />
       </section>
    );
