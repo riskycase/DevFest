@@ -69,7 +69,9 @@ function Devsoc() {
          </div>
          <div className="col-md-12 text-center">
             <button type="button" className="btn btn-primary btn-lg">
-               Visit our Website
+               <a href="https://devsoc.club/" className="anchor">
+                  Visit our Website
+               </a>
             </button>
          </div>
          <hr />
