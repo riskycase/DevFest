@@ -8,7 +8,7 @@ body {
 }
 
 .section-heading-1 {
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-weight: normal;
    font-size: 52px;
    letter-spacing: 0.2px;
@@ -18,7 +18,7 @@ body {
 .section-subheading-1 {
    padding-bottom: 5%;
    padding-top: 2%;
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-size: 20px;
    font-weight: 400;
    color: $secondary !important;
@@ -41,12 +41,12 @@ body {
    padding: 10%;
 }
 .card-title {
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-weight: 500;
    font-size: 20px;
 }
 .card-text {
-   font-family: 'Roboto';
+   font-family: 'Roboto', sans-serif;
    font-weight: 400;
    font-size: 16px;
 }
