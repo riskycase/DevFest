@@ -1,12 +1,13 @@
 .personCard {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 2.5rem;
     width: 100%;
+    max-width: 25rem;
     border: 2px solid darken(white, 15);
     border-radius: 0.5rem;
     font-size: 1rem;
-    background: var(--dark-background);
+    background: var(--primary);
     color: var(--text-color);
     .photoAndName{
         display: flex;
@@ -29,6 +30,8 @@
         font-weight: 400;
     }
     .personInfoContainer {
-        margin-top: 15px;
+        margin-top: 2rem;
+        max-height: 18rem;
+        overflow-y: auto;
     }
 }
