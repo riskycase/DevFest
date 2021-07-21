@@ -1,67 +1,70 @@
-$primary: #181818;
-$secondary: #ffffff;
-$tertiary: #4452fe;
-
-body {
-   background: $primary !important;
-   color: $secondary !important;
+:root {
+   --primary: #181818;
+   --secondary: #ffffff;
+   --tertiary: #4452fe;
 }
 
-.section-heading {
+body {
+   background: var(--primary) !important;
+   color: var(--secondary) !important;
+}
+
+.sectionheading {
+   color: var(--secondary);
    font-family: 'Roboto', sans-serif;
    font-weight: normal;
    font-size: 52px;
    padding-top: 10%;
 }
 
-.section-subheading {
+.sectionsubheading {
    font-family: 'Roboto', sans-serif;
    font-size: 24px;
    font-weight: normal;
-   color: $secondary !important;
+   color: var(--secondary) !important;
    padding-top: 3%;
 }
-.col-md-6 {
+.column6 {
    padding-left: 10%;
    padding-right: 10%;
    padding-top: 10%;
    padding-bottom: 5%;
 }
 
-.box-heading {
+.boxheading {
    font-family: 'Roboto', sans-serif;
    font-size: 20px;
    font-weight: 500;
    letter-spacing: 0.1px;
    text-align: left;
 }
-.box-text {
+.boxtext {
    font-family: 'Roboto', sans-serif;
    font: size 16px;
    font-weight: normal;
    letter-spacing: 0.2px;
    text-align: left;
 }
-.btn-primary {
-   background: $tertiary !important;
+.btn1 {
+   background: var(--tertiary) !important;
    font-family: 'Roboto', sans-serif !important;
 }
 
 ::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 6px $primary;
+   -webkit-box-shadow: inset 0 0 6px var(--primary);
    box-shadow: inset;
-   background-color: $primary;
+   background-color: var(--primary);
 }
 
 ::-webkit-scrollbar {
    width: 6px;
-   background-color: $secondary;
+   background-color: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb {
-   background-color: $secondary;
+   background-color: var(--secondary);
 }
 .anchor {
    text-decoration: none;
-   color: $secondary;
+   color: var(--secondary);
 }

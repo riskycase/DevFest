@@ -1,13 +1,15 @@
-$primary: #181818;
-$secondary: #ffffff;
-$tertiary: #4452fe;
-
-body {
-   background: $primary !important;
-   color: $secondary !important;
+:root {
+   --primary: #181818;
+   --secondary: #ffffff;
+   --tertiary: #4452fe;
 }
 
-.section-heading-1 {
+body {
+   background: var(--primary) !important;
+   color: var(--secondary) !important;
+}
+
+.sectionheading1 {
    font-family: 'Roboto', sans-serif;
    font-weight: normal;
    font-size: 52px;
@@ -15,42 +17,42 @@ body {
    padding-top: 5%;
 }
 
-.section-subheading-1 {
+.sectionsubheading1 {
    padding-bottom: 5%;
    padding-top: 2%;
    font-family: 'Roboto', sans-serif;
    font-size: 20px;
    font-weight: 400;
-   color: $secondary !important;
+   color: var(--secondary) !important;
 }
 .background1 {
    position: relative;
 }
-.col-auto {
-   background: $primary;
+.col2 {
+   background: var(--primary);
 }
-.col {
-   background: $primary;
+.col1 {
+   background: var(--primary);
 }
-.card {
-   background: $primary;
+.card1 {
+   background: var(--primary);
    border: transparent !important;
 }
-.card-block {
-   background: $primary;
+.cardblock {
+   background: var(--primary);
    padding: 10%;
 }
-.card-title {
+.cardtitle {
    font-family: 'Roboto', sans-serif;
    font-weight: 500;
    font-size: 20px;
 }
-.card-text {
+.cardtext {
    font-family: 'Roboto', sans-serif;
    font-weight: 400;
    font-size: 16px;
 }
-.calendar-element {
+.calendarelement {
    padding-top: 0;
    padding-bottom: 6%;
 }

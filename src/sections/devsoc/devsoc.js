@@ -1,5 +1,5 @@
 import React from 'react';
-import '../devsoc/devsoc.scss';
+import DevsocStyle from '../devsoc/devsoc.module.scss';
 /*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';*/
 /*import { faGooglePlay } from '@fortawesome/free-brands-svg-icons';*/
 
@@ -9,10 +9,10 @@ function Devsoc() {
          <div className="container">
             <div className="row">
                <div className="col-lg-12 text-center">
-                  <h2 className="section-heading text-center">
+                  <h2 className={`text-center ${DevsocStyle.sectionheading}`}>
                      DevSoc; BITS Goa
                   </h2>
-                  <h4 className="section-subheading text">
+                  <h4 className={`text ${DevsocStyle.sectionsubheading}`}>
                      Developers Society of BITS Goa has been primarily
                      responsible for providing innovative technical solutions to
                      most of the issues in BITS Goa.
@@ -20,7 +20,7 @@ function Devsoc() {
                </div>
             </div>
             <div className="row text-center">
-               <div className="col-md-6">
+               <div className={`col-md-6 ${DevsocStyle.column6}`}>
                   <span className="fa-stack fa-4x"></span>
 
                   <h4 className="box-heading">
@@ -41,23 +41,25 @@ function Devsoc() {
                      positive feedbacks.
                   </p>
                </div>
-               <div className="col-md-6">
+               <div className={`col-md-6 ${DevsocStyle.column6}`}>
                   <span className="fa-stack fa-4x"></span>
-                  <h4 className="box-heading">4000+ App Downloads so far</h4>
-                  <p className="box-text">
+                  <h4 className={DevsocStyle.boxheading}>
+                     4000+ App Downloads so far
+                  </h4>
+                  <p className={DevsocStyle.boxtext}>
                      Our apps have been downloaded 4000+ times.
                   </p>
                </div>
             </div>
             <div className="row text-center">
-               <div className="col-md-6">
+               <div className={`col-md-6 ${DevsocStyle.column6}`}>
                   <span className="fa-stack fa-4x"></span>
                   <h4 className="box-heading">4000+ App Downloads so far</h4>
                   <p className="box-text">
                      Our apps have been downloaded 4000+ times.
                   </p>
                </div>
-               <div className="col-md-6">
+               <div className={`col-md-6 ${DevsocStyle.column6}`}>
                   <span className="fa-stack fa-4x"></span>
                   <h4 className="box-heading">Avg Rating of 4.7</h4>
                   <p className="box-text">
@@ -68,8 +70,11 @@ function Devsoc() {
             </div>
          </div>
          <div className="col-md-12 text-center">
-            <button type="button" className="btn btn-primary btn-lg">
-               <a href="https://devsoc.club/" className="anchor">
+            <button
+               type="button"
+               className={`btn btn-primary btn-lg ${DevsocStyle.btn1}`}
+            >
+               <a href="https://devsoc.club/" className={DevsocStyle.anchor}>
                   Visit our Website
                </a>
             </button>
