@@ -26,15 +26,14 @@
       }
 
       @media (max-width: 650px) {
-          margin-right: 1rem;
-          margin-left: 1rem
+         margin-right: 1rem;
+         margin-left: 1rem;
       }
    }
 
    .heading {
       color: var(--secondary);
       font-family: var(--font-family);
-      margin-top: 6rem;
       margin-bottom: 4rem;
       text-align: center;
       font-size: var(--font-size-header);
