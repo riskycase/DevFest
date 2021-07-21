@@ -27,7 +27,7 @@ class Testimonials extends React.Component {
       });
       return (
          <div className={Styles.testimonialContainer}>
-            <span className={Styles.testimonialName}>Testimonials</span>
+            <h2>Testimonials</h2>
             <div className={Styles.testimonialMembers}>{testimonial}</div>
          </div>
       );
