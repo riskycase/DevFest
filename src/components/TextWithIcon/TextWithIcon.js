@@ -11,7 +11,11 @@ class TextWithIcon extends React.Component {
    render() {
       return (
          <div className={Styles.container}>
-            <FontAwesomeIcon icon={this.props.icon} className={Styles.icon} />
+            <FontAwesomeIcon
+               icon={this.props.icon}
+               className={Styles.icon}
+               size="2x"
+            />
             <span className={Styles.text}>{this.props.text}</span>
          </div>
       );

@@ -1,38 +1,44 @@
 import React from 'react';
 import PersonCard from '../../components/PersonCard/PersonCard';
 import Styles from './Team.module.scss';
+import Kanishq from '../../assets/img/team/Kanishq.jpeg';
+import Mayank from '../../assets/img/team/Mayank.jpeg';
+import Himanshu from '../../assets/img/team/Himanshu.jpeg';
+import Adithya from '../../assets/img/team/Adithya.jpeg';
+import Yash from '../../assets/img/team/Yash.jpeg';
+import Ritvij from '../../assets/img/team/Ritvij.png';
 
 class Team extends React.Component {
    render() {
       const team = [
          {
             name: 'Kanishq Khandelwal',
-            photo: '',
+            photo: Kanishq,
             designation: 'Chief Coordinator',
          },
          {
             name: 'Adithya',
-            photo: '',
+            photo: Adithya,
             designation: 'Sub-Coordinator',
          },
          {
             name: 'Himanshu Jain',
-            photo: '',
+            photo: Himanshu,
             designation: 'UI/UX Head',
          },
          {
             name: 'Mayank Mathur',
-            photo: '',
+            photo: Mayank,
             designation: 'Web Dev Vertical Head',
          },
          {
             name: 'Ritvij Kumar',
-            photo: '',
+            photo: Ritvij,
             designation: 'Mobile Dev Vertical Head',
          },
          {
             name: 'Yash Bhartia',
-            photo: '',
+            photo: Yash,
             designation: 'Game Dev Vertical Head',
          },
       ].map((person, index) => {
@@ -48,7 +54,7 @@ class Team extends React.Component {
       });
       return (
          <div className={Styles.teamContainer}>
-            <span className={Styles.teamName}>The DevSoc Team</span>
+            <span className={Styles.teamName}>The DEVSOC Team</span>
             <div className={Styles.teamMembers}>{team}</div>
          </div>
       );
