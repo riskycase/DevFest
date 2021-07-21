@@ -1,20 +1,39 @@
 .container {
-    --text-color: #FFF;
-    padding: 25px;
+    padding: 3rem;
+    color: var(--text-color);
     background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    .links {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: fit-content;
-    }
-    .contactUs {
+    .leftPart {
         display: flex;
         flex-direction: column;
-        justify-content: right;
-        width: fit-content;
+        flex: 1 1 auto;
+        font-weight: 500;
+        .logoContainer{
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            .logo {
+                height: 4.5rem;
+            }
+            .disclaimerText {
+                margin: 0 1rem;
+                font-size: 1.25rem;
+            }
+        }
+        .codeOfConduct {
+            font-size: 1.25rem;
+            margin: 1.5rem 0;
+        }
+        .websiteCredits, .websiteEditor {
+            margin: 0.25rem 0;
+        }
+    }
+    .rightPart {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex: 1 1 auto;
     }
 }

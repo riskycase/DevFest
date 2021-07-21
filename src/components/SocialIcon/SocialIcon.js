@@ -11,7 +11,11 @@ class SocialIcon extends React.Component {
    render() {
       return (
          <a className={Styles.container} href={this.props.link}>
-            <FontAwesomeIcon icon={this.props.icon} className={Styles.icon} />
+            <FontAwesomeIcon
+               icon={this.props.icon}
+               className={Styles.icon}
+               size="2x"
+            />
          </a>
       );
    }

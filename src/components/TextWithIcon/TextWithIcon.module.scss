@@ -2,11 +2,12 @@
     display: flex;
     width: fit-content;
     flex-direction: row;
-    margin: 5px;
     color: var(--text-color);
+    margin: 0.5rem 0;
     .icon {
+        width: 2rem;
         height: 2rem;
-        margin: 0 0.5rem;
+        margin-right: 0.5rem;
     }
     .text {
         display: flex;
