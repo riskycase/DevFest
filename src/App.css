@@ -1,10 +1,11 @@
-.App {
+body {
 
    /*     CSS style variables     */
 
-   --primary: #181818;
-   --secondary: #ffffff;
-   --tertiary: #4452fe;
+   --primary: #181818;  /* Cod Gray */
+   --secondary: #ffffff; /* White. This is to be used for text */
+   --tertiary: #4452fe; /* Dodger Blue */
    --font-family: 'Roboto';
-   --font-size-header: 40px;
+   --font-size-header: 40px; /* Font size for the secti0n headers */
+  --text-color: var(--secondary);
 }

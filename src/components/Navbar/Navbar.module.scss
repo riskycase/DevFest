@@ -1,8 +1,10 @@
 .fixed {
    background-color: #181818;
+   padding-top: 2%;
+   margin-left: 10%;
    .Navbar {
       margin-left: 10%;
-      width: 75%;
+      width: 70%;
       font-family: 'Roboto', sans-serif;
       display: flex;
       flex-wrap: wrap;
@@ -14,20 +16,29 @@
          text-decoration: none;
       }
       .logo {
-         display: inline-block;
+         display: inline-flex;
+         padding-top: 10px;
          font-size: 14px;
          text-align: center;
-         width: 150px;
-         height: 50px;
+         width: 75%;
+         height: auto;
       }
       img {
          height: 40px;
-         margin-top: 1%;
       }
    }
 }
 
-@media only screen and (max-width: 1044px) {
+@media only screen and (max-width: 400px) {
+   .logo {
+      display: block;
+   }
+}
+
+@media only screen and (max-width: 1509px) {
+   .desktop {
+      display: none;
+   }
    .fixed {
       .Navbar {
          margin-left: 0;
@@ -36,13 +47,17 @@
    }
 }
 
-@media only screen and (max-width: 884px) {
-   .desktop {
-      display: none;
+@media only screen and (max-width: 750px) {
+   .fixed {
+      .Navbar {
+         .logo {
+            width: 95px;
+         }
+      }
    }
 }
 
-@media only screen and (min-width: 885px) {
+@media only screen and (min-width: 1508px) {
    .mobile {
       display: none;
    }
@@ -56,10 +71,10 @@
    margin-left: 4%;
 }
 
-.mobileLinks:hover{
+.mobileLinks:hover {
    color: rgb(255, 255, 255);
 }
 .btn:focus {
    outline: none;
    box-shadow: none;
-   }
+}
