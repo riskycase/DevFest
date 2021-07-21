@@ -9,7 +9,7 @@ import apple from '../../assets/img/sponsors/apple-app.png';
 
 function Sponsors() {
    return (
-      <div className={Styles.brands}>
+      <div className={`${Styles.brands} container`}>
          <h1>Sponsors</h1>
          <h5>Meet our amazing Sponsors</h5>
          <div className={Styles.sponsors1}>

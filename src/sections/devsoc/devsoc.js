@@ -5,7 +5,7 @@ import DevsocStyle from '../devsoc/devsoc.module.scss';
 
 function Devsoc() {
    return (
-      <section className="page-section" id="boxs">
+      <section className="page-section container" id="boxs">
          <div className="container">
             <div className="row">
                <div className="col-lg-12 text-center">
