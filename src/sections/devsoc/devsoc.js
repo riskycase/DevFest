@@ -79,7 +79,6 @@ function Devsoc() {
                </a>
             </button>
          </div>
-         <hr />
       </section>
    );
 }
