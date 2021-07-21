@@ -3,21 +3,21 @@
    margin-top: 10rem;
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
+   height: 75%;
    background: #343434;
-   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
-   border-radius: 33px;
-   width: 80%;
+   box-shadow: 0px 1em 31px rgba(0, 0, 0, 0.15)!important;
+   border-radius: 2rem;
+   width: 75%;
    .hack {
-      margin-left: 2.5%;
-      height: auto;
-      width: auto;
-      max-width: 40%;
+      margin: auto ;
+      width: 40%;
       p {
          color: white;
          font-family: 'Roboto', sans-serif;
          font-weight: 400;
          font-style: normal;
-         font-size: 3.25em;
+         font-size: 3rem;
       }
       button {
          background-color: #4452fe;
@@ -28,20 +28,37 @@
       }
    }
    img {
+      border-radius: 1.5rem;
+      max-width: 100%;
       width: auto;
       height: auto;
    }
-}
 
 @media only screen and (max-width: 93.75em){
     .card{
-        flex-wrap: wrap;
-        text-align: center;
-        width: 100vw;
+        width: auto;
     }
     img{
         width: auto;
-        margin-top: 3.125em;
-        margin-bottom: 3.125em;
     }
+    .hack{
+       margin:0;
+    }
+}
+
+@media only screen and (max-width: 1300px){
+   img{
+       margin-top: 3.125em;
+   }
+}
+@media only screen and (max-width: 1000px){
+   .hack{
+      width: 100%;
+      text-align: center;
+      margin-top: 10%;
+      p{
+         font-size: 2rem;
+      }
+   }
+}
 }

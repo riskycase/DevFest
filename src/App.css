@@ -7,4 +7,5 @@ body {
    --tertiary: #4452fe; /* Dodger Blue */
    --font-family: 'Roboto';
    --font-size-header: 40px; /* Font size for the secti0n headers */
+  --text-color: var(--secondary);
 }

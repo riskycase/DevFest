@@ -10,13 +10,11 @@
    place-items: center;
 
    background: var(--primary);
-
    .container {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
-
       margin-right: 10rem;
       margin-left: 10rem;
 
