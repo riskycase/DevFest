@@ -29,7 +29,16 @@ class Speakers extends React.Component {
             </div>
          );
       });
-      return <div className={Styles.speakersContainer}>{people}</div>;
+      return (
+         <div className={Styles.speakersContainer}>
+            <h2>Speakers</h2>
+            <h4>
+               We focus on ergonomics and meeting you where you work.
+               It`&apos;`s only a keystroke away.
+            </h4>
+            {people}
+         </div>
+      );
    }
 }
 

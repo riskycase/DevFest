@@ -54,7 +54,7 @@ class Team extends React.Component {
       });
       return (
          <div className={Styles.teamContainer}>
-            <span className={Styles.teamName}>The DEVSOC Team</span>
+            <h2>The DEVSOC Team</h2>
             <div className={Styles.teamMembers}>{team}</div>
          </div>
       );
