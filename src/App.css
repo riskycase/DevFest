@@ -9,3 +9,13 @@ body {
    --font-size-header: 40px; /* Font size for the secti0n headers */
   --text-color: var(--secondary);
 }
+
+h2{
+  font-size: 3.25rem;
+  text-align: center;
+}
+
+h4{
+  font-size: 1.25rem;
+  text-align: center;
+}
