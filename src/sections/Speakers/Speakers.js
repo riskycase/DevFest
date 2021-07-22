@@ -53,7 +53,7 @@ class Speakers extends React.Component {
       people.push(people[1]);
       people.push(people[2]);
       return (
-         <div className={Styles.speakersContainer}>
+         <div className={`${Styles.speakersContainer} container`}>
             <h2>Speakers</h2>
             <h5>
                We focus on ergonomics and meeting you where you work. It&apos;s
