@@ -10,9 +10,9 @@ const Navbar = () => {
             <ul className={Styles.Navbar}>
                <li className={Styles.navLinks}>
                   <div className={Styles.logo}>
-                     Developer&apos;s Society BITS Goa
+                     <p>Developer&apos;s Society BITS Goa</p>
+                     <img src={logo} alt="Devsoc logo" />
                   </div>
-                  <img src={logo} alt="Devsoc logo" />
                </li>
                <li style={{ marginTop: '1%', marginLeft: '30px' }}>
                   <a href="#" className={Styles.navLinks}>

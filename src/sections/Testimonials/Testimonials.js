@@ -13,9 +13,9 @@ class Testimonials extends React.Component {
       }),
    };
    render() {
-      const team = this.props.people.map((person, index) => {
+      const testimonial = this.props.people.map((person, index) => {
          return (
-            <div key={index} className={Styles.teamCard}>
+            <div key={index} className={Styles.testimonialCard}>
                <PersonCard
                   name={person.name}
                   photo={person.photo}
@@ -26,9 +26,9 @@ class Testimonials extends React.Component {
          );
       });
       return (
-         <div className={Styles.teamContainer}>
-            <span className={Styles.teamName}>Testimonials</span>
-            <div className={Styles.teamMembers}>{team}</div>
+         <div className={`${Styles.testimonialContainer} container`}>
+            <h2>Testimonials</h2>
+            <div className={Styles.testimonialMembers}>{testimonial}</div>
          </div>
       );
    }
