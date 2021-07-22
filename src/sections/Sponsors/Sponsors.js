@@ -39,97 +39,80 @@ function Sponsors() {
                      path: IBM,
                      alt: 'IBM',
                   },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
+                  {
+                     path: android,
+                     alt: 'android',
+                  },
+                  {
+                     path: airbnb,
+                     alt: 'Airbnb',
+                  },
+                  {
+                     path: apple,
+                     alt: 'Apple',
+                  },
+                  {
+                     path: apiary,
+                     alt: 'Apiary',
+                  },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
+                  {
+                     path: android,
+                     alt: 'android',
+                  },
+                  {
+                     path: airbnb,
+                     alt: 'Airbnb',
+                  },
+                  {
+                     path: apple,
+                     alt: 'Apple',
+                  },
+                  {
+                     path: apiary,
+                     alt: 'Apiary',
+                  },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
+                  {
+                     path: android,
+                     alt: 'android',
+                  },
+                  {
+                     path: airbnb,
+                     alt: 'Airbnb',
+                  },
+                  {
+                     path: apple,
+                     alt: 'Apple',
+                  },
+                  {
+                     path: apiary,
+                     alt: 'Apiary',
+                  },
+                  {
+                     path: IBM,
+                     alt: 'IBM',
+                  },
                ]}
             />
-         </div>
-         <button
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#sponsors"
-            aria-expanded="false"
-            aria-controls="sponsors"
-         >
-            All Partners
-         </button>
-         <div id="sponsors" className="collapse">
-            <div className={Styles.sponsors2}>
-               <Logos
-                  array={[
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                     {
-                        path: android,
-                        alt: 'android',
-                     },
-                     {
-                        path: airbnb,
-                        alt: 'Airbnb',
-                     },
-                     {
-                        path: apple,
-                        alt: 'Apple',
-                     },
-                     {
-                        path: apiary,
-                        alt: 'Apiary',
-                     },
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                     {
-                        path: android,
-                        alt: 'android',
-                     },
-                     {
-                        path: airbnb,
-                        alt: 'Airbnb',
-                     },
-                     {
-                        path: apple,
-                        alt: 'Apple',
-                     },
-                     {
-                        path: apiary,
-                        alt: 'Apiary',
-                     },
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                     {
-                        path: android,
-                        alt: 'android',
-                     },
-                     {
-                        path: airbnb,
-                        alt: 'Airbnb',
-                     },
-                     {
-                        path: apple,
-                        alt: 'Apple',
-                     },
-                     {
-                        path: apiary,
-                        alt: 'Apiary',
-                     },
-                     {
-                        path: IBM,
-                        alt: 'IBM',
-                     },
-                  ]}
-               />
-            </div>
          </div>
       </div>
    );

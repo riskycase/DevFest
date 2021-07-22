@@ -1,21 +1,17 @@
-.Homepage {
-   color: #ffffff;
-   font-family: 'Roboto', sans-serif;
-   margin: auto;
-   margin-top: 10%;
-   width: 20vw;
-   section {
-      text-align: center;
-      font-size: 80px;
-      letter-spacing: 0.2px;
-   }
-   main {
-      text-align: center;
-      font-weight: 400;
+.mobile {
+   @media only screen and (max-width: 576px) {
+      background-image: url('../../assets/img/background.png');
+      position: 'relative';
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: 50% 60%;
+      .height {
+         height: auto;
+         height: 100vh;
+      }
    }
 }
 .Register {
-   background-size: 40em;
    margin-top: 10%;
    display: flex;
    justify-content: center;
@@ -24,6 +20,10 @@
       flex-wrap: wrap;
       width: 60%;
       justify-content: space-around;
+      @media only screen and (max-width: 576px) {
+         position: absolute;
+         bottom: 5rem;
+      }
       button {
          padding: 1rem 2.5rem;
          color: white;
@@ -43,6 +43,9 @@
 
 .background {
    height: 100%;
-   width: 100%;
-   min-height: 50vh;
+      width: 100%;
+      min-height: 50vh;
+   @media only screen and (max-width: 576px) {
+      display: none;
+   }
 }
