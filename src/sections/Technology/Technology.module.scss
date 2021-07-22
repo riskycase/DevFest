@@ -17,6 +17,7 @@
       align-items: center;
       margin-right: 10rem;
       margin-left: 10rem;
+      margin-bottom: -6rem;
 
       @media (max-width: 950px) {
          flex-flow: column wrap;
@@ -26,21 +27,19 @@
       }
 
       @media (max-width: 650px) {
-          margin-right: 1rem;
-          margin-left: 1rem
+         margin-right: 1rem;
+         margin-left: 1rem;
       }
    }
 
    .heading {
       color: var(--secondary);
-      font-family: var(--font-family);
-      margin-top: 6rem;
+      font-family: 'Roboto', sans-serif;
       margin-bottom: 4rem;
       text-align: center;
-      font-size: var(--font-size-header);
 
       @media (min-width: 450px) {
-         margin-bottom: 12rem;
+         margin-bottom: 3rem;
       }
    }
 }

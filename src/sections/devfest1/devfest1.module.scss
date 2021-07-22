@@ -1,0 +1,76 @@
+:root {
+   --primary: #181818;
+   --secondary: #ffffff;
+   --tertiary: #4452fe;
+}
+
+body {
+   background: var(--primary) !important;
+   color: var(--secondary) !important;
+}
+
+.sectionheading1 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: normal;
+   letter-spacing: 0.2px;
+   padding-top: 5%;
+}
+
+.sectionsubheading1 {
+   padding-bottom: 5%;
+   padding-top: 2%;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   color: var(--secondary) !important;
+}
+.background1 {
+   position: relative;
+}
+.col2 {
+   background: var(--primary);
+}
+.col1 {
+   background: var(--primary);
+}
+.card1 {
+   background: var(--primary);
+   border: transparent !important;
+}
+.cardblock {
+   background: var(--primary);
+   padding: 10%;
+}
+.cardtitle {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 500;
+   font-size: 20px;
+}
+.cardtext {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+}
+.calendarelement {
+   padding-top: 0;
+   padding-bottom: 6%;
+}
+/*.image-stack {
+   display: grid;
+   grid-template-columns: repeat(12, 1fr);
+   position: relative;
+}
+
+.image-stack__item--bottom {
+   grid-column: 4/-1;
+   grid-row: 1;
+}
+
+.image-stack__item--top {
+   grid-column: 1 / span 8;
+   grid-row: 1;
+   padding-top: 20%;
+}
+
+img {
+   display: block;
+}*/
