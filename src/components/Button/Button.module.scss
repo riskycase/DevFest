@@ -2,11 +2,12 @@
    --dark-background: #181818;
    --text-color: white;
    --blue: #4452fe;
-   background-color: var(--dark-background);
    font-size: 2rem;
    font-size: 500;
    font-style: normal;
-
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 1.5rem ;
    .primary {
       background-color: var(--blue);
       color: var(--text-color);

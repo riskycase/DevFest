@@ -22,25 +22,28 @@
    }
 
    .title {
-       color: var(--secondary);
-       font-size: 1.5rem;
-       text-align: center;
-       min-width: 50%;
-       max-width: 80%;
-       border: solid;
-       border-radius: 5%;
-       border-color: var(--secondary);
-       margin-top: 3rem;
-       padding-left: 2rem;
-       padding-right: 2rem;
-       padding-top: 1rem;
-       padding-bottom: 1rem; 
-       @media (max-width: 450px) {
-           font-size: 0.75em;
-           margin-top: 0rem;
-       }
-
+      color: var(--secondary);
+      font-size: 1.5rem;
+      text-align: center;
+      min-width: 50%;
+      max-width: 80%;
+      border: solid;
+      border-radius: 5%;
+      border-color: var(--secondary);
+      margin-top: 3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      @media (max-width: 450px) {
+         font-size: 0.75em;
+         margin-top: 0rem;
+      }
    }
 
    margin-bottom: 6rem;
+}
+
+.card:last-of-type {
+   margin-bottom: 0;
 }

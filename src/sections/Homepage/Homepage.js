@@ -16,13 +16,11 @@ const Homepage = () => {
                   fontFamily: 'Roboto, sans-serif',
                }}
             >
-               <section style={{ fontSize: '80px', textAlign: 'center' }}>
-                  DevFest 2.0
-               </section>
-               <main style={{ textAlign: 'center', fontWeight: '400' }}>
+               <h1 style={{ textAlign: 'center' }}>DevFest 2.0</h1>
+               <h4 style={{ textAlign: 'center', fontWeight: '400' }}>
                   Most calendars are designed for teams. Slate is designed for
                   freelancers who want a simple way to plan their schedule
-               </main>
+               </h4>
             </div>
             <div className={Styles.Register}>
                <div className={Styles.buttons}>
