@@ -4,12 +4,6 @@
     flex-direction: column;
     background: var(--primary);
     color: var(--text-color);
-    .testimonialName{
-        text-align: center;
-        margin: 1.5rem 0;
-        font-weight: 400;
-        font-size: 3rem; 
-    }
     .testimonialMembers {
         display: flex;
         flex-direction: row;
