@@ -55,10 +55,10 @@ class Speakers extends React.Component {
       return (
          <div className={`${Styles.speakersContainer} container`}>
             <h2>Speakers</h2>
-            <h5>
+            <h4>
                We focus on ergonomics and meeting you where you work. It&apos;s
                only a keystroke away.
-            </h5>
+            </h4>
             <div className={Styles.speakersCarousel}>
                <div
                   className={Styles.cardsContainer}
