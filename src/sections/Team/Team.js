@@ -1,5 +1,4 @@
 import React from 'react';
-import PersonCard from '../../components/PersonCard/PersonCard';
 import Styles from './Team.module.scss';
 import Kanishq from '../../assets/img/team/Kanishq.jpeg';
 import Mayank from '../../assets/img/team/Mayank.jpeg';
@@ -44,11 +43,13 @@ class Team extends React.Component {
       ].map((person, index) => {
          return (
             <div key={index} className={Styles.teamCard}>
-               <PersonCard
-                  name={person.name}
-                  photo={person.photo}
-                  designation={person.designation}
+               <img
+                  className={Styles.photo}
+                  src={person.photo}
+                  alt={person.name}
                />
+               <span className={Styles.name}>{person.name}</span>
+               <span className={Styles.designation}>{person.designation}</span>
             </div>
          );
       });
