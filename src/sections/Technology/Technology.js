@@ -1,6 +1,6 @@
 //import React, { useState } from 'react';
 import React from 'react';
-import TechCard from '../../components/techcard/TechCard';
+import TechCard from '../../components/TechCard/TechCard';
 import TechnologyList from './Tech.json';
 import Styles from './Technology.module.scss';
 
