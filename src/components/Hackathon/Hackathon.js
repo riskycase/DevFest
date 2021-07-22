@@ -1,13 +1,17 @@
 import React from 'react';
 import Styles from './Hackathon.module.scss';
 import hackathon from '../../assets/img/hack.png';
-
+import Button from '../Button/Button.js';
 const Hackathon = () => {
    return (
-      <div className={`${Styles.card} container`}>
+      <div className={Styles.card}>
          <div className={Styles.hack}>
-            <p>Register for the amazing sessions and the hackathon</p>
-            <button>Register now</button>
+            <h5 className={Styles.h5}>
+               Register for the amazing sessions and the hackathon
+            </h5>
+            <div className={Styles.align}>
+               <Button text="Register Now" color="primary" />
+            </div>
          </div>
          <img src={hackathon} alt="Hackathon" />
       </div>
