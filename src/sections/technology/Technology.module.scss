@@ -34,10 +34,8 @@
    .heading {
       color: var(--secondary);
       font-family: 'Roboto', sans-serif;
-      font-size: 52px !important;
       margin-bottom: 4rem;
       text-align: center;
-      font-size: var(--font-size-header);
 
       @media (min-width: 450px) {
          margin-bottom: 3rem;

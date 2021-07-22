@@ -11,7 +11,7 @@ function Sponsors() {
    return (
       <div className={`${Styles.brands} container`}>
          <h2 className={Styles.sponsorheading}>Sponsors</h2>
-         <h5 className={Styles.sponsorsubheading}>Meet our amazing Sponsors</h5>
+         <h4 className={Styles.sponsorsubheading}>Meet our amazing Sponsors</h4>
          <div className={Styles.sponsors1}>
             <Logos
                array={[
