@@ -1,0 +1,18 @@
+[
+   {
+      "title": "Mobile App Development",
+      "img_url": "assets/img/techimages/app.svg"
+   },
+   {
+      "title": "Web Development",
+      "img_url": "assets/img/techimages/web.svg"
+   },
+   {
+      "title": "Game Development",
+      "img_url": "assets/img/techimages/game.svg"
+   },
+   {
+      "title": "Product Design",
+      "img_url": "assets/img/techimages/product.svg"
+   }
+]
