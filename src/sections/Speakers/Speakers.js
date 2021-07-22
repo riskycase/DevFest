@@ -47,8 +47,11 @@ class Speakers extends React.Component {
       const indicators = this.props.people.map((_person, index) => {
          return <span key={index} className={Styles.cardsIndicator} />;
       });
-      // Add first item again to last so we can have consistent animation going from last item to first
+      // Add first three items again to last so we can have consistent
+      // animation going from last item to first
       people.push(people[0]);
+      people.push(people[1]);
+      people.push(people[2]);
       return (
          <div className={Styles.speakersContainer}>
             <h2>Speakers</h2>
