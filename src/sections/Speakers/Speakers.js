@@ -30,12 +30,14 @@ class Speakers extends React.Component {
          );
       });
       return (
-         <div className={Styles.speakersContainer}>
-            <h2>Speakers</h2>
-            <h5>
-               We focus on ergonomics and meeting you where you work.
-               It`&apos;`s only a keystroke away.
-            </h5>
+         <div className={`${Styles.speakersContainer} container`}>
+            <div>
+               <h2>Speakers</h2>
+               <h5>
+                  We focus on ergonomics and meeting you where you work.
+                  It&apos;s only a keystroke away.
+               </h5>
+            </div>
             {people}
          </div>
       );

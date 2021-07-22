@@ -5,12 +5,12 @@ import DevsocStyle from '../devsoc/devsoc.module.scss';
 
 function Devsoc() {
    return (
-      <section className="page-section" id="boxs">
-         <div className="container">
+      <section className="page-section container" id="boxs">
+         <div className="container cont">
             <div className="row">
                <div className="col-lg-12 text-center">
                   <h2 className={`text-center ${DevsocStyle.sectionheading}`}>
-                     DevSoc; BITS Goa
+                     DevSoc BITS Goa
                   </h2>
                   <h4 className={`text ${DevsocStyle.sectionsubheading}`}>
                      Developers Society of BITS Goa has been primarily

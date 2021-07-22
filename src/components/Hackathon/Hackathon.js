@@ -4,7 +4,7 @@ import hackathon from '../../assets/img/hack.png';
 
 const Hackathon = () => {
    return (
-      <div className={Styles.card}>
+      <div className={`${Styles.card} container`}>
          <div className={Styles.hack}>
             <p>Register for the amazing sessions and the hackathon</p>
             <button>Register now</button>
