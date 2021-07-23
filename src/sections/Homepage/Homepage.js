@@ -1,42 +1,75 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Styles from './Homepage.module.scss';
-import background from '../../assets/img/background.png';
+import background from '../../assets/img/background1.png';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Homepage = () => {
+   useEffect(() => {
+      const script = document.createElement('script');
+      script.src = 'https://apply.devfolio.co/v2/sdk.js';
+      script.async = true;
+      script.defer = true;
+      document.body.appendChild(script);
+      return () => {
+         document.body.removeChild(script);
+      };
+   }, []);
    return (
       <>
          <Navbar />
-         <div>
+         <div className={Styles.mobile}>
             <div
-               className="container-md w-auto text-white text-align-center"
+               className={`container-md w-auto text-white text-align-center ${Styles.height}`}
                style={{
                   marginTop: '10%',
-                  height: 'auto',
                   fontFamily: 'Roboto, sans-serif',
                }}
             >
-               <h1 style={{ textAlign: 'center' }}>DevFest 2.0</h1>
-               <h4 style={{ textAlign: 'center', fontWeight: '400' }}>
-                  Most calendars are designed for teams. Slate is designed for
-                  freelancers who want a simple way to plan their schedule
-               </h4>
+               <h1>DevFest 2.0</h1>
+               <main
+                  className="mt-md-5 mt-2"
+                  style={{
+                     textAlign: 'justify',
+                     fontWeight: '400',
+                  }}
+               >
+                  <p>
+                     DevFest is the week-long completely online technical fest
+                     organized by DevSoc, Developers&apos; Society, BITS Pilani,
+                     Goa campus. In this one week, we will be going on an
+                     exciting adventure of technical events like talks by
+                     eminent tech leaders, workshops to learn new skills and
+                     hackathons where teams rack their brains to find solutions
+                     to real-world problems. So what are you waiting for? Come
+                     and join us to be a part of this amazing event!
+                  </p>
+                  <div className={`${Styles.Register} mt-md-5`}>
+                     <div className={Styles.buttons}>
+                        <button
+                           className={`apply-button ${Styles.dashboard}`}
+                           // data-hackathon-slug="DevFest 2.0"
+                           // data-button-theme="light"
+                           style={{
+                              height: 'auto',
+                           }}
+                        >
+                           {/* <button className={Styles.dashboard}>
+                     </button> */}
+                           Apply with Devfolio
+                        </button>
+                        <button className={Styles.register}>
+                           Register for Talks/Workshops
+                        </button>
+                     </div>
+                  </div>
+                  <br />
+                  <img
+                     src={background}
+                     className={Styles.background}
+                     alt="background"
+                  />
+               </main>
             </div>
-            <div className={Styles.Register}>
-               <div className={Styles.buttons}>
-                  <button className={Styles.dashboard}>Go to Dashboard</button>
-                  <button className={Styles.register}>
-                     Register for Talks/Workshops
-                  </button>
-               </div>
-            </div>
-            <br />
-            {/* <div className={Styles.background}></div> */}
-            <img
-               src={background}
-               className={Styles.background}
-               alt="background"
-            />
          </div>
       </>
    );

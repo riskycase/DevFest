@@ -1,22 +1,18 @@
-.Homepage {
-   color: #ffffff;
-   font-family: 'Roboto', sans-serif;
-   margin: auto;
-   margin-top: 10%;
-   width: 20vw;
-   section {
-      text-align: center;
-      font-size: 80px;
-      letter-spacing: 0.2px;
-   }
-   main {
-      text-align: center;
-      font-weight: 400;
+.mobile {
+   @media only screen and (max-width: 576px) {
+      height: 100vh;
+      min-height: 100vh;
+      background-image: url('../../assets/img/background1.png');
+      position: 'relative';
+      background-size: 200%;
+      background-repeat: no-repeat;
+      background-position: 50% 60%;
+      h1{
+         font-size: 2rem;
+      }
    }
 }
 .Register {
-   background-size: 40em;
-   margin-top: 10%;
    display: flex;
    justify-content: center;
    .buttons {
@@ -24,25 +20,32 @@
       flex-wrap: wrap;
       width: 60%;
       justify-content: space-around;
-      button {
-         padding: 1rem 2.5rem;
-         color: white;
-         margin: 10px;
+      @media only screen and (max-width: 576px) {
+         position: absolute;
+         bottom: 5rem;
       }
       .dashboard {
          color: white;
          background: #4452fe;
       }
+      button {
+         padding: 1rem 2.5rem;
+         color: white;
+         margin: 10px;
+         border: 1px solid #ffffff;
+      }
       .register {
          color: white;
          background-color: #181818;
-         border: 1px solid #ffffff;
       }
    }
 }
 
 .background {
    height: 100%;
-   width: 100%;
-   min-height: 50vh;
+      width: 100%;
+      min-height: 50vh;
+   @media only screen and (max-width: 576px) {
+      display: none;
+   }
 }
