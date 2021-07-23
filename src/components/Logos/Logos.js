@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 import Styles from './Logos.module.scss';
 
 function Logos({ array }) {
-   return array.map((image, index) => (
-      <img
-         key={index}
-         src={image.path}
-         className={Styles.logos}
-         alt={image.alt}
-      />
+   return array.map((company, index) => (
+      <a key={index} href={company.link}>
+         <img src={company.image} className={Styles.logos} alt={company.name} />
+      </a>
    ));
 }
 
 Logos.protoTypes = PropTypes.arrayOf({
-   path: PropTypes.string,
-   alt: PropTypes.string,
+   image: PropTypes.string,
+   name: PropTypes.string,
+   link: PropTypes.string,
 });
 
 export default Logos;
