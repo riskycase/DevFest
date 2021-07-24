@@ -30,15 +30,4 @@
       @include sponsors;
       display: flex;
    }
-   .sponsors2 {
-      @include sponsors;
-      display: flex;
-   }
-   .sponsorheading {
-      font-size: 52px;
-   }
-   .sponsorsubheading {
-      font-size: 24px;
-      font-weight: 400;
-   }
 }

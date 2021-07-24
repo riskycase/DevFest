@@ -7,21 +7,24 @@ const Homepage = () => {
    return (
       <>
          <Navbar />
-         <div>
+         <div className={Styles.mobile}>
             <div
-               className="container-md w-auto text-white text-align-center"
+               className={`container-md w-auto text-white text-align-center ${Styles.height}`}
                style={{
                   marginTop: '10%',
-                  height: 'auto',
                   fontFamily: 'Roboto, sans-serif',
                }}
             >
-               <section style={{ fontSize: '80px', textAlign: 'center' }}>
-                  DevFest 2.0
-               </section>
-               <main style={{ textAlign: 'center', fontWeight: '400' }}>
-                  Most calendars are designed for teams. Slate is designed for
-                  freelancers who want a simple way to plan their schedule
+               <h1 style={{ textAlign: 'center' }}>DevFest 2.0</h1>
+               <main
+                  className="mt-md-1 mt-5"
+                  style={{
+                     textAlign: 'center',
+                     fontWeight: '400',
+                  }}
+               >
+                  DevSoc’s DevFest is a week-long event full of talks by eminent
+                  people, workshops, hackathon & productathon.
                </main>
             </div>
             <div className={Styles.Register}>
@@ -33,7 +36,6 @@ const Homepage = () => {
                </div>
             </div>
             <br />
-            {/* <div className={Styles.background}></div> */}
             <img
                src={background}
                className={Styles.background}
