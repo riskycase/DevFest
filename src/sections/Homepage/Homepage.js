@@ -53,8 +53,6 @@ const Homepage = () => {
                               height: 'auto',
                            }}
                         >
-                           {/* <button className={Styles.dashboard}>
-                     </button> */}
                            <a href="" className="text-decoration-none">
                               Apply with Devfolio
                            </a>
