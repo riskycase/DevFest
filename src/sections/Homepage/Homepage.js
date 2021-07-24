@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Styles from './Homepage.module.scss';
-import background from '../../assets/img/background1.png';
+import background from '../../assets/img/background.png';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Homepage = () => {
@@ -55,22 +55,22 @@ const Homepage = () => {
                         >
                            {/* <button className={Styles.dashboard}>
                      </button> */}
-                           Apply with Devfolio
+                           <a href="" className="text-decoration-none">
+                              Apply with Devfolio
+                           </a>
                         </button>
                         <button className={Styles.register}>
-                           Register for Talks/Workshops
+                           <a href="" className="text-decoration-none">
+                              Register for Talks/Workshops
+                           </a>
                         </button>
                      </div>
                   </div>
                   <br />
-                  <img
-                     src={background}
-                     className={Styles.background}
-                     alt="background"
-                  />
                </main>
             </div>
          </div>
+         <img src={background} className={Styles.background} alt="background" />
       </>
    );
 };

@@ -12,6 +12,14 @@ body {
    margin-bottom: 5rem;
 }
 
+a{
+   color: rgba(255, 255, 255,0.9);
+}
+
+a:hover{
+   color: rgb(255, 255, 255);
+}
+
 h1 {
    font-size: 5rem;
    text-align: center;

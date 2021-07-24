@@ -2,12 +2,12 @@
    @media only screen and (max-width: 576px) {
       height: 100vh;
       min-height: 100vh;
-      background-image: url('../../assets/img/background1.png');
+      background-image: url('../../assets/img/background.png');
       position: 'relative';
       background-size: 200%;
       background-repeat: no-repeat;
       background-position: 50% 60%;
-      h1{
+      h1 {
          font-size: 2rem;
       }
    }
@@ -43,8 +43,7 @@
 
 .background {
    height: 100%;
-      width: 100%;
-      min-height: 50vh;
+   width: 100%;
    @media only screen and (max-width: 576px) {
       display: none;
    }
