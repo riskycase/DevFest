@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Styles from './Homepage.module.scss';
-import background from '../../assets/img/background.png';
+import background from '../../assets/img/background.svg';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Homepage = () => {
