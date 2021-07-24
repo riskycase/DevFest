@@ -19,7 +19,7 @@ const Homepage = () => {
          <Navbar />
          <div className={Styles.mobile}>
             <div
-               className={`container-md w-auto text-white text-align-center ${Styles.height}`}
+               className={`container-md w-auto text-white text-align-center`}
                style={{
                   marginTop: '10%',
                   fontFamily: 'Roboto, sans-serif',
@@ -69,8 +69,12 @@ const Homepage = () => {
                   <br />
                </main>
             </div>
+            <img
+               src={background}
+               className={Styles.background}
+               alt="background"
+            />
          </div>
-         <img src={background} className={Styles.background} alt="background" />
       </>
    );
 };
