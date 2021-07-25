@@ -13,6 +13,7 @@
 
    .image {
       height: 12.5rem;
+      max-width: 80%;
       @media (max-width: 650px) {
           height: 15rem;
       }
@@ -31,6 +32,7 @@
       padding: 1rem 2rem 1rem 2rem;
       @media (max-width: 450px) {
          font-size: 0.75em;
+         margin-top: 1rem;
       }
    }
 

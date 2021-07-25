@@ -1,17 +1,26 @@
 .mobile {
    @media only screen and (max-width: 576px) {
-      min-height: 100vh;
+      /* min-height: 100vh;
       @media only screen and (max-width: 375px){
          min-height: 120vh;
       }
       @media only screen and(max-height:739px) and(max-width: 320px) {
          min-height: 170vh;
-      }
-      background-image: url('../../assets/img/background.svg');
+      } */
+      background-image: url("../../assets/img/background.svg");
       position: relative;
       background-size: 200%;
       background-repeat: no-repeat;
-      background-position: 50% 60%;
+      background-position: 50% 100%;
+
+      main {
+         p {
+            margin: 5rem 0;
+         }
+      }
+      h1 {
+         margin-top: 3rem;
+      }
    }
    @media only screen and (min-width: 576px) {
       h1 {
@@ -33,7 +42,7 @@
 }
 
 .Register {
-   @media only screen and(min-width:576px){
+   @media only screen and(min-width:576px) {
       margin-top: 6.25rem;
    }
    display: flex;
