@@ -5,7 +5,7 @@ import Img1 from '../../assets/img/Devfest1.0/Devfest1.png';
 
 function Devfest() {
    return (
-      <div className="container">
+      <div className="container" id="devfest">
          <div className="row">
             <div className="col-lg-12 text-center">
                <h2 className={`text-center ${DevfestStyle.sectionheading1}`}>

@@ -19,8 +19,15 @@ const Technology = () => {
    }; */
 
    return (
-      <div className={`${Styles.section} container`}>
-         <h2 className={Styles.heading}>Technologies in focus</h2>
+      <div className={`${Styles.section} container`} id="technology">
+         <h2 className={Styles.heading}>Technologies in Focus</h2>
+         <h4>
+            DevFest features talks and workshops in a variety of fields. Our
+            hackathon allows participants the freedom to choose their own way of
+            building something amazing. There are no restrictions of what domain
+            your hack is built for. We also feature a variety of problem
+            statements from different domains!
+         </h4>
          <div className={Styles.container}>
             {/* {TechnologyList.slice(0, itemsToShow).map(tech => ( */}
             {TechnologyList.map(tech => (
