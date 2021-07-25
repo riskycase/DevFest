@@ -17,7 +17,7 @@ const Homepage = () => {
    return (
       <>
          <Navbar />
-         <div className={Styles.mobile}>
+         <div className={Styles.mobile} id="about">
             <div
                className={`container-md w-auto text-white text-align-center`}
                style={{ marginTop: '8%' }}
