@@ -44,6 +44,15 @@ const Navbar = () => {
                         <a
                            className="nav-link"
                            aria-current="page"
+                           href="#about"
+                        >
+                           About
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <a
+                           className="nav-link"
+                           aria-current="page"
                            href="#technology"
                         >
                            Technologies
@@ -124,6 +133,15 @@ const Navbar = () => {
             <div className="offcanvas-body">
                <nav className="navbar">
                   <ul className="navbar-nav">
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a
+                           className={Styles.mobileLinks}
+                           aria-current="page"
+                           href="#about"
+                        >
+                           About
+                        </a>
+                     </li>
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a
                            className={Styles.mobileLinks}

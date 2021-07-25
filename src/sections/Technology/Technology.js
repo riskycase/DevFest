@@ -19,7 +19,7 @@ const Technology = () => {
    }; */
 
    return (
-      <div className={`${Styles.section} container`}>
+      <div className={`${Styles.section} container`} id="technology">
          <h2 className={Styles.heading}>Technologies in Focus</h2>
          <h4>
             DevFest features talks and workshops in a variety of fields. Our
