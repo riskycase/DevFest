@@ -12,14 +12,11 @@
    }
 
    .image {
-      max-width: 60%;
-      max-height: 60%;
-
-      @media (max-width: 450px) {
-         max-width: 60%;
-         max-height: 60%;
-      }
       height: 12.5rem;
+      max-width: 80%;
+      @media (max-width: 650px) {
+          height: 15rem;
+      }
    }
 
    .title {
@@ -32,13 +29,10 @@
       border-radius: 5%;
       border-color: var(--secondary);
       margin-top: 3rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+      padding: 1rem 2rem 1rem 2rem;
       @media (max-width: 450px) {
          font-size: 0.75em;
-         margin-top: 0rem;
+         margin-top: 1rem;
       }
    }
 
