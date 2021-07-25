@@ -10,6 +10,7 @@ body {
 }
 
 .sectionheading1 {
+   margin-left: 3rem;
    font-size: 5rem;
    @media (max-width: 768px) {
       font-size: 3.75rem;
@@ -19,13 +20,22 @@ body {
 }
 
 .sectionsubheading1 {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto Mono', monospace;
+   font-size: 2.25rem;
+   @media (max-width: 768px) {
+      font-size: 1.75rem;
+   }
+   padding-bottom: 3%;
+   padding-top: 2%;
+   font-weight: 400;
+}
+.sectionsubheading2 {
+   font-family: 'Roboto Mono', monospace;
    font-size: 2.25rem;
    @media (max-width: 768px) {
       font-size: 1.75rem;
    }
    padding-bottom: 5%;
-   padding-top: 2%;
 }
 .sectionsubheadingdiff {
    font-family: 'Roboto Mono', monospace;
