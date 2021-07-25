@@ -19,6 +19,14 @@ body {
    }   
 }
 
+a{
+   color: rgba(255, 255, 255,0.9);
+}
+
+a:hover{
+   color: rgb(255, 255, 255);
+}
+
 h1 {
    color: var(--secondary);
    font-family: 'Roboto Mono', monospace;

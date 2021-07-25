@@ -1,9 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../assets/img/logo.png';
 import Styles from './Navbar.module.scss';
-import menu from '../../assets/img/menu.png';
+import menu from '../../assets/img/Vector.png';
+import Offcanvas from '../../../node_modules/bootstrap/js/src/offcanvas';
 
 const Navbar = () => {
+   useEffect(() => {
+      let myOfcanvas = document.getElementById('offcanvasRight');
+      let bsOffcanvas = new Offcanvas(myOfcanvas);
+      document.getElementById('open').addEventListener('click', e => {
+         e.preventDefault();
+         e.stopPropagation();
+         bsOffcanvas.toggle();
+      });
+   });
+
    return (
       <div className={Styles.fixed}>
          <nav className="navbar navbar-expand-lg">
@@ -20,54 +31,64 @@ const Navbar = () => {
                      boxShadow: 'none',
                   }}
                   type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasRight"
-                  aria-controls="offcanvasRight"
-                  aria-expanded="false"
-                  aria-label="Toggle navigation"
+                  id="open"
                >
-                  <img src={menu} alt="Menu" />
+                  <img src={menu} style={{ height: '1rem' }} alt="Menu" />
                </button>
-               <div className="collapse navbar-collapse ms-5 w-auto">
+               <div
+                  className="collapse navbar-collapse w-auto"
+                  style={{ marginLeft: '10rem' }}
+               >
                   <ul className="navbar-nav mb-2 mb-lg-0 w-100">
                      <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
-                           About
-                        </a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link text-nowrap" href="#">
-                           DevFest 1.0
-                        </a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
-                           Devsoc
-                        </a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
+                        <a
+                           className="nav-link"
+                           aria-current="page"
+                           href="#technology"
+                        >
                            Technologies
                         </a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
-                           Speakers
-                        </a>
-                     </li>
-                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
+                        <a
+                           className="nav-link"
+                           aria-current="page"
+                           href="#sponsors"
+                        >
                            Sponsors
                         </a>
                      </li>
                      <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
-                           FAQs
+                        <a
+                           className="nav-link"
+                           aria-current="page"
+                           href="#team"
+                        >
+                           Teams
                         </a>
                      </li>
                      <li className="nav-item">
+                        <a className="nav-link text-nowrap" href="#devfest">
+                           DevFest 1.0
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <a
+                           className="nav-link"
+                           aria-current="page"
+                           href="#boxs"
+                        >
+                           Devsoc
+                        </a>
+                     </li>
+                     {/* <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">
-                           Teams
+                           Speakers
+                        </a>
+                     </li> */}
+                     <li className="nav-item">
+                        <a className="nav-link" aria-current="page" href="#FAQ">
+                           FAQs
                         </a>
                      </li>
                   </ul>
@@ -76,26 +97,21 @@ const Navbar = () => {
          </nav>
          <div
             className="offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
             tabIndex="-1"
             id="offcanvasRight"
             aria-labelledby="offcanvasRight"
-            style={{ backgroundColor: '#181818', color: 'white' }}
+            style={{
+               backgroundColor: '#181818',
+               color: 'white',
+            }}
          >
             <div className="offcanvas-header">
                <h5 id="offcanvasRight" className={Styles.navLinks}>
-                  <div
-                     className={Styles.logo}
-                     style={{ display: 'inline', marginRight: '4px' }}
-                  >
-                     Developer&apos;s Society BITS Goa
-                  </div>
-                  <img
-                     src={logo}
-                     alt="Devsoc logo"
-                     style={{ marginTop: '1%', height: '40px' }}
-                  />
+                  DevFest 2.0
                </h5>
-               <button
+               <buton
                   type="button"
                   className="btn-close bg-light text-reset"
                   style={{
@@ -103,49 +119,68 @@ const Navbar = () => {
                   }}
                   data-bs-dismiss="offcanvas"
                   aria-label="Close"
-               ></button>
+               />
             </div>
             <div className="offcanvas-body">
                <nav className="navbar">
                   <ul className="navbar-nav">
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           About
-                        </a>
-                     </li>
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           DevFest 1.0
-                        </a>
-                     </li>
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           DevSoc
-                        </a>
-                     </li>
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
+                        <a
+                           className={Styles.mobileLinks}
+                           aria-current="page"
+                           href="#technology"
+                        >
                            Technologies
                         </a>
                      </li>
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           Speakers
-                        </a>
-                     </li>
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
+                        <a
+                           href="#sponsors"
+                           aria-current="page"
+                           className={Styles.mobileLinks}
+                        >
                            Sponsors
                         </a>
                      </li>
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           FAQs
+                        <a
+                           aria-current="page"
+                           href="#team"
+                           className={Styles.mobileLinks}
+                        >
+                           Team
                         </a>
                      </li>
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a
+                           aria-current="page"
+                           href="#devfest"
+                           className={Styles.mobileLinks}
+                        >
+                           DevFest 1.0
+                        </a>
+                     </li>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a
+                           aria-current="page"
+                           href="#boxs"
+                           className={Styles.mobileLinks}
+                        >
+                           DevSoc
+                        </a>
+                     </li>
+                     {/* <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a href="#" className={Styles.mobileLinks}>
-                           Team
+                           Speakers
+                        </a>
+                     </li> */}
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a
+                           aria-current="page"
+                           href="#FAQ"
+                           className={Styles.mobileLinks}
+                        >
+                           FAQs
                         </a>
                      </li>
                   </ul>
