@@ -4,17 +4,20 @@
    margin-top: 10rem;
    display: flex;
    justify-content: space-between;
-   @media only screen and (max-width: 93.75em) {
-      justify-content: center;
+   flex-wrap: nowrap;
+   flex-direction: row;
+   @media only screen and (max-width: 1200px) {
+      flex-direction: column;
+      flex-wrap: wrap;
+
    }
-   flex-wrap: wrap;
    height: 75%;
    background: #343434;
    border-radius: 2rem;
    width: 80%;
    .hack {
-      margin: auto;
-      width: 40%;
+      padding: 0.5rem;
+      // width: 40%;
       .h5 {
          color: var(--secondary);
          font-family: 'Roboto', sans-serif;
@@ -22,7 +25,14 @@
          font-style: normal;
          font-size: 2.5rem;
          padding: 2rem 1rem 1rem 2rem;
-         text-align: center;
+         text-align: start;
+         @media only screen and (max-width: 1200px){
+            text-align: center;
+         }
+         @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+         }
       }
       .align {
          display: flex;
@@ -33,41 +43,17 @@
 
    img {
       border-radius: 1.5rem;
+      @media screen and (max-width: 768px) {
+         border-radius: 0rem 0rem 1.5rem 1.5rem;
+         width: 100%;
+      }
+      // @media screen and (max-width: 1200px) {
+      //    width: 100%;
+      // }
+      align-self: center;
       max-width: 100%;
       width: auto;
       height: auto;
-   }
-
-   @media only screen and (max-width: 93.75em) {
-      .card {
-         width: auto;
-         justify-content: center;
-      }
-      img {
-         width: auto;
-      }
-      .hack {
-         margin: 0;
-      }
-   }
-
-   @media only screen and (max-width: 1300px) {
-      img {
-         margin-top: 3.125em;
-      }
-      .card {
-         width: auto;
-         justify-content: center;
-      }
-   }
-   @media only screen and (max-width: 1000px) {
-      .hack {
-         width: 100%;
-         text-align: center;
-         margin-top: 10%;
-         .h5 {
-            font-size: 2rem;
-         }
-      }
+      object-fit: cover;
    }
 }

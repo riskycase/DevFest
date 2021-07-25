@@ -4,12 +4,19 @@ body {
    --primary: #181818; /* Cod Gray */
    --secondary: #ffffff; /* White. This is to be used for text */
    --tertiary: #4452fe; /* Dodger Blue */
-   --font-family: 'Roboto';
+   --font-family: 'Roboto', sans-serif;
    --font-size-header: 40px; /* Font size for the secti0n headers */
    --text-color: var(--secondary);
 }
+
 .container {
-   margin-bottom: 5rem;
+   margin-top: 12.5rem;
+}
+
+@media (max-width: 768px) {
+   .container {
+      margin-top: 7.5rem;
+   }   
 }
 
 a{
@@ -21,18 +28,29 @@ a:hover{
 }
 
 h1 {
+   color: var(--secondary);
+   font-family: 'Roboto Mono', monospace;
+   font-weight: 400;
    font-size: 5rem;
    text-align: center;
 }
 
 h2 {
+   color: var(--secondary);
+   font-family: var(--font-family);
    font-size: 3.25rem;
    text-align: center;
+   margin-bottom: 1.75rem;
+   font-weight: 400;
 }
   
 h4 {
-  font-size: 1.25rem;
-  text-align: center;
+   color: var(--secondary);
+   font-family: var(--font-family);
+   font-size: 1.25rem;
+   text-align: center;
+   margin-bottom: 1.75rem;
+   font-weight: 400
 }
 
 @media only screen and (max-width: 768px) {
