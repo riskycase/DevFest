@@ -9,8 +9,14 @@ body {
    --text-color: var(--secondary);
 }
 
-.container{
-   margin-bottom: 5rem;
+.container {
+   margin-top: 12.5rem;
+}
+
+@media (max-width: 768px) {
+   .container {
+      margin-top: 7.5rem;
+   }   
 }
 
 h1 {

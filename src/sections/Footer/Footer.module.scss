@@ -5,6 +5,7 @@
 }
 
 .container {
+   margin-top: 8rem;
    padding: 3rem;
    color: var(--text-color);
    background-color: var(--primary);
@@ -14,6 +15,7 @@
    flex-wrap: wrap;
    justify-items: stretch;
    @media (max-width: 768px) {
+      margin-top: 0;
       padding: 1.5rem;
       padding-top: 5rem;
       flex-direction: column;
