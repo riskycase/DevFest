@@ -22,6 +22,12 @@ body {
    color: var(--secondary) !important;
    padding-top: 3%;
 }
+.column6 {
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 10%;
+   padding-bottom: 5%;
+}
 
 .box-heading {
    font-family: 'Roboto', sans-serif;
@@ -64,6 +70,6 @@ body {
    text-decoration: none;
 }
 
-.cont {
+.cont{
    margin-bottom: 1rem !important;
 }
