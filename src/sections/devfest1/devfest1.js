@@ -2,8 +2,6 @@ import React from 'react';
 import DevfestStyle from './devfest1.module.scss';
 ('../devfest1/devfest1.module.scss');
 import Img1 from '../../assets/img/Devfest1.0/img.png';
-/*import Img2 from '../../assets/img/Devfest1.0/img2.png';*/
-import Img3 from '../../assets/img/Devfest1.0/Saly-42.png';
 
 function Devfest() {
    return (
@@ -19,11 +17,7 @@ function Devfest() {
                   DEVFEST!
                </h4>
             </div>
-            <div
-               className={`col-lg-12 text-center calendar-element ${DevfestStyle.calendarelement}`}
-            >
-               <img src={Img3} alt="" />
-            </div>
+
             <div className={`card ${DevfestStyle.card1}`}>
                <div className="row no-gutters">
                   <div className={`col-auto ${DevfestStyle.col2}`}>
