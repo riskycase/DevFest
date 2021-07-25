@@ -3,6 +3,9 @@
    --text-color: white;
    --blue: #4452fe;
    font-size: 2rem;
+   @media screen and (max-width: 768px) {
+      font-size: 1rem;
+   }
    font-size: 500;
    font-style: normal;
    margin-left: auto;
@@ -11,14 +14,14 @@
    .primary {
       background-color: var(--blue);
       color: var(--text-color);
-      min-width: 4rem;
+      min-width: 3rem;
       width: fit-content;
       padding: 0.5rem 1rem;
    }
    .secondary {
       background: var(--dark-background);
       color: var(--text-color);
-      min-width: 4rem;
+      min-width: 3rem;
       width: fit-content;
       padding: 0.5rem 1rem;
       align-items: center;
