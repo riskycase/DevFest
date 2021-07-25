@@ -12,14 +12,42 @@ function Devfest() {
                   DevFest 1.0
                </h2>
                <h4 className={`text ${DevfestStyle.sectionsubheading1}`}>
-                  Devfest 1.0 was a massive success with 1000+ students and 5+
-                  sessions. BITS Goa is back with yet another chapter of
-                  DEVFEST!
+                  <span className={DevfestStyle.sectionsubheadingdiff}>
+                     Devfest 1.0
+                  </span>{' '}
+                  was a massive success with 1000+ students and 5+ sessions.
+                  BITS Goa is back with yet another chapter of DEVFEST!
                </h4>
             </div>
 
             <div className={`card ${DevfestStyle.card1}`}>
                <div className="row no-gutters">
+                  <div className={`col ${DevfestStyle.col1}`}>
+                     <div
+                        className={`card-block px-2 ${DevfestStyle.cardblock}`}
+                     >
+                        <h4
+                           className={`card-title ${DevfestStyle.cardtitle}`}
+                        ></h4>
+                        <p className={`card-text ${DevfestStyle.cardtext}`}></p>
+                     </div>
+                     <div
+                        className={`card-block px-2 ${DevfestStyle.cardblock}`}
+                     >
+                        <h4
+                           className={`card-title ${DevfestStyle.cardtitle}`}
+                        ></h4>
+                        <p className={`card-text ${DevfestStyle.cardtext}`}></p>
+                     </div>
+                     <div
+                        className={`card-block px-2 ${DevfestStyle.cardblock}`}
+                     >
+                        <h4
+                           className={`card-title ${DevfestStyle.cardtitle}`}
+                        ></h4>
+                        <p className={`card-text ${DevfestStyle.cardtext}`}></p>
+                     </div>
+                  </div>
                   <div className={`col-auto ${DevfestStyle.col2}`}>
                      <img src={Img1} className="img-fluid" alt="" />
                   </div>

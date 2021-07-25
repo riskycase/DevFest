@@ -19,13 +19,20 @@ body {
 }
 
 .sectionsubheading1 {
-   font-family: 'Roboto Mono', monospace;
+   font-family: 'Roboto', sans-serif;
    font-size: 2.25rem;
    @media (max-width: 768px) {
       font-size: 1.75rem;
    }
    padding-bottom: 5%;
    padding-top: 2%;
+}
+.sectionsubheadingdiff {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 2.25rem;
+   @media (max-width: 768px) {
+      font-size: 1.75rem;
+   }
 }
 .background1 {
    position: relative;
