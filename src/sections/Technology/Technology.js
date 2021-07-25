@@ -19,7 +19,7 @@ const Technology = () => {
    }; */
 
    return (
-      <div className={`${Styles.section} container`}>
+      <div className={`${Styles.section} container`} id="technology">
          <h2 className={Styles.heading}>Technologies in focus</h2>
          <div className={Styles.container}>
             {/* {TechnologyList.slice(0, itemsToShow).map(tech => ( */}

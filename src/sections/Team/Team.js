@@ -54,7 +54,7 @@ class Team extends React.Component {
          );
       });
       return (
-         <div className={`${Styles.teamContainer} container`}>
+         <div className={`${Styles.teamContainer} container`} id="team">
             <h2>Meet the Team</h2>
             <div className={Styles.teamMembers}>{team}</div>
          </div>

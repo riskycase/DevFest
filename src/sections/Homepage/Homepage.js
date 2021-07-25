@@ -20,19 +20,10 @@ const Homepage = () => {
          <div className={Styles.mobile}>
             <div
                className={`container-md w-auto text-white text-align-center`}
-               style={{
-                  marginTop: '10%',
-                  fontFamily: 'Roboto, sans-serif',
-               }}
+               style={{ marginTop: '8%' }}
             >
                <h1>DevFest 2.0</h1>
-               <main
-                  className="mt-md-5 mt-2"
-                  style={{
-                     textAlign: 'justify',
-                     fontWeight: '400',
-                  }}
-               >
+               <main className="mt-md-5 mt-2">
                   <p>
                      DevFest is the week-long completely online technical fest
                      organized by DevSoc, Developers&apos; Society, BITS Pilani,
@@ -43,7 +34,7 @@ const Homepage = () => {
                      to real-world problems. So what are you waiting for? Come
                      and join us to be a part of this amazing event!
                   </p>
-                  <div className={`${Styles.Register} mt-md-5`}>
+                  <div className={`${Styles.Register}`}>
                      <div className={Styles.buttons}>
                         <button
                            className={`apply-button ${Styles.dashboard}`}

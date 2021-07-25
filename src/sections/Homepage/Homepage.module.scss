@@ -1,41 +1,58 @@
 .mobile {
    @media only screen and (max-width: 576px) {
-      height: 100vh;
+      main{
+         text-align: justify;
+      }
       min-height: 100vh;
+      @media only screen and(max-height:739px) and(max-width: 320px) {
+         min-height: 170vh;
+      }
       background-image: url('../../assets/img/background.svg');
-      position: 'relative';
+      position: relative;
       background-size: 200%;
       background-repeat: no-repeat;
       background-position: 50% 60%;
+   }
+   @media only screen and (min-width: 576px) {
       h1 {
-         font-size: 2rem;
+         font-family: Roboto Mono;
+         font-style: normal;
+         line-height: 88px;
+         letter-spacing: 0.2px;
+         font-weight: 400;
+         font-size: 80px;
+      }
+      main {
+         text-align: center;
+         p {
+            font-style: normal;
+            font-size: 36px;
+            line-height: 41px;
+         }
       }
    }
 }
+
 .Register {
+   @media only screen and(min-width:576px){
+      margin-top: 6.25rem;
+   }
    display: flex;
    justify-content: center;
    .buttons {
       display: flex;
       flex-wrap: wrap;
-      width: 60%;
+      width: 80%;
       justify-content: space-around;
-      @media only screen and (max-width: 576px) {
-         position: absolute;
-         bottom: 5rem;
-         @media only screen and (max-height: 812px){
-            bottom: 7rem;
-         }
-         @media only screen and (max-height: 667px){
-            bottom: 3rem;
-         }
-      }
       .dashboard {
          color: white;
          background: #4452fe;
       }
       button {
          padding: 1rem 2.5rem;
+         // @media only screen and(max-height:739px) and(max-width: 360px) {
+         //    padding: 0.4rem 0.4rem;
+         // }
          color: white;
          margin: 10px;
          border: 1px solid #ffffff;

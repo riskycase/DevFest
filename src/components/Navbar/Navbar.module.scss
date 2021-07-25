@@ -28,7 +28,7 @@
                background: #aaa;
                height: 1px;
             }
-            a:hover {
+            a:hover, a:active {
                color: rgb(255, 255, 255);
             }
             a:hover:after{
@@ -42,6 +42,9 @@
          align-items: center;
          div {
             display: inline-block;
+            @media only screen and (max-width: 359px){
+               width: 6.25rem;
+            }
          }
       }
       background-color: #181818 !important;

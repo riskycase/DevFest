@@ -11,7 +11,7 @@ import Replit from '../../assets/img/sponsors/Replit_dark-full.svg';
 
 function Sponsors() {
    return (
-      <div className={`${Styles.brands} container`}>
+      <div className={`${Styles.brands} container`} id="sponsors">
          <h2 className={Styles.sponsorheading}>Sponsors</h2>
          <h4 className={Styles.sponsorsubheading}>Meet our amazing Sponsors</h4>
          <div className={Styles.sponsors1}>
