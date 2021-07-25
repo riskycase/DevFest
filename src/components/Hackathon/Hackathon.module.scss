@@ -25,7 +25,10 @@
          font-style: normal;
          font-size: 2.5rem;
          padding: 2rem 1rem 1rem 2rem;
-         text-align: center;
+         text-align: start;
+         @media only screen and (max-width: 1200px){
+            text-align: center;
+         }
          @media only screen and (max-width: 768px) {
             font-size: 1.5rem;
             padding: 0.5rem 0.5rem 0.5rem 0.5rem;
