@@ -1,9 +1,7 @@
 import React from 'react';
 import DevfestStyle from './devfest1.module.scss';
 ('../devfest1/devfest1.module.scss');
-import Img1 from '../../assets/img/Devfest1.0/img.png';
-/*import Img2 from '../../assets/img/Devfest1.0/img2.png';*/
-import Img3 from '../../assets/img/Devfest1.0/Saly-42.png';
+import Img1 from '../../assets/img/Devfest1.0/Devfest1.png';
 
 function Devfest() {
    return (
@@ -14,16 +12,16 @@ function Devfest() {
                   DevFest 1.0
                </h2>
                <h4 className={`text ${DevfestStyle.sectionsubheading1}`}>
-                  Devfest 1.0 was a massive success with 1000+ students and 5+
-                  sessions. BITS Goa is back with yet another chapter of
-                  DEVFEST!
+                  <span className={DevfestStyle.sectionsubheadingdiff}>
+                     Devfest 1.0
+                  </span>{' '}
+                  was a massive success with people joining in!
+               </h4>
+               <h4 className={`text ${DevfestStyle.sectionsubheading2}`}>
+                  BITS Pilani, Goa is back with yet another chaper of DevFest!
                </h4>
             </div>
-            <div
-               className={`col-lg-12 text-center calendar-element ${DevfestStyle.calendarelement}`}
-            >
-               <img src={Img3} alt="" />
-            </div>
+
             <div className={`card ${DevfestStyle.card1}`}>
                <div className="row no-gutters">
                   <div className={`col-auto ${DevfestStyle.col2}`}>

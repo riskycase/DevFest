@@ -10,6 +10,7 @@ body {
 }
 
 .sectionheading1 {
+   margin-left: 2.25rem;
    font-size: 5rem;
    @media (max-width: 768px) {
       font-size: 3.75rem;
@@ -20,12 +21,28 @@ body {
 
 .sectionsubheading1 {
    font-family: 'Roboto Mono', monospace;
-   font-size: 2.25rem;
+   font-size: 1.5rem;
+   @media (max-width: 768px) {
+      font-size: 1.75rem;
+   }
+   padding-bottom: 3%;
+   padding-top: 2%;
+   font-weight: 400;
+}
+.sectionsubheading2 {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.5rem;
    @media (max-width: 768px) {
       font-size: 1.75rem;
    }
    padding-bottom: 5%;
-   padding-top: 2%;
+}
+.sectionsubheadingdiff {
+   font-family: 'Roboto Mono', monospace;
+   font-size: 1.5rem;
+   @media (max-width: 768px) {
+      font-size: 1.75rem;
+   }
 }
 .background1 {
    position: relative;
@@ -48,6 +65,7 @@ body {
    font-family: 'Roboto', sans-serif;
    font-weight: 500;
    font-size: 20px;
+   text-align: left;
 }
 .cardtext {
    font-family: 'Roboto', sans-serif;
