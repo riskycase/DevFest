@@ -15,10 +15,7 @@
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: center;
-      margin-right: 3rem;
-      margin-left: 3rem;
-      margin-bottom: -6rem;
-      margin-top: 5rem;
+      margin: 5rem 3rem -6rem 3rem;
 
       @media (max-width: 950px) {
          flex-flow: column wrap;
