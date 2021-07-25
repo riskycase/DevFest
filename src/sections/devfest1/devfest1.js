@@ -18,7 +18,7 @@ function Devfest() {
                   was a massive success with people joining in!
                </h4>
                <h4 className={`text ${DevfestStyle.sectionsubheading2}`}>
-                  BITS Pilani, Goa is back with yet another chaper of DevFest!
+                  BITS Pilani, Goa is back with yet another chapter of DevFest!
                </h4>
             </div>
 
@@ -34,7 +34,9 @@ function Devfest() {
                         <h4 className={`card-title ${DevfestStyle.cardtitle}`}>
                            10,000+ Registrations
                         </h4>
-                        <p className={`card-text ${DevfestStyle.cardtext}`}>
+                        <p
+                           className={`card-text col-md-6 ${DevfestStyle.cardtext}`}
+                        >
                            When you add work to your Slate calendar we
                            automatically calculate useful insights
                         </p>
@@ -45,7 +47,9 @@ function Devfest() {
                         <h4 className={`card-title ${DevfestStyle.cardtitle}`}>
                            500+ Colleges
                         </h4>
-                        <p className={`card-text ${DevfestStyle.cardtext}`}>
+                        <p
+                           className={`card-text col-md-6 ${DevfestStyle.cardtext}`}
+                        >
                            When you add work to your Slate calendar we
                            automatically calculate useful insights
                         </p>
@@ -56,7 +60,9 @@ function Devfest() {
                         <h4 className={`card-title ${DevfestStyle.cardtitle}`}>
                            20+ Talks and Workshops
                         </h4>
-                        <p className={`card-text ${DevfestStyle.cardtext}`}>
+                        <p
+                           className={`card-text col-md-6 ${DevfestStyle.cardtext}`}
+                        >
                            When you add work to your Slate calendar we
                            automatically calculate useful insights
                         </p>
