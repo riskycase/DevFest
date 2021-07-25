@@ -46,9 +46,11 @@ body {
 }
 .background1 {
    position: relative;
+   padding: 10%;
 }
 .col2 {
    background: var(--primary);
+   padding-left: 12%;
 }
 .col1 {
    background: var(--primary);
@@ -66,6 +68,7 @@ body {
    font-weight: 500;
    font-size: 20px;
    text-align: left;
+   padding-bottom: 1rem;
 }
 .cardtext {
    font-family: 'Roboto', sans-serif;
