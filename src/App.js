@@ -13,6 +13,11 @@ import Team from './sections/Team/Team';
 function App() {
    return (
       <div>
+         <style>
+            @import url(`&apos;`, `&lsquo;`, `&#39;`,
+            `&rsquo;`https://fonts.googleapis.com/css2?family=Roboto&apos;family=Roboto+Mono&apos;display=swap`&apos;`,
+            `&lsquo;`, `&#39;`, `&rsquo;`);
+         </style>
          <Homepage />
          <Technology />
          <Sponsors />
