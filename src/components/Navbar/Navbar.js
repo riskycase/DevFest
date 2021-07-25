@@ -35,7 +35,10 @@ const Navbar = () => {
                >
                   <img src={menu} style={{ height: '1rem' }} alt="Menu" />
                </button>
-               <div className="collapse navbar-collapse ms-5 w-auto">
+               <div
+                  className="collapse navbar-collapse w-auto"
+                  style={{ marginLeft: '10rem' }}
+               >
                   <ul className="navbar-nav mb-2 mb-lg-0 w-100">
                      <li className="nav-item">
                         <a

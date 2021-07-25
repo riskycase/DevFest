@@ -1,9 +1,9 @@
 .mobile {
    @media only screen and (max-width: 576px) {
-      main{
-         text-align: justify;
-      }
       min-height: 100vh;
+      @media only screen and (max-width: 375px){
+         min-height: 120vh;
+      }
       @media only screen and(max-height:739px) and(max-width: 320px) {
          min-height: 170vh;
       }
@@ -15,7 +15,6 @@
    }
    @media only screen and (min-width: 576px) {
       h1 {
-         font-family: Roboto Mono;
          font-style: normal;
          line-height: 88px;
          letter-spacing: 0.2px;
@@ -50,9 +49,6 @@
       }
       button {
          padding: 1rem 2.5rem;
-         // @media only screen and(max-height:739px) and(max-width: 360px) {
-         //    padding: 0.4rem 0.4rem;
-         // }
          color: white;
          margin: 10px;
          border: 1px solid #ffffff;
