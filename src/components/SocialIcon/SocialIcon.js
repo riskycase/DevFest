@@ -10,7 +10,12 @@ class SocialIcon extends React.Component {
    };
    render() {
       return (
-         <a className={Styles.container} href={this.props.link}>
+         <a
+            className={Styles.container}
+            href={this.props.link}
+            target="_blank"
+            rel="noreferrer"
+         >
             <FontAwesomeIcon
                icon={this.props.icon}
                className={Styles.icon}
