@@ -74,7 +74,12 @@ function Devsoc() {
                type="button"
                className={`btn btn-primary btn-lg ${DevsocStyle.btn1}`}
             >
-               <a href="https://devsoc.club/" className={DevsocStyle.anchor}>
+               <a
+                  href="https://devsoc.club/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={DevsocStyle.anchor}
+               >
                   Visit our Website
                </a>
             </button>
