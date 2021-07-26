@@ -20,7 +20,7 @@
       // width: 40%;
       .h5 {
          color: var(--secondary);
-         font-family: 'Roboto', sans-serif;
+         font-family: "Roboto", sans-serif;
          font-weight: 400;
          font-style: normal;
          font-size: 2.5rem;
@@ -40,36 +40,13 @@
          align-items: center;
       }
    }
-   .image {
-      background-image: url('../../assets/img/hack.png');
-      background-size: 'cover';
-      border-radius: 2rem;
-      background-position: 50% 50%;
-      flex: 1;
-      @media only screen and (max-width: 1200px) {
-         // flex-direction: row !important ;
-         flex: 1 1 15rem;
-         // height: 20rem;
-         position: relative;
-      }
-   }
-   .img {
-      border-radius: 2rem;
-      @media screen and (max-width: 768px) {
-         border-radius: 0rem 0rem 2rem 2rem;
+   .image_container {
+      .image {
+         border-radius: 0 2rem 2rem 0;
+         @media (max-width: 1200px) {
+            border-radius: 0 0 2rem 2rem;
+         }
          width: 100%;
       }
-      @media screen and (min-width: 768px) {
-         border-radius: 0rem 2rem 2rem 0rem;
-         width: 100%;
-      }
-      // @media screen and (max-width: 1200px) {
-      //    width: 100%;
-      // }
-      align-self: center;
-      max-width: 100%;
-      // width: auto;
-      // height: auto;
-      object-fit: cover;
    }
 }
