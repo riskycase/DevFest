@@ -1,12 +1,34 @@
-//import React, { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 import TechCard from '../../components/TechCard/TechCard';
+import useWindowDimensions from './useWindowDimension';
 import TechnologyList from './Tech.json';
 import Styles from './Technology.module.scss';
 
 const Technology = () => {
-   /* const [itemsToShow, setItemsToShow] = useState(2);
+   const { width } = useWindowDimensions();
+   const defaultItemsToShow = width >= 670 ? TechnologyList.length : 2;
+   const [itemsToShow, setItemsToShow] = useState(defaultItemsToShow);
    const [buttonValue, setButtonValue] = useState('Show more');
+
+   const Button = () => {
+      if (itemsToShow != 2) {
+         return (
+            <a
+               className={Styles.button}
+               href="#technology"
+               onClick={() => buttonClicked()}
+            >
+               {buttonValue}
+            </a>
+         );
+      } else {
+         return (
+            <button className={Styles.button} onClick={() => buttonClicked()}>
+               {buttonValue}
+            </button>
+         );
+      }
+   };
 
    const buttonClicked = () => {
       if (itemsToShow == 2) {
@@ -16,7 +38,7 @@ const Technology = () => {
          setItemsToShow(2);
          setButtonValue('Show more');
       }
-   }; */
+   };
 
    return (
       <div className={`${Styles.section} container`} id="technology">
@@ -29,8 +51,7 @@ const Technology = () => {
             statements from different domains!
          </h4>
          <div className={Styles.container}>
-            {/* {TechnologyList.slice(0, itemsToShow).map(tech => ( */}
-            {TechnologyList.map(tech => (
+            {TechnologyList.slice(0, itemsToShow).map(tech => (
                <TechCard
                   key={tech.title}
                   title={tech.title}
@@ -38,7 +59,7 @@ const Technology = () => {
                />
             ))}
          </div>
-         {/* <button onClick={() => buttonClicked()}>{buttonValue}</button> */}
+         {width <= 670 && <Button />}
       </div>
    );
 };

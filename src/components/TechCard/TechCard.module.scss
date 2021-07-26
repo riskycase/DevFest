@@ -25,8 +25,7 @@
       font-size: 1.5rem;
       text-align: center;
       width: 80%;
-      border: solid;
-      border-color: var(--secondary);
+      border: 1px solid var(--secondary);
       margin-top: 2rem;
       padding: 1rem 2rem 1rem 2rem;
       @media (max-width: 450px) {
