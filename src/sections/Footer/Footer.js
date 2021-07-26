@@ -10,7 +10,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import {
    faFacebookSquare,
-   faGithub,
    faInstagram,
    faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
@@ -50,10 +49,6 @@ class Footer extends React.Component {
             link: 'https://www.instagram.com/devsocbitsgoa/',
             icon: faInstagram,
          },
-         {
-            link: 'https://github.com/Devsoc-BPGC/',
-            icon: faGithub,
-         },
       ].map((socialIcon, index) => (
          <SocialIcon
             icon={socialIcon.icon}
@@ -63,20 +58,19 @@ class Footer extends React.Component {
       ));
       return (
          <div className={Styles.container}>
-            <div className={Styles.logoContainer}>
-               <span className={Styles.disclaimerText}>
-                  All ideas and source code will be under the ownership of
-                  DevSoc
-               </span>
-               <img className={Styles.logo} src={logo} />
-            </div>
-            <div className={Styles.rightPart}>
-               {textsWithIcon}
-               <span className={Styles.socialIconsContainer}>
-                  {socialIcons}
-               </span>
+            <div className={Styles.topHalf}>
+               <div className={Styles.leftPart}>
+                  <img className={Styles.logo} src={logo} />
+                  <span className={Styles.socialIconsContainer}>
+                     {socialIcons}
+                  </span>
+               </div>
+               <div className={Styles.rightPart}>{textsWithIcon}</div>
             </div>
             <span className={Styles.lastText}>Made with ❤️ by DevSoc</span>
+            <span className={Styles.disclaimerText}>
+               All ideas and source code will be under the ownership of DevSoc
+            </span>
          </div>
       );
    }
