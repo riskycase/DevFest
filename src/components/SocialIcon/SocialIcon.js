@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SocialIcon extends React.Component {
    static propTypes = {
-      icon: PropTypes.string,
+      icon: PropTypes.object,
       link: PropTypes.string,
    };
    render() {
