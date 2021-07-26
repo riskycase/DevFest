@@ -24,7 +24,7 @@ function Devsoc() {
             </div>
             <div className="row text-center">
                <div className={`col-md-6 ${DevsocStyle.column6}`}>
-                  <span className="fa-stack fa-4x"></span>
+                  <span className="fa-stack fa-2x"></span>
 
                   <h4 className="box-heading">
                      <svg
@@ -45,7 +45,7 @@ function Devsoc() {
                   </p>
                </div>
                <div className={`col-md-6 ${DevsocStyle.column6}`}>
-                  <span className="fa-stack fa-4x"></span>
+                  <span className="fa-stack fa-2x"></span>
                   <h4 className={DevsocStyle.boxheading}>
                      4000+ App Downloads so far
                   </h4>
@@ -56,14 +56,14 @@ function Devsoc() {
             </div>
             <div className="row text-center">
                <div className={`col-md-6 ${DevsocStyle.column6}`}>
-                  <span className="fa-stack fa-4x"></span>
+                  <span className="fa-stack fa-2x"></span>
                   <h4 className="box-heading">4000+ App Downloads so far</h4>
                   <p className="box-text">
                      Our apps have been downloaded 4000+ times.
                   </p>
                </div>
                <div className={`col-md-6 ${DevsocStyle.column6}`}>
-                  <span className="fa-stack fa-4x"></span>
+                  <span className="fa-stack fa-2x"></span>
                   <h4 className="box-heading">Avg Rating of 4.7</h4>
                   <p className="box-text">
                      Our apps have an average app rating of 4.7 out of 5 on
