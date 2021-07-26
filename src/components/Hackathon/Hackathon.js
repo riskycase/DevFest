@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from './Hackathon.module.scss';
-import hackathon from '../../assets/img/hack.png';
+// import hackathon from '../../assets/img/hack.png';
 import Button from '../Button/Button.js';
 const Hackathon = () => {
    return (
@@ -13,7 +13,9 @@ const Hackathon = () => {
                <Button text="Register Now" color="primary" />
             </div>
          </div>
-         <img src={hackathon} alt="Hackathon" />
+         <div className={Styles.image}>
+            {/* <img src={hackathon} alt="Hackathon" /> */}
+         </div>
       </div>
    );
 };
