@@ -1,5 +1,6 @@
 import React from 'react';
 import DevsocStyle from '../devsoc/devsoc.module.scss';
+import CountUp from '../../components/CountUp/CountUp';
 /*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';*/
 /*import { faGooglePlay } from '@fortawesome/free-brands-svg-icons';*/
 
@@ -24,11 +25,11 @@ function Devsoc() {
          {
             number: 20,
             stat: 'Websites built',
-            description: 'Our apps have been downloaded 4000+ times.',
+            description: 'With thousands of people having used them.',
          },
          {
-            number: 4000,
-            stat: 'App Downloads so far',
+            number: 10,
+            stat: 'Clients worked for',
             description: 'Our apps have been downloaded 4000+ times.',
          },
       ],
@@ -49,7 +50,7 @@ function Devsoc() {
       <div key={index} className={DevsocStyle.vertical}>
          {vertical.map((stat, index) => (
             <div key={index} className={DevsocStyle.stat}>
-               <span className={DevsocStyle.statNumber}>{stat.number}+</span>
+               <CountUp number={stat.number} />
                <span className={DevsocStyle.statName}>{stat.stat}</span>
                <p className={DevsocStyle.statDescription}>{stat.description}</p>
             </div>
