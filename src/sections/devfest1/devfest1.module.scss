@@ -39,10 +39,12 @@ body {
    border: transparent !important;
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    justify-content: space-around;
    align-items: center;
    .image {
       max-width: 45rem;
+      width: 100%;
    }
    .col1 {
       display: flex;
