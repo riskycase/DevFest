@@ -21,7 +21,7 @@ const Technology = () => {
    return (
       <div className={`${Styles.section} container`} id="technology">
          <h2 className={Styles.heading}>Technologies in Focus</h2>
-         <h4>
+         <h4 className={Styles.sub_heading}>
             DevFest features talks and workshops in a variety of fields. Our
             hackathon allows participants the freedom to choose their own way of
             building something amazing. There are no restrictions of what domain
