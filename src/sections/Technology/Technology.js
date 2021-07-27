@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TechCard from '../../components/TechCard/TechCard';
+import TechCard from '../../components/techcard/TechCard';
 import useWindowDimensions from './useWindowDimension';
 import TechnologyList from './Tech.json';
 import Styles from './Technology.module.scss';
