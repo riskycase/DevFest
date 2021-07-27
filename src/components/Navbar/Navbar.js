@@ -85,7 +85,7 @@ const Navbar = () => {
                         <a
                            className="nav-link"
                            aria-current="page"
-                           href="#boxs"
+                           href="#devsocbitsgoa"
                         >
                            Devsoc
                         </a>
@@ -120,7 +120,7 @@ const Navbar = () => {
                <h5 id="offcanvasRight" className={Styles.navLinks}>
                   DevFest 2.0
                </h5>
-               <buton
+               <button
                   type="button"
                   className="btn-close bg-light text-reset"
                   style={{
