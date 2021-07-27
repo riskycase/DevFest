@@ -1,0 +1,126 @@
+.speakersContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    .speakerCardsContainer {
+        width: 100%;
+        max-width: 97.5rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        .speakerCard {
+            background-color: white;
+            color: black;
+            border-radius: 0 0 10px 10px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 31%;
+            max-width: 20rem;
+            margin: 2.5rem 2rem;
+            justify-content: center;
+            .photo {
+                width: 100%;
+                height: 18.75rem;
+                object-fit: cover;
+            }
+            .nameAndDesignation {
+                margin: 1.25rem;
+                font-weight: 700;
+            }
+            .about {
+                margin: 0 1.25rem 2rem;
+                font-size: 0.75rem;
+            }
+        }
+    }
+    // .speakersCarousel {
+    //     display: flex;
+    //     flex-direction: column;
+    //     overflow: hidden;
+    //     ::-webkit-scrollbar{
+    //         display: none;
+    //     }
+    //     .cardsContainer {
+    //         display: grid;
+    //         align-self: center;
+    //         grid-template-rows: max-content;
+    //         max-width: calc(100vw - 1rem);
+    //         @media only screen and (min-width: 24rem) {
+    //             max-width: 23rem;
+    //         }
+    //         @media only screen and (min-width: 47rem) {
+    //             max-width: 46rem;
+    //         }
+    //         @media only screen and (min-width: 70rem) {
+    //             max-width: 69rem;
+    //         }
+    //         overflow-x: auto;
+    //         scroll-snap-type: x mandatory;
+    //         .speakerCardWrapper {
+    //             ::-webkit-scrollbar{
+    //                 display: inline;
+    //             }
+    //             scroll-snap-align: start;
+    //             width: calc(100vw - 1rem);
+    //             max-width: 23rem;
+    //             grid-row: 1/1;
+    //             .speakerCard {
+    //                 background-color: white;
+    //                 color: black;
+    //                 border-radius: 0 0 10px 10px;
+    //                 display: flex;
+    //                 flex-direction: column;
+    //                 position: relative;
+    //                 max-width: 20rem;
+    //                 margin: 1.5rem;
+    //                 justify-content: center;
+    //                 .photo {
+    //                     width: 100%;
+    //                     height: 18.75rem;
+    //                     object-fit: cover;
+    //                 }
+    //                 .nameAndDesignation {
+    //                     margin: 1.25rem;
+    //                     font-weight: 700;
+    //                 }
+    //                 .about {
+    //                     margin: 0 1.25rem 2rem;
+    //                     font-size: 0.75rem;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     .cardsPagination {
+    //         display: flex;
+    //         margin: 0 auto;
+    //         align-items: center;
+    //         .changeCardIcon {
+    //             margin: 0.4rem;
+    //         }
+    //         .indicatorWrapper{
+    //             display: flex;
+    //             flex-wrap: wrap;
+    //             justify-items: center;
+    //             .cardsIndicator {
+    //                 width: 1rem;
+    //                 height: 1rem;
+    //                 margin: 0.2rem;
+    //                 border-radius: 50%;
+    //                 background-color: #FFFFFF44;
+    //             }
+    //             .indicatorActive {
+    //                 width: 1rem;
+    //                 height: 1rem;
+    //                 margin: 0.2rem;
+    //                 border-radius: 50%;
+    //                 background-color: lightgreen;
+    //             }
+    //         }
+    //     }
+    // }
+}

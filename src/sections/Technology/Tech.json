@@ -1,0 +1,34 @@
+[
+   {
+      "title": "App Development",
+      "img_url": "assets/img/techimages/app.svg"
+   },
+   {
+      "title": "Web Development",
+      "img_url": "assets/img/techimages/web.svg"
+   },
+   {
+      "title": "Product Design",
+      "img_url": "assets/img/techimages/product.svg"
+   },
+   {
+      "title": "Game Development",
+      "img_url": "assets/img/techimages/game.svg"
+   },
+   {
+      "title": "Blockchain",
+      "img_url": "assets/img/techimages/blockchain.svg"
+   },
+   {
+      "title": "Artificial Intelligence",
+      "img_url": "assets/img/techimages/ai.svg"
+   },
+   {
+      "title": "Fintech",
+      "img_url": "assets/img/techimages/fintech.svg"
+   },
+   {
+      "title": "AR / VR",
+      "img_url": "assets/img/techimages/arvr.svg"
+   }
+]

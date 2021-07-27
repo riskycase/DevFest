@@ -1,0 +1,39 @@
+.card {
+   flex-basis: 25%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @media (max-width: 1200px) {
+      flex-basis: 30%;
+   }
+
+   @media (max-width: 1000px) {
+      flex-basis: 40%;
+   }
+
+   .image {
+      max-width: 80%;
+      height: 12rem;
+      @media (max-width: 1000px) {
+         width: 40vh;
+      }
+   }
+
+   .title {
+      color: var(--secondary);
+      font-size: 1.5rem;
+      text-align: center;
+      width: 80%;
+      border: 1px solid var(--secondary);
+      margin-top: 2rem;
+      padding: 1rem 2rem 1rem 2rem;
+      @media (max-width: 450px) {
+         font-size: 0.75em;
+         margin-top: 1rem;
+         width: 60%;
+      }
+   }
+
+   margin-bottom: 6rem;
+}

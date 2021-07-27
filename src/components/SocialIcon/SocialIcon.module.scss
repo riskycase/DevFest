@@ -1,0 +1,10 @@
+.container {
+    color: var(--text-color);
+    :hover, :focus, :visited, :active{
+        color: var(--text-color);
+        filter: brightness(80%);
+    }
+    .icon {
+        margin: 1rem;
+    }
+}

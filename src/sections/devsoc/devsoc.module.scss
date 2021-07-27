@@ -1,0 +1,81 @@
+:root {
+   --primary: #181818;
+   --secondary: #ffffff;
+   --tertiary: #4452fe;
+}
+
+.container {
+   width: 80%;
+   max-width: 85rem;
+   border-radius: 2rem;
+   background: linear-gradient(180deg, #343434 0%, rgba(24, 24, 24, 0) 100%);
+   padding-top: 4rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   > h4 {
+      margin-top: 1.75rem;
+      font-size: 1.5rem;
+      max-width: 45rem;
+      @media (max-width: 768px) {
+         font-size: 1.25rem;
+      }
+   }
+   > h1 {
+      @media (max-width: 768px) {
+         font-size: 3.5rem;
+      }
+   }
+   @media (max-width: 768px) {
+      width: 100%;
+   }
+   .statsContainer {
+      width: 100%;
+      margin-top: 6rem;
+      max-width: 45rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .vertical {
+         width: 100%;
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 0.75rem;
+         @media (max-width: 1024px) {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 0;
+         }
+         .stat {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 48%;
+            max-width: 17.5rem;
+            line-height: 1.5;
+            @media (max-width: 1024px) {
+               width: max-content;
+               margin-left: 20%;
+               margin-bottom: 2rem;
+            }
+            .statName {
+               font-size: 1.25rem;
+            }
+            .statDescription {
+               margin: 1.25rem 0;  
+            }
+         }
+      }
+   }
+   .button {
+      background: var(--tertiary) !important;
+      margin-top: 6rem;
+      padding: 1.125rem;
+      .anchor {
+         text-decoration: none;
+         color: var(--secondary);
+         :hover {
+            text-decoration: none;
+         }
+      }
+   }
+}
