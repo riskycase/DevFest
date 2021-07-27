@@ -52,13 +52,13 @@ function Devsoc() {
             <div key={index} className={DevsocStyle.stat}>
                <CountUp number={stat.number} />
                <span className={DevsocStyle.statName}>{stat.stat}</span>
-               <p className={DevsocStyle.statDescription}>{stat.description}</p>
+               {/* <p className={DevsocStyle.statDescription}>{stat.description}</p> */}
             </div>
          ))}
       </div>
    ));
    return (
-      <div className={`container ${DevsocStyle.container}`}>
+      <div className={`container ${DevsocStyle.container}`} id="devsocbitsgoa">
          <h1>DevSoc;</h1>
          <h1>BITS Goa</h1>
          <h4>
