@@ -4,7 +4,7 @@ import Kanishq from '../../assets/img/team/Kanishq.jpeg';
 import Mayank from '../../assets/img/team/Mayank.jpeg';
 import Himanshu from '../../assets/img/team/Himanshu.jpeg';
 import Adithya from '../../assets/img/team/Adithya.jpeg';
-import Yash from '../../assets/img/team/Yash.jpeg';
+import Yash from '../../assets/img/team/Yash_edited.jpeg';
 import Ritvij from '../../assets/img/team/Ritvij.png';
 
 class Team extends React.Component {
