@@ -73,12 +73,17 @@ const Navbar = () => {
                            aria-current="page"
                            href="#team"
                         >
-                           Teams
+                           Team
                         </a>
                      </li>
                      <li className="nav-item">
                         <a className="nav-link text-nowrap" href="#devfest">
                            DevFest 1.0
+                        </a>
+                     </li>
+                     <li className="nav-item">
+                        <a className="nav-link" aria-current="page" href="#FAQ">
+                           FAQs
                         </a>
                      </li>
                      <li className="nav-item">
@@ -88,16 +93,6 @@ const Navbar = () => {
                            href="#devsocbitsgoa"
                         >
                            DevSoc
-                        </a>
-                     </li>
-                     {/* <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">
-                           Speakers
-                        </a>
-                     </li> */}
-                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#FAQ">
-                           FAQs
                         </a>
                      </li>
                   </ul>
@@ -181,24 +176,19 @@ const Navbar = () => {
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a
                            aria-current="page"
-                           href="#devsocbitsgoa"
-                           className={Styles.mobileLinks}
-                        >
-                           DevSoc
-                        </a>
-                     </li>
-                     {/* <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a href="#" className={Styles.mobileLinks}>
-                           Speakers
-                        </a>
-                     </li> */}
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
-                        <a
-                           aria-current="page"
                            href="#FAQ"
                            className={Styles.mobileLinks}
                         >
                            FAQs
+                        </a>
+                     </li>
+                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                        <a
+                           aria-current="page"
+                           href="#devsocbitsgoa"
+                           className={Styles.mobileLinks}
+                        >
+                           DevSoc
                         </a>
                      </li>
                   </ul>
