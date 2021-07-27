@@ -87,7 +87,7 @@ const Navbar = () => {
                            aria-current="page"
                            href="#devsocbitsgoa"
                         >
-                           Devsoc
+                           DevSoc
                         </a>
                      </li>
                      {/* <li className="nav-item">
@@ -181,7 +181,7 @@ const Navbar = () => {
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a
                            aria-current="page"
-                           href="#boxs"
+                           href="#devsocbitsgoa"
                            className={Styles.mobileLinks}
                         >
                            DevSoc
