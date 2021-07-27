@@ -13,7 +13,9 @@ const Hackathon = () => {
                <Button text="Register Now" color="primary" />
             </div>
          </div>
-         <img src={hackathon} alt="Hackathon" />
+         <div className={Styles.image_container}>
+            <img src={hackathon} className={Styles.image} alt="Hackathon" />
+         </div>
       </div>
    );
 };

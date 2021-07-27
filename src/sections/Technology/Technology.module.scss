@@ -1,45 +1,80 @@
 .section {
-   @media (min-width: 650px) {
-      --font-size-header: 60px;
-   }
-   @media (max-width: 450px) {
-      --font-size-header: 30px;
-   }
+    @media (min-width: 650px) {
+        --font-size-header: 60px;
+    }
+    @media (max-width: 450px) {
+        --font-size-header: 30px;
+    }
 
-   display: grid;
-   place-items: center;
+    display: grid;
+    place-items: center;
 
-   background: var(--primary);
-   .container {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: center;
-      margin-right: 10rem;
-      margin-left: 10rem;
-      margin-bottom: -6rem;
+    margin-left: 2.333rem;
+    margin-right: 2.333rem;
 
-      @media (max-width: 950px) {
-         flex-flow: column wrap;
-         justify-content: center;
-         margin-right: 5rem;
-         margin-left: 5rem;
-      }
+    @media (max-width: 450px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-      @media (max-width: 650px) {
-         margin-right: 1rem;
-         margin-left: 1rem;
-      }
-   }
+    padding: 0;
 
-   .heading {
-      color: var(--secondary);
-      font-family: 'Roboto', sans-serif;
-      margin-bottom: 4rem;
-      text-align: center;
+    max-width: 100%;
+    width: auto;
 
-      @media (min-width: 450px) {
-         margin-bottom: 3rem;
-      }
-   }
+    background: var(--primary);
+    .container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5rem 0 -6rem 0;
+
+        @media (max-width: 670px) {
+            flex-flow: column wrap;
+            justify-content: center;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .heading {
+        text-align: center;
+
+        @media (min-width: 450px) {
+            margin-bottom: 3rem;
+        }
+
+        @media only screen and (min-width: 576px) {
+            margin-top: 5rem;
+        }
+    }
+
+    .sub_heading {
+        max-width: 55%;
+
+        @media (max-width: 850px) {
+            max-width: 60%;
+        }
+        @media (max-width: 800px) {
+            max-width: 65%;
+        }
+        @media (max-width: 670px) {
+            max-width: 80%;
+        }
+    }
+
+    .button {
+        color: var(--secondary);
+        background-color: var(--tertiary);
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        width: 50%;
+        border: 1px solid var(--secondary);
+        // border-radius: 3.5rem;
+        // box-shadow: 0px 15px 20px #0a047a;
+        margin-top: 5rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
 }

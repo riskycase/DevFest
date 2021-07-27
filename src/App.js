@@ -8,11 +8,17 @@ import Devsoc from './sections/devsoc/devsoc';
 import Technology from './sections/Technology/Technology';
 import Footer from './sections/Footer/Footer';
 import Team from './sections/Team/Team';
+import FAQ from './sections/FAQ/FAQ';
 // import Speakers from './sections/Speakers/Speakers';
 
 function App() {
    return (
       <div>
+         <style>
+            @import url(`&apos;`, `&lsquo;`, `&#39;`,
+            `&rsquo;`https://fonts.googleapis.com/css2?family=Roboto&apos;family=Roboto+Mono&apos;display=swap`&apos;`,
+            `&lsquo;`, `&#39;`, `&rsquo;`);
+         </style>
          <Homepage />
          <Technology />
          <Sponsors />
@@ -20,6 +26,7 @@ function App() {
          <Devfest />
          {/* <Speakers /> */}
          <Hackathon />
+         <FAQ />
          <Devsoc />
          <Footer />
       </div>

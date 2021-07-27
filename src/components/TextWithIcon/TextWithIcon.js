@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class TextWithIcon extends React.Component {
    static propTypes = {
-      icon: PropTypes.string,
+      icon: PropTypes.object,
       text: PropTypes.string,
    };
    render() {

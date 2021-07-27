@@ -5,12 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class SocialIcon extends React.Component {
    static propTypes = {
-      icon: PropTypes.string,
+      icon: PropTypes.object,
       link: PropTypes.string,
    };
    render() {
       return (
-         <a className={Styles.container} href={this.props.link}>
+         <a
+            className={Styles.container}
+            href={this.props.link}
+            target="_blank"
+            rel="noreferrer"
+         >
             <FontAwesomeIcon
                icon={this.props.icon}
                className={Styles.icon}

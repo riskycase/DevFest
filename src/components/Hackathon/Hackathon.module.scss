@@ -4,25 +4,35 @@
    margin-top: 10rem;
    display: flex;
    justify-content: space-between;
-   @media only screen and (max-width: 93.75em) {
-      justify-content: center;
-   }
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
+   flex-direction: row;
    height: 75%;
    background: #343434;
    border-radius: 2rem;
    width: 80%;
+   @media only screen and (max-width: 1200px) {
+      flex-direction: column;
+      flex-wrap: nowrap;
+   }
    .hack {
-      margin: auto;
-      width: 40%;
+      padding: 0.5rem;
+      flex: 1;
+      // width: 40%;
       .h5 {
          color: var(--secondary);
-         font-family: 'Roboto', sans-serif;
+         font-family: "Roboto", sans-serif;
          font-weight: 400;
          font-style: normal;
          font-size: 2.5rem;
          padding: 2rem 1rem 1rem 2rem;
-         text-align: center;
+         text-align: start;
+         @media only screen and (max-width: 1200px) {
+            text-align: center;
+         }
+         @media only screen and (max-width: 768px) {
+            font-size: 1.5rem;
+            padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+         }
       }
       .align {
          display: flex;
@@ -30,44 +40,13 @@
          align-items: center;
       }
    }
-
-   img {
-      border-radius: 1.5rem;
-      max-width: 100%;
-      width: auto;
-      height: auto;
-   }
-
-   @media only screen and (max-width: 93.75em) {
-      .card {
-         width: auto;
-         justify-content: center;
-      }
-      img {
-         width: auto;
-      }
-      .hack {
-         margin: 0;
-      }
-   }
-
-   @media only screen and (max-width: 1300px) {
-      img {
-         margin-top: 3.125em;
-      }
-      .card {
-         width: auto;
-         justify-content: center;
-      }
-   }
-   @media only screen and (max-width: 1000px) {
-      .hack {
-         width: 100%;
-         text-align: center;
-         margin-top: 10%;
-         .h5 {
-            font-size: 2rem;
+   .image_container {
+      .image {
+         border-radius: 0 2rem 2rem 0;
+         @media (max-width: 1200px) {
+            border-radius: 0 0 2rem 2rem;
          }
+         width: 100%;
       }
    }
 }
