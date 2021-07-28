@@ -52,12 +52,9 @@
       flex-wrap: wrap;
       width: 80%;
       justify-content: space-around;
-      .dashboard {
-         color: white;
-         background: #4452fe;
-      }
+      align-items: center;
       button {
-         padding: 1rem 2.5rem;
+         padding: 0.6rem 2.5rem;
          color: white;
          margin: 10px;
          border: 1px solid #ffffff;
