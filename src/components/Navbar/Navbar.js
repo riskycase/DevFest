@@ -81,11 +81,11 @@ const Navbar = () => {
                            DevFest 1.0
                         </a>
                      </li>
-                     <li className="nav-item">
+                     {/* <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#FAQ">
                            FAQs
                         </a>
-                     </li>
+                     </li> */}
                      <li className="nav-item">
                         <a
                            className="nav-link"
@@ -173,7 +173,7 @@ const Navbar = () => {
                            DevFest 1.0
                         </a>
                      </li>
-                     <li style={{ marginTop: '30%', marginLeft: '30px' }}>
+                     {/* <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a
                            aria-current="page"
                            href="#FAQ"
@@ -181,7 +181,7 @@ const Navbar = () => {
                         >
                            FAQs
                         </a>
-                     </li>
+                     </li> */}
                      <li style={{ marginTop: '30%', marginLeft: '30px' }}>
                         <a
                            aria-current="page"
