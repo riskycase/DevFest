@@ -18,6 +18,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
+                cursor: pointer;
                 @media (max-width: 1024px) {
                     padding: 0.5rem 1.5rem;
                 }
@@ -55,6 +56,10 @@
             }
             .hidden {
                 max-height: 0;
+
+                .answer {
+                    visibility: hidden;
+                }
             }
         }
         > :last-child {

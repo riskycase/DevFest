@@ -28,9 +28,9 @@ class FAQ extends React.Component {
             question: 'How does the application process work?',
             answer: (
                <p>
-                  We&apos;re looking for people who &qout;do&qout;! Folks who
-                  are passionate enough to work on crazy world-changing ideas.
-                  Tell us what makes you apply to DevFest, what excites you,
+                  We&apos;re looking for people who &#34;do&#34;! Folks who are
+                  passionate enough to work on crazy world-changing ideas. Tell
+                  us what makes you apply to DevFest, what excites you,
                   accomplishments you are proud of and whatever else you think
                   can strengthen your chances of acceptance. We’ll get to know
                   more about your abilities from the past projects, GitHub
@@ -118,14 +118,16 @@ class FAQ extends React.Component {
          },
       ].map((question, index) => (
          <div className={Styles.questionAnswer} key={index}>
-            <div className={Styles.questionWrapper}>
+            <div
+               className={Styles.questionWrapper}
+               onClick={() => this.toggleFAQ(index)}
+            >
                <span className={Styles.question}>{question.question}</span>
                <img
                   className={`${Styles.chevron} ${
                      this.state.visible === index ? Styles.chevronExpanded : ''
                   }`}
                   src={chevron}
-                  onClick={() => this.toggleFAQ(index)}
                />
             </div>
             <div

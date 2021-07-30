@@ -15,6 +15,11 @@ import InterviewCake from '../../assets/img/sponsors/Interview Cake/cake_logo_wh
 import Qoohoo from '../../assets/img/sponsors/Qoohoo/qoohoo-logo.png';
 import StreamYard from '../../assets/img/sponsors/StreamYard/StreamYard_text+logo.png';
 import Zeta from '../../assets/img/sponsors/Zeta/zeta_textlogo.png';
+import Postman from '../../assets/img/sponsors/pm-orange-logo-horiz.svg';
+import VoiceFlow from '../../assets/img/sponsors/voiceflow.svg';
+import CodingNinjas from '../../assets/img/sponsors/Coding Ninjas Logo 2.png';
+import Caarya from '../../assets/img/sponsors/caaryalogo-dark.svg';
+import EchoAR from '../../assets/img/sponsors/echoAR - Logo.webp';
 
 function Sponsors() {
    return (
@@ -50,9 +55,10 @@ function Sponsors() {
                      link: 'https://www.digitalocean.com/',
                   },
                   {
-                     name: 'Replit',
-                     image: Replit,
-                     link: 'https://replit.com/',
+                     name: 'Caarya',
+                     image: Caarya,
+                     link: 'https://caarya.in/',
+                     style: { height: '7rem' },
                   },
                   {
                      name: 'Autonise',
@@ -93,6 +99,31 @@ function Sponsors() {
                      name: 'Zeta',
                      image: Zeta,
                      link: 'https://www.zeta.tech/',
+                  },
+                  {
+                     name: 'Postman',
+                     image: Postman,
+                     link: 'https://www.postman.com/',
+                  },
+                  {
+                     name: 'Replit',
+                     image: Replit,
+                     link: 'https://replit.com/',
+                  },
+                  {
+                     name: 'VoiceFlow',
+                     image: VoiceFlow,
+                     link: 'https://www.voiceflow.com/',
+                  },
+                  {
+                     name: 'CodingNinjas',
+                     image: CodingNinjas,
+                     link: 'https://www.codingninjas.com/',
+                  },
+                  {
+                     name: 'EchoAR',
+                     image: EchoAR,
+                     link: 'https://www.echoar.xyz/',
                   },
                ]}
             />
