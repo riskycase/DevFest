@@ -4,7 +4,7 @@ import Styles from './Logos.module.scss';
 
 function Logos({ array }) {
    return array.map((company, index) => (
-      <a key={index} href={company.link}>
+      <a key={index} href={company.link} title={company.name}>
          <img src={company.image} className={Styles.logos} alt={company.name} />
       </a>
    ));
