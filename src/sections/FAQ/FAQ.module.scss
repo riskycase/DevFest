@@ -55,6 +55,10 @@
             }
             .hidden {
                 max-height: 0;
+
+                .answer {
+                    visibility: hidden;
+                }
             }
         }
         > :last-child {

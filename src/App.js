@@ -8,7 +8,7 @@ import Devsoc from './sections/devsoc/devsoc';
 import Technology from './sections/Technology/Technology';
 import Footer from './sections/Footer/Footer';
 import Team from './sections/Team/Team';
-// import FAQ from './sections/FAQ/FAQ';
+import FAQ from './sections/FAQ/FAQ';
 // import Speakers from './sections/Speakers/Speakers';
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
          <Devfest />
          {/* <Speakers /> */}
          <Hackathon />
-         {/* <FAQ /> */}
+         <FAQ />
          <Devsoc />
          <Footer />
       </div>
