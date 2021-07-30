@@ -118,14 +118,16 @@ class FAQ extends React.Component {
          },
       ].map((question, index) => (
          <div className={Styles.questionAnswer} key={index}>
-            <div className={Styles.questionWrapper}>
+            <div
+               className={Styles.questionWrapper}
+               onClick={() => this.toggleFAQ(index)}
+            >
                <span className={Styles.question}>{question.question}</span>
                <img
                   className={`${Styles.chevron} ${
                      this.state.visible === index ? Styles.chevronExpanded : ''
                   }`}
                   src={chevron}
-                  onClick={() => this.toggleFAQ(index)}
                />
             </div>
             <div
