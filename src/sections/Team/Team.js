@@ -6,7 +6,7 @@ import Himanshu from '../../assets/img/team/Himanshu.jpeg';
 import Adithya from '../../assets/img/team/Adithya.jpeg';
 import Yash from '../../assets/img/team/Yash_edited.jpeg';
 import Ritvij from '../../assets/img/team/Ritvij.png';
-import LinkedInIcon from './../../assets/img/linkedin.svg';
+import LinkedInIcon from './../../assets/img/linkedin-blue.png';
 
 class Team extends React.Component {
    render() {
@@ -58,7 +58,7 @@ class Team extends React.Component {
                />
                <span className={Styles.name}>{person.name}</span>
                <span className={Styles.designation}>{person.designation}</span>
-               <span className={Styles.designation}>
+               <span className={Styles.linkedin}>
                   <a href={person.linkedIn}>
                      <img src={LinkedInIcon} />
                   </a>
