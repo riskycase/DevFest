@@ -58,6 +58,7 @@ function Sponsors() {
                      name: 'Caarya',
                      image: Caarya,
                      link: 'https://caarya.in/',
+                     style: { height: '7rem' },
                   },
                   {
                      name: 'Autonise',
