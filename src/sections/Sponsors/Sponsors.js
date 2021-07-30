@@ -55,9 +55,9 @@ function Sponsors() {
                      link: 'https://www.digitalocean.com/',
                   },
                   {
-                     name: 'Replit',
-                     image: Replit,
-                     link: 'https://replit.com/',
+                     name: 'Caarya',
+                     image: Caarya,
+                     link: 'https://caarya.in/',
                   },
                   {
                      name: 'Autonise',
@@ -105,9 +105,9 @@ function Sponsors() {
                      link: 'https://www.postman.com/',
                   },
                   {
-                     name: 'Caarya',
-                     image: Caarya,
-                     link: 'https://caarya.in/',
+                     name: 'Replit',
+                     image: Replit,
+                     link: 'https://replit.com/',
                   },
                   {
                      name: 'VoiceFlow',
