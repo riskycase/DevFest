@@ -42,11 +42,11 @@ const Homepage = () => {
                            data-button-theme="light"
                            style={{ height: '44px', width: '312px' }}
                         />
-                        <button className={Styles.register}>
+                        {/* <button className={Styles.register}>
                            <a href="" className="text-decoration-none">
                               Register for Talks/Workshops
                            </a>
-                        </button>
+                        </button> */}
                      </div>
                   </div>
                   <br />
