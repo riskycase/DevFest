@@ -1,27 +1,27 @@
 [
    {
       "title": "App Development",
-      "img_url": "assets/img/techimages/app.svg"
+      "img_url": "assets/img/techimages/mobile.svg"
    },
    {
       "title": "Web Development",
-      "img_url": "assets/img/techimages/web.svg"
+      "img_url": "assets/img/techimages/webDev.svg"
    },
    {
       "title": "Product Design",
-      "img_url": "assets/img/techimages/product.svg"
+      "img_url": "assets/img/techimages/product.png"
    },
    {
       "title": "Game Development",
-      "img_url": "assets/img/techimages/game.svg"
+      "img_url": "assets/img/techimages/gameDev.svg"
    },
    {
       "title": "Blockchain",
-      "img_url": "assets/img/techimages/blockchain.svg"
+      "img_url": "assets/img/techimages/blockchain.png"
    },
    {
       "title": "Artificial Intelligence",
-      "img_url": "assets/img/techimages/ai.svg"
+      "img_url": "assets/img/techimages/ai.png"
    },
    {
       "title": "Fintech",
@@ -29,6 +29,6 @@
    },
    {
       "title": "AR / VR",
-      "img_url": "assets/img/techimages/arvr.svg"
+      "img_url": "assets/img/techimages/arvr.png"
    }
 ]
