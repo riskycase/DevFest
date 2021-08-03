@@ -1,7 +1,6 @@
 import React from 'react';
 import Styles from './Hackathon.module.scss';
 import hackathon from '../../assets/img/hack.png';
-import Button from '../Button/Button.js';
 const Hackathon = () => {
    return (
       <div className={Styles.card}>
@@ -10,7 +9,19 @@ const Hackathon = () => {
                Register for the amazing sessions and the hackathon
             </h5>
             <div className={Styles.align}>
-               <Button text="Register Now" color="primary" />
+               <button
+                  type="button"
+                  className={`btn btn-primary btn-lg ${Styles.button}`}
+               >
+                  <a
+                     href="https://devsoc.club/"
+                     target="_blank"
+                     rel="noreferrer"
+                     className={Styles.anchor}
+                  >
+                     Register Now
+                  </a>
+               </button>
             </div>
          </div>
          <div className={Styles.image_container}>

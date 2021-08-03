@@ -9,6 +9,8 @@ import Technology from './sections/Technology/Technology';
 import Footer from './sections/Footer/Footer';
 import Team from './sections/Team/Team';
 import FAQ from './sections/FAQ/FAQ';
+import { Bg } from './sections/Homepage/Bg';
+import { Timeline } from './sections/Timeline/Timeline';
 // import Speakers from './sections/Speakers/Speakers';
 
 function App() {
@@ -20,15 +22,23 @@ function App() {
             `&lsquo;`, `&#39;`, `&rsquo;`);
          </style>
          <Homepage />
-         <Technology />
-         <Sponsors />
-         <Team />
-         <Devfest />
-         {/* <Speakers /> */}
-         <Hackathon />
-         <FAQ />
-         <Devsoc />
-         <Footer />
+         <div style={{ position: 'sticky', top: 0 }}>
+            <Bg />
+         </div>
+         <div
+            style={{ position: 'relative', zIndex: 2, background: '#181818' }}
+         >
+            <Timeline />
+            <Technology />
+            <Sponsors />
+            <Team />
+            <Devfest />
+            {/* <Speakers /> */}
+            <Hackathon />
+            <FAQ />
+            <Devsoc />
+            <Footer />
+         </div>
       </div>
    );
 }

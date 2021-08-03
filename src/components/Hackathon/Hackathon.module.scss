@@ -22,7 +22,7 @@
       justify-content: space-around;
       .h5 {
          color: var(--secondary);
-         font-family: "Roboto", sans-serif;
+         font-family: 'Roboto', sans-serif;
          font-weight: 400;
          font-style: normal;
          font-size: 2.5rem;
@@ -49,6 +49,17 @@
             border-radius: 0 0 2rem 2rem;
          }
          width: 100%;
+      }
+   }
+   .button {
+      background: var(--tertiary) !important;
+      padding: 1.125rem;
+      .anchor {
+         text-decoration: none;
+         color: var(--secondary);
+         :hover {
+            text-decoration: none;
+         }
       }
    }
 }

@@ -35,6 +35,28 @@ function Sponsors() {
                      link: 'https://devfolio.co/',
                   },
                   {
+                     name: 'Caarya',
+                     image: Caarya,
+                     link: 'https://caarya.in/',
+                     style: { height: '7rem' },
+                  },
+
+                  {
+                     name: 'Qoohoo',
+                     image: Qoohoo,
+                     link: 'https://qoohoo.in/',
+                  },
+                  {
+                     name: 'DigitalOcean',
+                     image: DigitalOcean,
+                     link: 'https://www.digitalocean.com/',
+                  },
+                  {
+                     name: 'Autonise',
+                     image: Autonise,
+                     link: 'https://www.autonise.com/',
+                  },
+                  {
                      name: 'Celo',
                      image: Celo,
                      link: 'https://celo.org/',
@@ -48,22 +70,6 @@ function Sponsors() {
                      name: 'Tezos',
                      image: Tezos,
                      link: 'https://tezos.com/',
-                  },
-                  {
-                     name: 'DigitalOcean',
-                     image: DigitalOcean,
-                     link: 'https://www.digitalocean.com/',
-                  },
-                  {
-                     name: 'Caarya',
-                     image: Caarya,
-                     link: 'https://caarya.in/',
-                     style: { height: '7rem' },
-                  },
-                  {
-                     name: 'Autonise',
-                     image: Autonise,
-                     link: 'https://www.autonise.com/',
                   },
                   {
                      name: 'Balsamiq',
@@ -80,25 +86,21 @@ function Sponsors() {
                      image: Figma,
                      link: 'https://www.figma.com/',
                   },
+
+                  {
+                     name: 'Zeta',
+                     image: Zeta,
+                     link: 'https://www.zeta.tech/',
+                  },
                   {
                      name: 'InterviewCake',
                      image: InterviewCake,
                      link: 'https://www.interviewcake.com/',
                   },
                   {
-                     name: 'Qoohoo',
-                     image: Qoohoo,
-                     link: 'https://qoohoo.in/',
-                  },
-                  {
                      name: 'StreamYard',
                      image: StreamYard,
                      link: 'https://streamyard.com/',
-                  },
-                  {
-                     name: 'Zeta',
-                     image: Zeta,
-                     link: 'https://www.zeta.tech/',
                   },
                   {
                      name: 'Postman',
