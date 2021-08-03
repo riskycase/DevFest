@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Styles from './Homepage.module.scss';
-import background from '../../assets/img/background.svg';
 import Navbar from '../../components/Navbar/Navbar';
 
 const Homepage = () => {
@@ -52,11 +51,6 @@ const Homepage = () => {
                   <br />
                </main>
             </div>
-            <img
-               src={background}
-               className={Styles.background}
-               alt="background"
-            />
          </div>
       </>
    );

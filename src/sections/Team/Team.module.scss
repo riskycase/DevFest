@@ -1,42 +1,50 @@
 .teamContainer {
-    font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 0.5rem;
-    align-items: center;
-    .teamMembers {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        .teamCard {
-            background: white;
-            display: flex;
-            flex-direction: column;
-            max-width: 15rem;
-            flex: 1 1 27%;
-            padding: 1.5rem;
-            margin: 1.25rem 3.5rem;
-            align-items: center;
-            border-radius: 0 0 1rem 1rem;
-            .photo {
-                width: 10rem;
-                height: 10rem;
-                margin-bottom: 1rem;
-                object-fit: cover;
-                border-radius: 50%;
+   font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+      Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   padding: 0 0.5rem;
+   align-items: center;
+   .teamMembers {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      .teamCard {
+         background: #2e2f2f;
+         display: flex;
+         flex-direction: column;
+         max-width: 15rem;
+         flex: 1 1 27%;
+         padding: 1.5rem;
+         margin: 1.25rem 3.5rem;
+         align-items: center;
+         border-radius: 0 0 1rem 1rem;
+         .photo {
+            width: 10rem;
+            height: 10rem;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            border-radius: 50%;
+         }
+         .name {
+            font-size: 1.25rem;
+            color: #fff;
+         }
+         .designation {
+            color: #666;
+         }
+         .linkedin {
+            margin: 1rem 0 0 0;
+            img {
+               height: 1.25rem;
+               &:hover {
+                  transform: scale(1.5);
+                  transition: 0.4s;
+               }
             }
-            .name{
-                font-size: 1.25rem;
-                color: #151522;
-            }
-            .designation{
-                color: #666;
-            }
-            .linkedin {
-                margin: 1rem 0 0 0;
-            }
-        }
-    }
+         }
+      }
+   }
 }
