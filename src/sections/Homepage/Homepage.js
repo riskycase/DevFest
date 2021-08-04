@@ -41,11 +41,16 @@ const Homepage = () => {
                            data-button-theme="light"
                            style={{ height: '44px', width: '312px' }}
                         />
-                        {/* <button className={Styles.register}>
-                           <a href="" className="text-decoration-none">
-                              Register for Talks/Workshops
-                           </a>
-                        </button> */}
+                        <a
+                           href="https://discord.gg/Kxtk3J5eZM"
+                           className="text-decoration-none"
+                           target="_blank"
+                           rel="noreferrer"
+                        >
+                           <button className={Styles.register}>
+                              Join our Discord channel
+                           </button>
+                        </a>
                      </div>
                   </div>
                   <br />

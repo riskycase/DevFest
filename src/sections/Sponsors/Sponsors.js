@@ -20,6 +20,7 @@ import VoiceFlow from '../../assets/img/sponsors/voiceflow.svg';
 import CodingNinjas from '../../assets/img/sponsors/Coding Ninjas Logo 2.png';
 import Caarya from '../../assets/img/sponsors/caaryalogo-dark.svg';
 import EchoAR from '../../assets/img/sponsors/echoAR - Logo.webp';
+import sawo_logo from '../../assets/img/sponsors/sawo_logo.svg';
 
 function Sponsors() {
    return (
@@ -129,6 +130,12 @@ function Sponsors() {
                   },
                ]}
             />
+         </div>
+         <div className="container-sm">
+            <h3 className={Styles.auth}>AUTHENTICATION PARTNER</h3>
+            <a href="https://sawolabs.com/">
+               <img src={sawo_logo} alt="Sawo" style={{ marginTop: '2rem' }} />
+            </a>
          </div>
       </div>
    );
