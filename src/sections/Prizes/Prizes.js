@@ -12,7 +12,7 @@ class Prizes extends React.Component {
                '.XYZ Domains for all team members.',
                'Certificate of Excellence',
                'Premium swag kits',
-               'Digital Ocean credits worth 250$',
+               'Digital Ocean credits worth $250',
                'Voiceflow professional license for 1 month.',
                'Coding Ninjas course discount of 25%',
                '90 day extended trial of Balsamiq',
@@ -28,7 +28,7 @@ class Prizes extends React.Component {
                '.XYZ Domains for all team members.',
                'Certificate of Excellence',
                'Premium swag kits',
-               'Digital Ocean credits worth 250$',
+               'Digital Ocean credits worth $250',
                'Voiceflow professional license for 1 month.',
                'Coding Ninjas course discount of 25%',
                '90 day extended trial of Balsamiq',
@@ -43,7 +43,7 @@ class Prizes extends React.Component {
                '.XYZ Domains for all team members.',
                'Certificate of Excellence',
                'Premium swag kits',
-               'Digital Ocean credits worth 250$',
+               'Digital Ocean credits worth $250',
                'Voiceflow professional license for 1 month.',
                'Coding Ninjas course discount of 25%',
                '90 day extended trial of Balsamiq',
@@ -56,7 +56,7 @@ class Prizes extends React.Component {
                '.XYZ Domains per team',
                'Certificate of Appreciation',
                'Special swag kits',
-               'Digital Ocean credits worth 100$',
+               'Digital Ocean credits worth $100',
                'Voiceflow professional license for 1 month.',
                'Coding Ninjas course discount of 25%',
                '90 day extended trial of Balsamiq',
@@ -67,7 +67,7 @@ class Prizes extends React.Component {
             recipient: 'All Participants',
             items: [
                'Certificate of Participation',
-               'Digital Ocean credits worth 100$',
+               'Digital Ocean credits worth $100',
                'Voiceflow professional license for 1 month.',
                'Coding Ninjas course discount of 25%',
                '90 day extended trial of Balsamiq',
@@ -77,9 +77,11 @@ class Prizes extends React.Component {
       ].map((prize, index) => (
          <div key={index} className={Styles.prizeCard}>
             <span className={Styles.recipient}>{prize.recipient}</span>
-            <ul>
+            <ul className={Styles.list}>
                {prize.items.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li key={index} className={Styles.listItem}>
+                     {item}
+                  </li>
                ))}
             </ul>
          </div>
