@@ -31,12 +31,12 @@ function App() {
          >
             <Timeline />
             <Technology />
+            <Prizes />
             <Sponsors />
             <Team />
             <Devfest />
             {/* <Speakers /> */}
             <Hackathon />
-            <Prizes />
             <FAQ />
             <Devsoc />
             <Footer />
