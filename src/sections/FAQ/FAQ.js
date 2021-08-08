@@ -51,12 +51,9 @@ class FAQ extends React.Component {
             question: 'Can we participate as a team?',
             answer: (
                <p>
-                  Yes! This hackathon is strictly a team competition. We believe
-                  that you&apos;re stronger as a team. You can apply for the
-                  hackathon as a team or you can apply individually and form a
-                  team once you&apos;re accepted. To apply as a team, join a
-                  team before applying and the team leader will have to submit
-                  the application of the team.
+                  Yes! We believe that you&apos;re stronger as a team. To apply
+                  as a team, the team leader will have to submit the application
+                  of the team.
                </p>
             ),
          },
@@ -91,8 +88,8 @@ class FAQ extends React.Component {
                   companies. And yeah we&apos;ll have prizes for finalist teams
                   and many other sponsored prizes.
                   <br />
-                  The prizes include cash prizes upto ₹45000 and other credits
-                  worth a total of ₹10 lacs
+                  The prizes include cash prizes upto ₹60000 and other credits
+                  worth a total of ₹20 lacs
                </p>
             ),
          },
